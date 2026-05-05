@@ -3,8 +3,6 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import QuoteForm from '@/components/forms/QuoteForm';
 
-export const runtime = 'edge';
-
 export async function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug.split('/') }));
 }
