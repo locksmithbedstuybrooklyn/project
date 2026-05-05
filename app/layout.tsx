@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+
+export const runtime = 'edge';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import LocalBusinessSchema from '@/components/schema/LocalBusinessSchema';

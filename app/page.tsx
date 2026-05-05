@@ -1,4 +1,6 @@
 import Link from 'next/link';
+
+export const runtime = 'edge';
 import Button from '@/components/common/Button';
 import Card from '@/components/common/Card';
 import QuoteForm from '@/components/forms/QuoteForm';
