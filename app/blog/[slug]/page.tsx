@@ -2,6 +2,8 @@ import { blogPosts, services } from '@/lib/content';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+export const runtime = 'edge';
+
 export async function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
 }

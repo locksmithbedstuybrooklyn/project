@@ -2,6 +2,8 @@ import { locations, services, testimonials } from '@/lib/content';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+export const runtime = 'edge';
+
 export async function generateStaticParams() {
   return locations.map((l) => ({ slug: l.slug }));
 }
