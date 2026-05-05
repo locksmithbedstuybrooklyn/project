@@ -6,8 +6,9 @@ export async function generateStaticParams() {
   return locations.map((l) => ({ slug: l.slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const location = locations.find((l) => l.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const location = locations.find((l) => l.slug === slug);
   if (!location) return {};
   return {
     title: `Locksmith ${location.name} | Car & Home Locksmith | (718) 568-6597`,
@@ -15,8 +16,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function LocationPage({ params }: { params: { slug: string } }) {
-  const location = locations.find((l) => l.slug === params.slug);
+export default async function LocationPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const location = locations.find((l) => l.slug === slug);
   if (!location) notFound();
 
   const localReview = testimonials.find((t) => t.location.toLowerCase().includes(location.name.toLowerCase().split(' ')[0]));

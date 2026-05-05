@@ -4,10 +4,35 @@
   --color-trust-blue: #1E3A8A;
   --color-action-orange: #F97316;
   --color-safety-green: #10B981;
+  --font-sans: 'Inter', system-ui, sans-serif;
 }
 
-body {
-  background: white;
-  color: #111827;
-  font-family: 'Inter', system-ui, sans-serif;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-hover-effect {
+    @apply transition-all duration-300 hover:shadow-lg active:scale-95;
+  }
+  
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
 }

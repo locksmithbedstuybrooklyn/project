@@ -4,11 +4,13 @@ import { notFound } from 'next/navigation';
 import QuoteForm from '@/components/forms/QuoteForm';
 
 export async function generateStaticParams() {
-  return services.map((s) => ({ slug: s.slug }));
+  return services.map((s) => ({ slug: s.slug.split('/') }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const service = services.find((s) => s.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }) {
+  const { slug } = await params;
+  const fullSlug = slug.join('/');
+  const service = services.find((s) => s.slug === fullSlug);
   if (!service) return {};
   return {
     title: `${service.name} Bed-Stuy | Emergency Service | (718) 568-6597`,
@@ -16,8 +18,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
-  const service = services.find((s) => s.slug === params.slug);
+export default async function ServicePage({ params }: { params: Promise<{ slug: string[] }> }) {
+  const { slug } = await params;
+  const fullSlug = slug.join('/');
+  const service = services.find((s) => s.slug === fullSlug);
   if (!service) notFound();
 
   const related = services.filter((s) => s.slug !== service.slug).slice(0, 3);
