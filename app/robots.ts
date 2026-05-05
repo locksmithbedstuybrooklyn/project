@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/admin/', '/private/', '/temp/'],
     },
-    sitemap: 'https://locksmithbedstuy.com/sitemap.xml',
+    sitemap: 'https://www.locksmithbedstuy.com/sitemap.xml',
   };
 }

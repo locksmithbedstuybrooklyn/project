@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   description:
     'Fast emergency locksmith service in Bed-Stuy. Car unlock, key replacement, lock repair. 20-minute response. Available 24/7. Call (718) 568-6597.',
   keywords: ['locksmith', 'bed stuy', 'brooklyn', 'emergency locksmith', 'car unlock', 'lock repair'],
-  metadataBase: new URL('https://locksmithbedstuy.com'),
+  metadataBase: new URL('https://www.locksmithbedstuy.com'),
   openGraph: {
     title: 'Bed-Stuy Locksmith | Emergency Service 24/7',
     description: 'Fast emergency locksmith service in Bed-Stuy. 20-minute response. Available 24/7.',
     type: 'website',
-    url: 'https://locksmithbedstuy.com',
+    url: 'https://www.locksmithbedstuy.com',
     siteName: 'Bed-Stuy Locksmith',
   },
   twitter: {
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     description: 'Fast emergency locksmith service in Bed-Stuy. Call (718) 568-6597.',
   },
   alternates: {
-    canonical: 'https://locksmithbedstuy.com',
+    canonical: 'https://www.locksmithbedstuy.com',
   },
 };
 

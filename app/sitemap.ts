@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://locksmithbedstuy.com';
+const BASE_URL = 'https://www.locksmithbedstuy.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const services = [

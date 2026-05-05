@@ -1,4 +1,4 @@
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://locksmithbedstuy.com';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.locksmithbedstuy.com';
 const SITE_NAME = 'Bed-Stuy Locksmith';
 const PHONE = '(718) 568-6597';
 
