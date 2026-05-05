@@ -1,8 +1,0 @@
-{
-  "name": "locksmithbedstuy",
-  "pages_build_output_dir": ".vercel/output",
-  "build": {
-    "command": "npm run pages:build",
-    "watch_dir": "app"
-  }
-}
