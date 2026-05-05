@@ -1,0 +1,6 @@
+/services/car-unlock /services/car-lockout 301
+/services/house-unlock /services/residential-lockout 301
+/services/key-replacement /services/car-key-replacement 301
+/emergency /services/24-hour-locksmith 301
+/about-us /about 301
+/contact-us /contact 301
