@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Massive Authority Hero */}
-      <section className="relative bg-gray-900 text-white pt-40 pb-24 md:pt-56 md:pb-40 overflow-hidden">
+      <section className="relative bg-gray-900 text-white pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-trust-blue/20 to-transparent"></div>
 
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="text-left">
               <MasterBadge variant="full" className="mb-8" />
-              <h1 className="text-6xl md:text-9xl font-black mb-8 tracking-tighter uppercase italic leading-none">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tighter uppercase italic leading-none">
                 Brooklyn <span className="text-action-orange">Locksmith</span>
               </h1>
               <p className="text-xl md:text-3xl text-blue-100 mb-12 max-w-xl font-medium leading-tight">
@@ -111,7 +111,7 @@ export default function Home() {
             </div>
 
             <div>
-              <h2 className="text-5xl md:text-7xl font-black mb-12 uppercase italic tracking-tighter leading-none text-gray-900">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-12 uppercase italic tracking-tighter leading-none text-gray-900">
                 We Protect <span className="text-trust-blue">Your Property</span>.
               </h2>
               <div className="space-y-10">
@@ -147,7 +147,7 @@ export default function Home() {
       <section className="py-32 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-24">
-            <h2 className="text-5xl md:text-7xl font-black mb-8 uppercase italic tracking-tighter">Our <span className="text-action-orange">Services</span></h2>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 uppercase italic tracking-tighter">Our <span className="text-action-orange">Services</span></h2>
             <p className="text-xl text-blue-100/60 font-medium max-w-2xl mx-auto italic">We solve your lock problems in Brooklyn.</p>
           </div>
 
@@ -176,7 +176,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-24">
             <div className="max-w-2xl">
-              <h2 className="text-5xl md:text-7xl font-black mb-8 uppercase italic tracking-tighter text-gray-900 leading-none">Local <span className="text-trust-blue">Locksmith</span></h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 uppercase italic tracking-tighter text-gray-900 leading-none">Local <span className="text-trust-blue">Locksmith</span></h2>
               <p className="text-xl text-gray-500 font-medium italic leading-relaxed">
                 We are not a national dispatch center. Our technicians are in your neighborhood.
               </p>
@@ -204,7 +204,7 @@ export default function Home() {
       <section className="py-40 bg-gray-950 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&q=80')] bg-cover bg-center grayscale"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-5xl md:text-9xl font-black mb-12 tracking-tighter uppercase italic leading-none">Locked <span className="text-action-orange">Out?</span></h2>
+          <h2 className="text-5xl md:text-7xl lg:text-8xl font-black mb-12 tracking-tighter uppercase italic leading-none">Locked <span className="text-action-orange">Out?</span></h2>
           <p className="text-2xl md:text-3xl text-blue-100 mb-16 font-medium italic">
             Do not waste time. Call a local locksmith directly for fast help.
           </p>
