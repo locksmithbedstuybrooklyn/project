@@ -34,12 +34,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   // Generate Table of Contents from markdown headers
   const toc = service.content
     .split('\n')
-    .filter((line) => line.startsWith('## '))
+    .filter((line) => line.includes('[[H2:'))
     .map((line) => {
-      const title = line.replace('## ', '');
+      const match = line.match(/\[\[H2:(.*?)\]\]/);
+      const title = match ? match[1] : '';
       const id = title.toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, '-');
       return { title, id };
-    });
+    })
+    .filter((item) => item.title !== '');
 
   const serviceSchema = generateServiceSchema(service.name, service.description, service.slug);
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -145,6 +147,18 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
               <article className="prose prose-lg max-w-none">
                 {renderContent(service.content)}
               </article>
+
+              {service.videoUrl && (
+                <div className="mt-12 relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-gray-900">
+                  <iframe 
+                    src={service.videoUrl} 
+                    title={`${service.name} Video Demonstration`}
+                    className="absolute top-0 left-0 w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              )}
 
               {/* Related Services */}
               <div className="mt-24 pt-24 border-t border-gray-100">

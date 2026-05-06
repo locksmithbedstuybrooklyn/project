@@ -12,6 +12,7 @@ export const services: Service[] = [
     image: 'https://images.unsplash.com/photo-1543674892-7d64d45df18b?auto=format&fit=crop&q=80',
     keywords: ['automotive locksmith', 'car lockout', 'car key replacement', 'ignition repair', 'transponder programming'],
     updatedAt: new Date('2026-05-06'),
+    videoUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
     content: `[[H2:The 2026 Standard for Automotive Security in Brooklyn]]
 In the modern landscape of New York City, automotive security has transcended simple mechanical locks. Today's vehicles are mobile computing environments, and losing access to them requires a combination of precision engineering and advanced digital diagnostics. At Bed-Stuy Locksmith, we have spent over 15 years mastering the evolution of vehicle entry and key generation.
 
@@ -101,6 +102,7 @@ Trust your security to the experts who know Brooklyn architecture inside and out
     image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&q=80',
     keywords: ['lock replacement', 'change locks', 'new door locks', 'high security lock upgrade'],
     updatedAt: new Date('2026-05-06'),
+    videoUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
     content: `[[H2:Strategic Security: When to Choose Lock Replacement]]
 In the evolving urban environment of Brooklyn, your locks are the first line of defense. But [lock replacement](/services/lock-replacement) is not just a reactive measure after a lost key—it is a strategic upgrade to your property's security posture. At Bed-Stuy Locksmith, we help residents of [Bed-Stuy](/locations/bed-stuy) and [Williamsburg](/locations/williamsburg) transition from aging, vulnerable hardware to the gold standard of 2026 protection.
 
@@ -1087,6 +1089,7 @@ Whether you're in [Crown Heights](/locations/crown-heights) or [Williamsburg](/l
     updatedAt: new Date('2026-05-06'),
     author: 'Robert K.',
     category: 'Guide',
+    videoUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
   },
   {
     id: 'lock-repair-vs-replacement',

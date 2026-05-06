@@ -31,12 +31,14 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
   // Generate TOC from headers
   const toc = location.content
     .split('\n')
-    .filter((line) => line.startsWith('## '))
+    .filter((line) => line.includes('[[H2:'))
     .map((line) => {
-      const title = line.replace('## ', '');
+      const match = line.match(/\[\[H2:(.*?)\]\]/);
+      const title = match ? match[1] : '';
       const id = title.toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, '-');
       return { title, id };
-    });
+    })
+    .filter((item) => item.title !== '');
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: '/' },

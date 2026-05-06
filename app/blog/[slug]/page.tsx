@@ -37,8 +37,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const renderContent = (content: string) => {
     // Extract headers for TOC
     const headers = content.split('\n\n')
-      .filter(block => block.startsWith('## '))
-      .map(block => block.replace('## ', ''));
+      .filter(block => block.includes('[[H2:'))
+      .map(block => {
+        const match = block.match(/\[\[H2:(.*?)\]\]/);
+        return match ? match[1] : '';
+      })
+      .filter(h => h !== '');
 
     const blocks = content.split('\n\n');
     
@@ -107,22 +111,28 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           }
 
           // Headers with anchors for TOC
-          if (block.startsWith('### ')) {
-            return <h3 key={i} className="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase italic tracking-tight">{block.replace('### ', '')}</h3>;
+          if (block.includes('[[H3:')) {
+            const match = block.match(/\[\[H3:(.*?)\]\]/);
+            if (match) {
+              return <h3 key={i} className="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase italic tracking-tight">{match[1]}</h3>;
+            }
           }
           
-          if (block.startsWith('## ')) {
-            const hText = block.replace('## ', '');
-            const hIdx = headers.indexOf(hText);
-            return (
-              <h2 
-                key={i} 
-                id={`section-${hIdx}`}
-                className="text-3xl font-black text-trust-blue mt-16 mb-8 uppercase italic tracking-tighter border-l-4 border-action-orange pl-6 scroll-mt-32"
-              >
-                {hText}
-              </h2>
-            );
+          if (block.includes('[[H2:')) {
+            const match = block.match(/\[\[H2:(.*?)\]\]/);
+            if (match) {
+              const hText = match[1];
+              const hIdx = headers.indexOf(hText);
+              return (
+                <h2 
+                  key={i} 
+                  id={`section-${hIdx}`}
+                  className="text-3xl font-black text-trust-blue mt-16 mb-8 uppercase italic tracking-tighter border-l-4 border-action-orange pl-6 scroll-mt-32"
+                >
+                  {hText}
+                </h2>
+              );
+            }
           }
           
           // Parse links [text](/url)
@@ -219,6 +229,18 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                   className="object-cover"
                 />
               </div>
+
+              {post.videoUrl && (
+                <div className="mb-12 relative aspect-video rounded-3xl overflow-hidden shadow-2xl border border-gray-100 bg-gray-900">
+                  <iframe 
+                    src={post.videoUrl} 
+                    title={`${post.title} Video Demonstration`}
+                    className="absolute top-0 left-0 w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              )}
 
               <div className="prose prose-xl max-w-none">
                 {renderContent(post.content)}
