@@ -4,6 +4,7 @@ import { Phone, CheckCircle, Clock, Shield, Star, ArrowRight, MapPin, ChevronRig
 import { Metadata } from 'next';
 import Button from '@/components/common/Button';
 import InteractiveEstimator from '@/components/pricing/InteractiveEstimator';
+import MasterBadge from '@/components/common/MasterBadge';
 import Image from 'next/image';
 
 export const runtime = 'edge';
@@ -24,10 +25,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="text-left">
-              <div className="inline-flex items-center gap-2 bg-action-orange/10 border border-action-orange/30 px-6 py-2 rounded-full text-action-orange text-xs font-black uppercase tracking-[0.2em] mb-8 italic animate-pulse">
-                <Zap size={14} />
-                Technical Emergency Units Active
-              </div>
+              <MasterBadge variant="full" className="mb-8" />
               <h1 className="text-6xl md:text-9xl font-black mb-8 tracking-tighter uppercase italic leading-none">
                 Brooklyn <span className="text-action-orange">Security</span> Authority
               </h1>
@@ -62,7 +60,18 @@ export default function Home() {
 
             <div className="relative">
               <div className="absolute -inset-4 bg-trust-blue/20 blur-3xl rounded-full"></div>
+              <div className="relative">
+              <div className="absolute -top-12 -right-12 hidden lg:block animate-pulse">
+                <div className="bg-safety-green/20 backdrop-blur-md p-4 rounded-full border border-safety-green/50">
+                  <div className="text-[10px] font-black uppercase italic tracking-widest text-safety-green">Active Dispatch</div>
+                </div>
+              </div>
+              <div className="hidden lg:block absolute -bottom-16 left-0 bg-white/5 backdrop-blur p-6 rounded-2xl border border-white/10 w-64 z-20">
+                <div className="flex items-center gap-3 text-safety-green mb-2"><Shield size={20} /> <span className="font-black uppercase italic tracking-wider">Certified Techs</span></div>
+                <p className="text-[10px] text-white/60 font-medium">Verified by NY Security Board for 2026 standards.</p>
+              </div>
               <InteractiveEstimator />
+            </div>
             </div>
           </div>
         </div>

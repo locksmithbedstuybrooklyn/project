@@ -8,6 +8,7 @@ export interface Service {
   image: string;
   keywords: string[];
   updatedAt: Date;
+  videoUrl?: string;
 }
 
 export interface Location {
@@ -20,6 +21,7 @@ export interface Location {
   serviceAreas: string[];
   neighborhoods: string[];
   updatedAt: Date;
+  videoUrl?: string;
 }
 
 export interface BlogPost {
@@ -34,6 +36,7 @@ export interface BlogPost {
   author: string;
   category: string;
   image: string;
+  videoUrl?: string;
 }
 
 export interface SEOMetadata {

@@ -70,9 +70,29 @@ export function renderContent(content: string) {
       }
     }
 
-    // Process headers and paragraphs
+    // Process headers, lists, and paragraphs
     const lines = part.split('\n');
     return lines.map((line, lIndex) => {
+      // H2 Custom Tag: [[H2:Title]]
+      if (line.includes('[[H2:')) {
+        const titleMatch = line.match(/\[\[H2:(.*?)\]\]/);
+        if (titleMatch) {
+          const title = titleMatch[1];
+          const id = title.toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, '-');
+          return <h2 key={`${index}-${lIndex}`} id={id} className="text-3xl md:text-4xl font-black text-gray-900 mt-16 mb-8 uppercase italic tracking-tight leading-tight scroll-mt-32 border-l-8 border-action-orange pl-6">{title}</h2>;
+        }
+      }
+      
+      // H3 Custom Tag: [[H3:Title]]
+      if (line.includes('[[H3:')) {
+        const titleMatch = line.match(/\[\[H3:(.*?)\]\]/);
+        if (titleMatch) {
+          const title = titleMatch[1];
+          return <h3 key={`${index}-${lIndex}`} className="text-xl md:text-2xl font-bold text-gray-900 mt-12 mb-6 uppercase italic tracking-tight">{title}</h3>;
+        }
+      }
+
+      // Legacy support for ## and ### (optional, but removing per user request for content.ts)
       if (line.startsWith('## ')) {
         const title = line.replace('## ', '');
         const id = title.toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, '-');
@@ -82,6 +102,7 @@ export function renderContent(content: string) {
         const title = line.replace('### ', '');
         return <h3 key={`${index}-${lIndex}`} className="text-xl md:text-2xl font-bold text-gray-900 mt-12 mb-6 uppercase italic tracking-tight">{title}</h3>;
       }
+
       if (line.startsWith('- ')) {
         return <li key={`${index}-${lIndex}`} className="ml-6 mb-3 text-gray-700 list-disc pl-2 font-medium">{processLinks(line.replace('- ', ''))}</li>;
       }

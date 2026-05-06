@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Button from '@/components/common/Button';
+import MasterBadge from '@/components/common/MasterBadge';
 import { Menu, X, Phone, Clock, Shield, ChevronRight } from 'lucide-react';
 
 export default function Header() {
@@ -23,9 +24,12 @@ export default function Header() {
       <div className="bg-gray-950 text-white py-2 overflow-hidden border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-[0.2em] italic">
-            <div className="flex gap-6">
+            <div className="flex items-center gap-6">
               <span className="flex items-center gap-2"><Clock size={12} className="text-action-orange" /> 20-Min Response</span>
-              <span className="flex items-center gap-2 hidden md:flex"><Shield size={12} className="text-safety-green" /> Licensed NYC #2103442</span>
+              <div className="hidden md:flex items-center gap-4">
+                <span className="flex items-center gap-2"><Shield size={12} className="text-safety-green" /> Licensed NYC #2103442</span>
+                <MasterBadge variant="compact" />
+              </div>
             </div>
             <div className="flex gap-6">
               <span className="text-action-orange hidden sm:inline">24/7 Emergency Dispatch</span>
@@ -89,13 +93,16 @@ export default function Header() {
             </div>
  
             {/* Mobile Menu Button */}
-            <button
-              className="lg:hidden p-2 text-gray-900 hover:text-action-orange transition-colors"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
-            </button>
+            <div className="lg:hidden flex items-center gap-3">
+              <MasterBadge variant="compact" />
+              <button
+                className="p-2 text-gray-900 hover:text-action-orange transition-colors"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Toggle menu"
+              >
+                {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
+              </button>
+            </div>
           </div>
         </div>
  

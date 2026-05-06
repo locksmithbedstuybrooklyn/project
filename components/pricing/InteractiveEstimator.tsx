@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Shield, Car, Home, Building2, ChevronRight, Phone, RefreshCcw, CheckCircle2 } from 'lucide-react';
 import Button from '@/components/common/Button';
+import { trackEstimatorStep, trackEvent } from '@/lib/analytics';
 
 const CATEGORIES = [
   { id: 'automotive', name: 'Automotive', icon: Car, color: 'bg-blue-500' },
@@ -42,11 +43,13 @@ export default function InteractiveEstimator() {
   const selectCategory = (id: string) => {
     setCategory(id);
     setStep(2);
+    trackEstimatorStep(2, id);
   };
 
   const selectService = (item: any) => {
     setService(item);
     setStep(3);
+    trackEstimatorStep(3, item);
   };
 
   return (
@@ -125,7 +128,11 @@ export default function InteractiveEstimator() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a href="tel:(718)568-6597" className="w-full">
+              <a 
+                href="tel:(718)568-6597" 
+                className="w-full"
+                onClick={() => trackEvent('phone_click', { label: 'estimator_dispatch', service: service.id })}
+              >
                 <Button size="large" className="w-full bg-action-orange hover:bg-orange-600 text-white font-black py-6 rounded-2xl uppercase italic shadow-xl">
                   Dispatch Now
                 </Button>
