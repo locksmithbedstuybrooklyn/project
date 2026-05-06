@@ -3,49 +3,55 @@ export async function GET() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core Pages -->
   <url>
-    <loc>https://locksmithbedstuy.com/</loc>
+    <loc>https://www.locksmithbedstuy.com/</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services</loc>
+    <loc>https://www.locksmithbedstuy.com/services</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/locations</loc>
+    <loc>https://www.locksmithbedstuy.com/locations</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/about</loc>
+    <loc>https://www.locksmithbedstuy.com/about</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/contact</loc>
+    <loc>https://www.locksmithbedstuy.com/contact</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/quote</loc>
+    <loc>https://www.locksmithbedstuy.com/quote</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/faq</loc>
+    <loc>https://www.locksmithbedstuy.com/booking</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.locksmithbedstuy.com/faq</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog</loc>
+    <loc>https://www.locksmithbedstuy.com/blog</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -53,43 +59,43 @@ export async function GET() {
 
   <!-- Consolidated Pillar Service Pages -->
   <url>
-    <loc>https://locksmithbedstuy.com/services/automotive-locksmith</loc>
+    <loc>https://www.locksmithbedstuy.com/services/automotive-locksmith</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services/lock-installation</loc>
+    <loc>https://www.locksmithbedstuy.com/services/lock-installation</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services/lock-replacement</loc>
+    <loc>https://www.locksmithbedstuy.com/services/lock-replacement</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services/lock-repair</loc>
+    <loc>https://www.locksmithbedstuy.com/services/lock-repair</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services/lock-rekeying</loc>
+    <loc>https://www.locksmithbedstuy.com/services/lock-rekeying</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services/residential-lockout</loc>
+    <loc>https://www.locksmithbedstuy.com/services/residential-lockout</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services/24-hour-emergency-locksmith</loc>
+    <loc>https://www.locksmithbedstuy.com/services/24-hour-emergency-locksmith</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -97,49 +103,49 @@ export async function GET() {
 
   <!-- Location Pages -->
   <url>
-    <loc>https://locksmithbedstuy.com/locations/bed-stuy</loc>
+    <loc>https://www.locksmithbedstuy.com/locations/bed-stuy</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/locations/bed-stuy/crown-heights</loc>
+    <loc>https://www.locksmithbedstuy.com/locations/bed-stuy/crown-heights</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/locations/bed-stuy/prospect-heights</loc>
+    <loc>https://www.locksmithbedstuy.com/locations/bed-stuy/prospect-heights</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/locations/williamsburg</loc>
+    <loc>https://www.locksmithbedstuy.com/locations/williamsburg</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/locations/greenpoint</loc>
+    <loc>https://www.locksmithbedstuy.com/locations/greenpoint</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/locations/bushwick</loc>
+    <loc>https://www.locksmithbedstuy.com/locations/bushwick</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/locations/astoria</loc>
+    <loc>https://www.locksmithbedstuy.com/locations/astoria</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/locations/long-island-city</loc>
+    <loc>https://www.locksmithbedstuy.com/locations/long-island-city</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -147,67 +153,67 @@ export async function GET() {
 
   <!-- Blog Pages -->
   <url>
-    <loc>https://locksmithbedstuy.com/blog/locked-out-car</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/locked-out-car</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog/prevent-lockouts</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/prevent-lockouts</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog/car-key-replacement-guide</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/car-key-replacement-guide</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog/ignition-problems</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/ignition-problems</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog/residential-lock-security</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/residential-lock-security</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog/lock-replacement-guide</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/lock-replacement-guide</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog/lock-repair-vs-replacement</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/lock-repair-vs-replacement</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog/high-security-locks</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/high-security-locks</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog/emergency-locksmith-tips</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/emergency-locksmith-tips</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog/lock-maintenance</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/lock-maintenance</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/blog/bed-stuy-locksmith-guide</loc>
+    <loc>https://www.locksmithbedstuy.com/blog/bed-stuy-locksmith-guide</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -215,31 +221,31 @@ export async function GET() {
 
   <!-- Supporting Pages -->
   <url>
-    <loc>https://locksmithbedstuy.com/price-estimator</loc>
+    <loc>https://www.locksmithbedstuy.com/price-estimator</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/testimonials</loc>
+    <loc>https://www.locksmithbedstuy.com/testimonials</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/privacy-policy</loc>
+    <loc>https://www.locksmithbedstuy.com/privacy-policy</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/terms-of-service</loc>
+    <loc>https://www.locksmithbedstuy.com/terms-of-service</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/service-areas</loc>
+    <loc>https://www.locksmithbedstuy.com/service-areas</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

@@ -27,6 +27,7 @@ export interface BlogPost {
   updatedAt: Date;
   author: string;
   category: string;
+  image: string;
 }
 
 export interface SEOMetadata {
