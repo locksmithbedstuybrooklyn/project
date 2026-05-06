@@ -7,8 +7,8 @@ import Button from '@/components/common/Button';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Locksmith Authority Guides | 2026 Security Masterclasses',
-  description: 'Deep-dive technical guides on locksmithing, security systems, and emergency protocols. 2500+ word authority guides from Bed-Stuy experts.',
+  title: 'Locksmith Advice | Bed-Stuy Brooklyn',
+  description: 'Read our guides on car lockouts, home security, and lock replacement. We help you stay safe in Brooklyn.',
 };
 
 export default function BlogPage() {
@@ -31,10 +31,10 @@ export default function BlogPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 via-gray-900/90 to-gray-900"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <h1 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter uppercase italic leading-none">
-            The <span className="text-action-orange">Authority</span> Guide
+            Helpful <span className="text-action-orange">Advice</span>
           </h1>
           <p className="text-xl md:text-3xl text-blue-100 mb-12 max-w-4xl mx-auto font-medium leading-relaxed">
-            Deep-dive technical masterclasses on locksmithing, security architecture, and emergency survival in 2026.
+            Read our guides on home security, car lockouts, and lock maintenance.
           </p>
           <div className="flex justify-center">
             <a href="#articles" className="inline-flex items-center gap-2 bg-white text-gray-900 font-black px-10 py-5 rounded-2xl uppercase italic text-lg hover:bg-action-orange hover:text-white transition-all">
@@ -49,7 +49,7 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-24">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
-              <h2 className="text-3xl font-black mb-12 uppercase italic tracking-tight border-l-4 border-action-orange pl-6">Technical Masterclasses</h2>
+              <h2 className="text-3xl font-black mb-12 uppercase italic tracking-tight border-l-4 border-action-orange pl-6">Latest Articles</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {blogPosts.map((post) => (
                   <Link key={post.id} href={`/blog/${post.slug}`} className="group">
@@ -86,7 +86,7 @@ export default function BlogPage() {
                           {post.description}
                         </p>
                         <div className="mt-auto flex items-center text-trust-blue font-black gap-2 text-xs uppercase italic tracking-widest">
-                          <span>Study Full Guide</span>
+                          <span>Read Article</span>
                           <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform" />
                         </div>
                       </div>
@@ -115,7 +115,7 @@ export default function BlogPage() {
                 <div className="bg-trust-blue text-white p-10 rounded-[2.5rem] shadow-xl">
                    <h3 className="text-xl font-black mb-6 uppercase italic tracking-tight">Need a Pro?</h3>
                    <p className="text-blue-100 text-sm mb-10 font-medium leading-relaxed">
-                     Technical knowledge is power, but some jobs require master tools. Our mobile units are active 24/7.
+                     Some jobs require professional tools. Our mobile units are active 24/7.
                    </p>
                    <a href="tel:(718)568-6597" className="block w-full text-center bg-action-orange hover:bg-orange-600 text-white font-black py-5 rounded-2xl transition-all uppercase italic text-lg shadow-lg">
                       <Phone className="inline-block mr-2" size={20} />
@@ -133,7 +133,7 @@ export default function BlogPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-black mb-8 uppercase italic tracking-tighter">Emergency in Bed-Stuy?</h2>
           <p className="text-xl text-gray-600 mb-12 font-medium">
-            Don't waste time on thin content. Call the professionals who know every lock in Brooklyn.
+            Do not wait outside. Call the professionals who know every lock in Brooklyn.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="tel:(718)568-6597">
