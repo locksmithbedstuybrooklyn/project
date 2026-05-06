@@ -28,7 +28,7 @@ export default function MasterBadge({ className = '', variant = 'full' }: Master
             {[1, 2, 3, 4, 5].map((i) => (
               <div key={i} className="w-1.5 h-1.5 rounded-full bg-safety-green" />
             ))}
-            <span className="text-[8px] font-bold text-safety-green uppercase tracking-widest ml-1">Level 5 Auth</span>
+            <span className="text-[8px] font-bold text-safety-green uppercase tracking-widest ml-1">Top Rated</span>
           </div>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default function MasterBadge({ className = '', variant = 'full' }: Master
         </div>
         <div className="flex items-center gap-2 text-[9px] font-bold uppercase tracking-widest text-gray-400">
           <CheckCircle2 size={10} className="text-safety-green" />
-          NDE Certified Expert
+          Damage-Free Expert
         </div>
       </div>
     </div>

@@ -10,8 +10,8 @@ import Image from 'next/image';
 export const runtime = 'edge';
 
 export const metadata: Metadata = {
-  title: 'Bed-Stuy Locksmith Authority | 2026 Masterclass Security | Brooklyn',
-  description: 'Brooklyn’s premier locksmith authority. 20-min emergency response, high-security hardware, and automotive electronic experts. Licensed & Insured. Call (718) 568-6597.',
+  title: 'Bed-Stuy Locksmith | Emergency Services | Brooklyn',
+  description: 'Fast local locksmith in Brooklyn. 20-minute emergency response. Car keys, lock replacement, and lockouts. Licensed and Insured. Call (718) 568-6597.',
 };
 
 export default function Home() {
@@ -27,10 +27,10 @@ export default function Home() {
             <div className="text-left">
               <MasterBadge variant="full" className="mb-8" />
               <h1 className="text-6xl md:text-9xl font-black mb-8 tracking-tighter uppercase italic leading-none">
-                Brooklyn <span className="text-action-orange">Security</span> Authority
+                Brooklyn <span className="text-action-orange">Locksmith</span>
               </h1>
               <p className="text-xl md:text-3xl text-blue-100 mb-12 max-w-xl font-medium leading-tight">
-                Beyond standard locksmithing. We provide <span className="text-white font-bold">2026 Technical Entry</span> and high-security architecture for Bed-Stuy.
+                We provide <span className="text-white font-bold">reliable locksmith services</span> for your home and car in Bed-Stuy.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 mb-16">
@@ -67,8 +67,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="hidden lg:block absolute -bottom-16 left-0 bg-white/5 backdrop-blur p-6 rounded-2xl border border-white/10 w-64 z-20">
-                <div className="flex items-center gap-3 text-safety-green mb-2"><Shield size={20} /> <span className="font-black uppercase italic tracking-wider">Certified Techs</span></div>
-                <p className="text-[10px] text-white/60 font-medium">Verified by NY Security Board for 2026 standards.</p>
+                <div className="flex items-center gap-3 text-safety-green mb-2"><Shield size={20} /> <span className="font-black uppercase italic tracking-wider">Licensed Techs</span></div>
+                <p className="text-[10px] text-white/60 font-medium">Fully licensed and insured in New York.</p>
               </div>
               <InteractiveEstimator />
             </div>
@@ -100,25 +100,25 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
                 <div className="absolute bottom-12 left-12 right-12">
-                  <p className="text-white text-3xl font-black uppercase italic leading-none mb-4">The NDE <span className="text-action-orange">Protocol</span></p>
-                  <p className="text-gray-300 font-medium italic">Our commitment to Non-Destructive Entry means your property remains pristine. We pick locks, we don't destroy them.</p>
+                  <p className="text-white text-3xl font-black uppercase italic leading-none mb-4">Damage-Free <span className="text-action-orange">Entry</span></p>
+                  <p className="text-gray-300 font-medium italic">We pick locks. We do not destroy them. Your property remains safe.</p>
                 </div>
               </div>
               <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-action-orange rounded-[3rem] p-8 text-white flex flex-col justify-center shadow-2xl rotate-6">
                 <Award size={48} className="mb-4" />
-                <span className="text-xs font-black uppercase tracking-widest italic">Certified Master Tech</span>
+                <span className="text-xs font-black uppercase tracking-widest italic">Licensed Technician</span>
               </div>
             </div>
 
             <div>
               <h2 className="text-5xl md:text-7xl font-black mb-12 uppercase italic tracking-tighter leading-none text-gray-900">
-                Security is <span className="text-trust-blue">Engineering</span>, Not Luck.
+                We Protect <span className="text-trust-blue">Your Property</span>.
               </h2>
               <div className="space-y-10">
                 {[
-                  { title: 'Historic Expertise', desc: 'Specializing in Bed-Stuy brownstone mortise lock restoration and modernization.' },
-                  { title: 'Electronic Supremacy', desc: 'Programming encrypted transponder keys and 2026 smart-home security hubs.' },
-                  { title: 'Neighborhood Roots', desc: 'Serving the 11216, 11233, and 11221 zip codes with local integrity since 2010.' }
+                  { title: 'Brownstone Locks', desc: 'We restore and replace old mortise locks on Bed-Stuy brownstones.' },
+                  { title: 'Smart Keys', desc: 'We program transponder keys. We install smart home locks.' },
+                  { title: 'Local Business', desc: 'We serve local zip codes. We care about our community.' }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-8 group">
                     <div className="flex-shrink-0 w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center text-gray-400 group-hover:bg-trust-blue group-hover:text-white transition-all">
@@ -134,7 +134,7 @@ export default function Home() {
               <div className="mt-16">
                 <Link href="/about">
                   <Button variant="secondary" className="border-2 border-gray-900 text-gray-900 font-black px-10 py-6 rounded-2xl uppercase italic tracking-widest hover:bg-gray-900 hover:text-white transition-all">
-                    Explore Our Standards
+                    Learn More About Us
                   </Button>
                 </Link>
               </div>
@@ -147,8 +147,8 @@ export default function Home() {
       <section className="py-32 bg-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-24">
-            <h2 className="text-5xl md:text-7xl font-black mb-8 uppercase italic tracking-tighter">Core <span className="text-action-orange">Expertise</span></h2>
-            <p className="text-xl text-blue-100/60 font-medium max-w-2xl mx-auto italic">Technical solutions for every securityjunction in Brooklyn.</p>
+            <h2 className="text-5xl md:text-7xl font-black mb-8 uppercase italic tracking-tighter">Our <span className="text-action-orange">Services</span></h2>
+            <p className="text-xl text-blue-100/60 font-medium max-w-2xl mx-auto italic">We solve your lock problems in Brooklyn.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
@@ -160,7 +160,7 @@ export default function Home() {
                   {s.description.substring(0, 100)}...
                 </p>
                 <div className="flex items-center gap-2 text-action-orange group-hover:text-white font-black uppercase italic text-xs tracking-[0.2em] transition-colors">
-                  Technical Details <ChevronRight size={14} className="group-hover:translate-x-2 transition-transform" />
+                  Learn More <ChevronRight size={14} className="group-hover:translate-x-2 transition-transform" />
                 </div>
                 <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-10 transition-opacity">
                   <Target size={120} />
@@ -176,9 +176,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-24">
             <div className="max-w-2xl">
-              <h2 className="text-5xl md:text-7xl font-black mb-8 uppercase italic tracking-tighter text-gray-900 leading-none">Local <span className="text-trust-blue">Response</span></h2>
+              <h2 className="text-5xl md:text-7xl font-black mb-8 uppercase italic tracking-tighter text-gray-900 leading-none">Local <span className="text-trust-blue">Locksmith</span></h2>
               <p className="text-xl text-gray-500 font-medium italic leading-relaxed">
-                We aren't a national dispatch center. We are on the streets of these neighborhoods right now.
+                We are not a national dispatch center. Our technicians are in your neighborhood.
               </p>
             </div>
             <Link href="/locations">
@@ -206,7 +206,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-5xl md:text-9xl font-black mb-12 tracking-tighter uppercase italic leading-none">Locked <span className="text-action-orange">Out?</span></h2>
           <p className="text-2xl md:text-3xl text-blue-100 mb-16 font-medium italic">
-            Don't waste time on search ads. Call the neighborhood authority directly for immediate dispatch.
+            Do not waste time. Call a local locksmith directly for fast help.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="tel:(718)568-6597">

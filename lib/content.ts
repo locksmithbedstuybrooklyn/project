@@ -13,16 +13,16 @@ export const services: Service[] = [
     keywords: ['automotive locksmith', 'car lockout', 'car key replacement', 'ignition repair', 'transponder programming'],
     updatedAt: new Date('2026-05-06'),
     videoUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
-    content: `[[H2:Fast & Safe Car Unlocking in Brooklyn]]
-Locked out of your car? It happens to the best of us. Whether you're stuck in the rain or just need to get to work, our mobile units are ready. We use specialized tools to unlock your car without leaving a single scratch on the paint or damaging the window seals.
+    content: `[[H2:Fast Car Unlocking]]
+You are locked out of your car. Our mobile units are ready. We use specialized tools to unlock your car. We leave no scratches on the paint. We protect the window seals.
 
-[[H3:Car Key Replacement On the Spot]]
-Lost your keys completely? We don't just unlock doors; we can cut and program a brand new transponder or smart key for you right where you're parked.
+[[H3:Car Key Replacement]]
+You lost your keys. We cut and program a new transponder key. We do this at your location.
 
 [[CTA:PHONE]]
 
 [[H3:Ignition Repair]]
-If your key won't turn, don't force it. We can repair or replace stuck ignitions for most makes and models, saving you an expensive trip to the dealership.`,
+Your key is stuck. Do not force it. We repair stuck ignitions for most cars. You avoid an expensive dealership trip.`,
   },
   {
     id: 'lock-installation',
@@ -32,16 +32,16 @@ If your key won't turn, don't force it. We can repair or replace stuck ignitions
     icon: '🔒',
     keywords: ['lock installation', 'install deadbolt', 'smart lock installation', 'high security locks', 'mortise lock install'],
     updatedAt: new Date('2026-05-06'),
-    content: `[[H2:Secure Your Home with Professional Lock Installation]]
-Moving into a new apartment or want to upgrade your home's security? Getting new locks installed is the best way to ensure you're the only one with access to your property.
+    content: `[[H2:Secure Your Home]]
+You are moving into a new apartment. You want better security. New locks protect your property.
 
-[[H3:Smart Locks & Deadbolts]]
-We install everything from traditional heavy-duty deadbolts to the latest smart locks, so you can control access directly from your phone. 
+[[H3:Smart Locks]]
+We install heavy-duty deadbolts. We install smart locks. You control access from your phone.
 
 [[CTA:QUOTE]]
 
-[[H3:Why Hire a Professional?]]
-A lock is only as strong as its installation. We ensure your locks are perfectly aligned and the door frame is reinforced, so they work smoothly and provide the maximum possible security for your family.`,
+[[H3:Professional Help]]
+A lock needs proper installation. We align your locks perfectly. We reinforce the door frame. The locks work smoothly. They protect your family.`,
   },
   {
     id: 'lock-replacement',
@@ -53,13 +53,13 @@ A lock is only as strong as its installation. We ensure your locks are perfectly
     keywords: ['lock replacement', 'change locks', 'new door locks', 'high security lock upgrade'],
     updatedAt: new Date('2026-05-06'),
     videoUrl: 'https://www.youtube.com/embed/tgbNymZ7vqY',
-    content: `[[H2:Quick & Reliable Lock Replacement]]
-If your lock is sticking, broken, or you've lost track of who has a spare key, it's time for a replacement. We carry a wide range of high-quality locks in our vans, so we can usually replace your locks in a single visit.
+    content: `[[H2:Quick Lock Replacement]]
+Your lock is broken. You lost track of spare keys. You need a replacement. We carry high-quality locks in our vans. We replace your locks in one visit.
 
 [[CTA:BOOKING]]
 
-[[H3:Commercial & Residential Upgrades]]
-From historic brownstones to modern storefronts, we match the right hardware to your door. We'll help you choose a lock that looks great and keeps intruders out.`,
+[[H3:Commercial Upgrades]]
+We match the right hardware to your door. We help you choose a lock. It looks great. It keeps intruders out.`,
   },
   {
     id: 'lock-repair',
@@ -70,13 +70,13 @@ From historic brownstones to modern storefronts, we match the right hardware to 
     image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80',
     keywords: ['lock repair', 'fix lock', 'stuck door lock', 'broken key extraction'],
     updatedAt: new Date('2026-05-06'),
-    content: `[[H2:Don't Replace It if We Can Fix It]]
-A sticking or jammed lock doesn't always mean you need to buy a brand new one. Often, a professional cleaning, lubrication, or minor alignment adjustment is all it takes to get your lock working perfectly again.
+    content: `[[H2:Fix Your Lock]]
+A jammed lock does not mean a new purchase. We clean and lubricate the lock. We make minor alignment adjustments. Your lock works perfectly again.
 
 [[CTA:PHONE]]
 
 [[H3:Honest Assessments]]
-We'll always give you a transparent assessment. If repairing the lock is the most cost-effective and safe option, we'll fix it. If the lock is beyond saving, we'll explain why and offer affordable replacement options.`,
+We give you a transparent assessment. Repairing the lock saves money. We fix it. A lock is beyond saving. We explain the problem. We offer affordable replacement options.`,
   },
   {
     id: 'lock-rekeying',
@@ -87,11 +87,11 @@ We'll always give you a transparent assessment. If repairing the lock is the mos
     image: 'https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&q=80',
     keywords: ['lock rekeying', 'rekey locks', 'change lock combination', 'master key system'],
     updatedAt: new Date('2026-05-06'),
-    content: `[[H2:A Smarter Way to Change Your Keys]]
-Just moved in? Fired an employee? Lost a spare key? You don't necessarily need to buy all new locks. We can "rekey" your existing locks by changing the internal pins so the old keys no longer work, and give you a brand new set of keys.
+    content: `[[H2:Change Your Keys]]
+You just moved in. You fired an employee. You lost a spare key. You do not need to buy all new locks. We rekey your existing locks. We change the internal pins. The old keys stop working. We give you a new set of keys.
 
-[[H3:Save Money & Time]]
-Rekeying is faster and much more affordable than replacing all your hardware, while providing the exact same peace of mind.
+[[H3:Save Money]]
+Rekeying is fast. It costs less than replacing all your hardware. It provides the exact same peace of mind.
 
 [[CTA:QUOTE]]`,
   },
@@ -104,11 +104,11 @@ Rekeying is faster and much more affordable than replacing all your hardware, wh
     image: 'https://images.unsplash.com/photo-1506784911079-53d9e945034b?auto=format&fit=crop&q=80',
     keywords: ['residential lockout', 'house lockout', 'locked out of home', 'emergency entry'],
     updatedAt: new Date('2026-05-06'),
-    content: `[[H2:Fast & Safe Home Lockout Service]]
-There's nothing more stressful than being locked out of your own home. Whether you left your keys inside on the counter or the lock is jammed, we can get you back inside quickly and safely.
+    content: `[[H2:Fast Home Lockout Service]]
+You are locked out of your home. You left your keys inside. The lock is jammed. We get you back inside quickly and safely.
 
 [[H3:Damage-Free Entry]]
-Our technicians use specialized, non-destructive lock-picking techniques to open your door. Our goal is always to get you back in without damaging the lock or the door frame, saving you from unnecessary replacement costs.
+Our technicians use specialized lock-picking techniques. We open your door. We do not damage the lock. We do not damage the door frame. You save money on replacement costs.
 
 [[CTA:PHONE]]`,
   },
@@ -121,11 +121,11 @@ Our technicians use specialized, non-destructive lock-picking techniques to open
     image: 'https://images.unsplash.com/photo-1543674892-7d64d45df18b?auto=format&fit=crop&q=80',
     keywords: ['24 hour locksmith', 'emergency locksmith', '24/7 locksmith', 'immediate locksmith help'],
     updatedAt: new Date('2026-05-06'),
-    content: `[[H2:Here When You Need Us Most]]
-Emergencies don't happen on a schedule. That's why our dispatchers and mobile units are available 24 hours a day, 7 days a week, including weekends and holidays.
+    content: `[[H2:Here For You]]
+Emergencies happen at any time. Our dispatchers and mobile units are available 24 hours a day. We work 7 days a week. We work on weekends and holidays.
 
 [[H3:Fast Response Times]]
-When you call us in the middle of the night, you get a real local technician on the line, not an out-of-state call center. We aim to arrive within 20-30 minutes anywhere in our service area so you aren't left waiting outside in the dark.
+You call us in the middle of the night. You speak to a real local technician. We arrive within 30 minutes anywhere in our service area. You are not left waiting outside in the dark.
 
 [[CTA:PHONE]]`,
   },
@@ -143,21 +143,21 @@ export const locations: Location[] = [
     updatedAt: new Date('2026-05-06'),
     serviceAreas: ['Stuyvesant Ave', 'Myrtle Ave', 'Nostrand Ave', 'Halsey St', 'Madison St', 'Marcy Ave', 'Tompkins Ave', 'Hancock St'],
     neighborhoods: ['Bed-Stuyvesant'],
-    content: `[[H2:Fast & Reliable Locksmith in Bed-Stuy]]
-Whether you're locked out of your apartment, need to change the locks on a new business, or lost your car keys, we are your local Bed-Stuy locksmith. We understand how stressful lock and key issues can be, which is why we prioritize fast arrival times and honest pricing.
+    content: `[[H2:Fast Locksmith in Bed-Stuy]]
+You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Bed-Stuy locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
 [[H3:Emergency Lockout Services]]
-Locked out in Bed-Stuy? Don't panic. Our mobile technicians are always nearby and can usually reach you within 20 to 30 minutes. We use damage-free techniques to get you back inside quickly.
+You are locked out in Bed-Stuy. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
 
 [[CTA:PHONE]]
 
-[[H3:Residential & Commercial Lock Upgrades]]
-If you've just moved into Bed-Stuy or want to improve your property's security, we offer professional lock installation and replacement. We can walk you through the best deadbolts and smart locks to fit your door and budget.
+[[H3:Lock Upgrades]]
+You just moved into Bed-Stuy. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
 
 [[CTA:QUOTE]]
 
-[[H3:Automotive Locksmith Near You]]
-Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fully equipped to cut and program new keys on the spot, getting you back on the road without towing your car to a dealership.`,
+[[H3:Automotive Services]]
+Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
   {
     id: 'crown-heights',
@@ -168,21 +168,21 @@ Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fu
     updatedAt: new Date('2026-05-06'),
     serviceAreas: ['Nostrand Ave', 'Utica Ave', 'Franklin Ave', 'Classon Ave', 'Underhill Ave', 'Prospect Place', 'St. Johns Place'],
     neighborhoods: ['Crown Heights'],
-    content: `[[H2:Fast & Reliable Locksmith in Crown Heights]]
-Whether you're locked out of your apartment, need to change the locks on a new business, or lost your car keys, we are your local Crown Heights locksmith. We understand how stressful lock and key issues can be, which is why we prioritize fast arrival times and honest pricing.
+    content: `[[H2:Fast Locksmith in Crown Heights]]
+You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Crown Heights locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
 [[H3:Emergency Lockout Services]]
-Locked out in Crown Heights? Don't panic. Our mobile technicians are always nearby and can usually reach you within 20 to 30 minutes. We use damage-free techniques to get you back inside quickly.
+You are locked out in Crown Heights. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
 
 [[CTA:PHONE]]
 
-[[H3:Residential & Commercial Lock Upgrades]]
-If you've just moved into Crown Heights or want to improve your property's security, we offer professional lock installation and replacement. We can walk you through the best deadbolts and smart locks to fit your door and budget.
+[[H3:Lock Upgrades]]
+You just moved into Crown Heights. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
 
 [[CTA:QUOTE]]
 
-[[H3:Automotive Locksmith Near You]]
-Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fully equipped to cut and program new keys on the spot, getting you back on the road without towing your car to a dealership.`,
+[[H3:Automotive Services]]
+Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
   {
     id: 'prospect-heights',
@@ -193,21 +193,21 @@ Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fu
     updatedAt: new Date('2026-05-06'),
     serviceAreas: ['Vanderbilt Ave', 'Flatbush Ave', 'Classon Ave', 'Underhill Ave', 'Prospect Place', 'Sterling Place', 'St. Johns Place'],
     neighborhoods: ['Prospect Heights'],
-    content: `[[H2:Fast & Reliable Locksmith in Prospect Heights]]
-Whether you're locked out of your apartment, need to change the locks on a new business, or lost your car keys, we are your local Prospect Heights locksmith. We understand how stressful lock and key issues can be, which is why we prioritize fast arrival times and honest pricing.
+    content: `[[H2:Fast Locksmith in Prospect Heights]]
+You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Prospect Heights locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
 [[H3:Emergency Lockout Services]]
-Locked out in Prospect Heights? Don't panic. Our mobile technicians are always nearby and can usually reach you within 20 to 30 minutes. We use damage-free techniques to get you back inside quickly.
+You are locked out in Prospect Heights. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
 
 [[CTA:PHONE]]
 
-[[H3:Residential & Commercial Lock Upgrades]]
-If you've just moved into Prospect Heights or want to improve your property's security, we offer professional lock installation and replacement. We can walk you through the best deadbolts and smart locks to fit your door and budget.
+[[H3:Lock Upgrades]]
+You just moved into Prospect Heights. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
 
 [[CTA:QUOTE]]
 
-[[H3:Automotive Locksmith Near You]]
-Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fully equipped to cut and program new keys on the spot, getting you back on the road without towing your car to a dealership.`,
+[[H3:Automotive Services]]
+Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
   {
     id: 'williamsburg',
@@ -218,21 +218,21 @@ Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fu
     updatedAt: new Date('2026-05-06'),
     serviceAreas: ['Bedford Ave', 'North 6th St', 'North 7th St', 'North 8th St', 'Wythe Ave', 'Kent Ave', 'East River Waterfront'],
     neighborhoods: ['Williamsburg'],
-    content: `[[H2:Fast & Reliable Locksmith in Williamsburg]]
-Whether you're locked out of your apartment, need to change the locks on a new business, or lost your car keys, we are your local Williamsburg locksmith. We understand how stressful lock and key issues can be, which is why we prioritize fast arrival times and honest pricing.
+    content: `[[H2:Fast Locksmith in Williamsburg]]
+You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Williamsburg locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
 [[H3:Emergency Lockout Services]]
-Locked out in Williamsburg? Don't panic. Our mobile technicians are always nearby and can usually reach you within 20 to 30 minutes. We use damage-free techniques to get you back inside quickly.
+You are locked out in Williamsburg. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
 
 [[CTA:PHONE]]
 
-[[H3:Residential & Commercial Lock Upgrades]]
-If you've just moved into Williamsburg or want to improve your property's security, we offer professional lock installation and replacement. We can walk you through the best deadbolts and smart locks to fit your door and budget.
+[[H3:Lock Upgrades]]
+You just moved into Williamsburg. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
 
 [[CTA:QUOTE]]
 
-[[H3:Automotive Locksmith Near You]]
-Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fully equipped to cut and program new keys on the spot, getting you back on the road without towing your car to a dealership.`,
+[[H3:Automotive Services]]
+Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
   {
     id: 'greenpoint',
@@ -243,21 +243,21 @@ Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fu
     updatedAt: new Date('2026-05-06'),
     serviceAreas: ['Franklin St', 'McGraw Ave', 'Greenpoint Ave', 'Noble St', 'Calyer St', 'Huron St', 'Newtown Creek'],
     neighborhoods: ['Greenpoint'],
-    content: `[[H2:Fast & Reliable Locksmith in Greenpoint]]
-Whether you're locked out of your apartment, need to change the locks on a new business, or lost your car keys, we are your local Greenpoint locksmith. We understand how stressful lock and key issues can be, which is why we prioritize fast arrival times and honest pricing.
+    content: `[[H2:Fast Locksmith in Greenpoint]]
+You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Greenpoint locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
 [[H3:Emergency Lockout Services]]
-Locked out in Greenpoint? Don't panic. Our mobile technicians are always nearby and can usually reach you within 20 to 30 minutes. We use damage-free techniques to get you back inside quickly.
+You are locked out in Greenpoint. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
 
 [[CTA:PHONE]]
 
-[[H3:Residential & Commercial Lock Upgrades]]
-If you've just moved into Greenpoint or want to improve your property's security, we offer professional lock installation and replacement. We can walk you through the best deadbolts and smart locks to fit your door and budget.
+[[H3:Lock Upgrades]]
+You just moved into Greenpoint. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
 
 [[CTA:QUOTE]]
 
-[[H3:Automotive Locksmith Near You]]
-Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fully equipped to cut and program new keys on the spot, getting you back on the road without towing your car to a dealership.`,
+[[H3:Automotive Services]]
+Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
   {
     id: 'bushwick',
@@ -268,21 +268,21 @@ Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fu
     updatedAt: new Date('2026-05-06'),
     serviceAreas: ['Knickerbocker Ave', 'Myrtle Ave', 'Wyckoff Ave', 'Dekalb Ave', 'Jefferson St', 'Troutman St', 'Cypress Ave'],
     neighborhoods: ['Bushwick'],
-    content: `[[H2:Fast & Reliable Locksmith in Bushwick]]
-Whether you're locked out of your apartment, need to change the locks on a new business, or lost your car keys, we are your local Bushwick locksmith. We understand how stressful lock and key issues can be, which is why we prioritize fast arrival times and honest pricing.
+    content: `[[H2:Fast Locksmith in Bushwick]]
+You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Bushwick locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
 [[H3:Emergency Lockout Services]]
-Locked out in Bushwick? Don't panic. Our mobile technicians are always nearby and can usually reach you within 20 to 30 minutes. We use damage-free techniques to get you back inside quickly.
+You are locked out in Bushwick. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
 
 [[CTA:PHONE]]
 
-[[H3:Residential & Commercial Lock Upgrades]]
-If you've just moved into Bushwick or want to improve your property's security, we offer professional lock installation and replacement. We can walk you through the best deadbolts and smart locks to fit your door and budget.
+[[H3:Lock Upgrades]]
+You just moved into Bushwick. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
 
 [[CTA:QUOTE]]
 
-[[H3:Automotive Locksmith Near You]]
-Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fully equipped to cut and program new keys on the spot, getting you back on the road without towing your car to a dealership.`,
+[[H3:Automotive Services]]
+Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
   {
     id: 'astoria',
@@ -293,21 +293,21 @@ Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fu
     updatedAt: new Date('2026-05-06'),
     serviceAreas: ['Ditmars Blvd', 'Steinway St', '30th Ave', 'Broadway', 'Astoria Park', 'Vernon Blvd', '23rd Ave'],
     neighborhoods: ['Astoria', 'Queens'],
-    content: `[[H2:Fast & Reliable Locksmith in Astoria]]
-Whether you're locked out of your apartment, need to change the locks on a new business, or lost your car keys, we are your local Astoria locksmith. We understand how stressful lock and key issues can be, which is why we prioritize fast arrival times and honest pricing.
+    content: `[[H2:Fast Locksmith in Astoria]]
+You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Astoria locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
 [[H3:Emergency Lockout Services]]
-Locked out in Astoria? Don't panic. Our mobile technicians are always nearby and can usually reach you within 20 to 30 minutes. We use damage-free techniques to get you back inside quickly.
+You are locked out in Astoria. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
 
 [[CTA:PHONE]]
 
-[[H3:Residential & Commercial Lock Upgrades]]
-If you've just moved into Astoria or want to improve your property's security, we offer professional lock installation and replacement. We can walk you through the best deadbolts and smart locks to fit your door and budget.
+[[H3:Lock Upgrades]]
+You just moved into Astoria. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
 
 [[CTA:QUOTE]]
 
-[[H3:Automotive Locksmith Near You]]
-Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fully equipped to cut and program new keys on the spot, getting you back on the road without towing your car to a dealership.`,
+[[H3:Automotive Services]]
+Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
   {
     id: 'long-island-city',
@@ -318,21 +318,21 @@ Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fu
     updatedAt: new Date('2026-05-06'),
     serviceAreas: ['Jackson Ave', 'Queens Plaza', 'Greenpoint Ave', 'Thomson Ave', '44th Drive', '45th Ave', 'Waterfront Park'],
     neighborhoods: ['Long Island City', 'LIC', 'Queens'],
-    content: `[[H2:Fast & Reliable Locksmith in Long Island City]]
-Whether you're locked out of your apartment, need to change the locks on a new business, or lost your car keys, we are your local Long Island City locksmith. We understand how stressful lock and key issues can be, which is why we prioritize fast arrival times and honest pricing.
+    content: `[[H2:Fast Locksmith in Long Island City]]
+You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Long Island City locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
 [[H3:Emergency Lockout Services]]
-Locked out in Long Island City? Don't panic. Our mobile technicians are always nearby and can usually reach you within 20 to 30 minutes. We use damage-free techniques to get you back inside quickly.
+You are locked out in Long Island City. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
 
 [[CTA:PHONE]]
 
-[[H3:Residential & Commercial Lock Upgrades]]
-If you've just moved into Long Island City or want to improve your property's security, we offer professional lock installation and replacement. We can walk you through the best deadbolts and smart locks to fit your door and budget.
+[[H3:Lock Upgrades]]
+You just moved into Long Island City. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
 
 [[CTA:QUOTE]]
 
-[[H3:Automotive Locksmith Near You]]
-Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fully equipped to cut and program new keys on the spot, getting you back on the road without towing your car to a dealership.`,
+[[H3:Automotive Services]]
+Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
   {
     id: 'stuyvesant-heights',
@@ -343,21 +343,21 @@ Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fu
     updatedAt: new Date('2026-05-06'),
     serviceAreas: ['Stuyvesant Ave', 'MacDonough St', 'Decatur St', 'Bainbridge St', 'Chauncey St', 'Fulton St', 'Lewis Ave'],
     neighborhoods: ['Stuyvesant Heights', 'Bed-Stuy'],
-    content: `[[H2:Fast & Reliable Locksmith in Stuyvesant Heights]]
-Whether you're locked out of your apartment, need to change the locks on a new business, or lost your car keys, we are your local Stuyvesant Heights locksmith. We understand how stressful lock and key issues can be, which is why we prioritize fast arrival times and honest pricing.
+    content: `[[H2:Fast Locksmith in Stuyvesant Heights]]
+You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Stuyvesant Heights locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
 [[H3:Emergency Lockout Services]]
-Locked out in Stuyvesant Heights? Don't panic. Our mobile technicians are always nearby and can usually reach you within 20 to 30 minutes. We use damage-free techniques to get you back inside quickly.
+You are locked out in Stuyvesant Heights. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
 
 [[CTA:PHONE]]
 
-[[H3:Residential & Commercial Lock Upgrades]]
-If you've just moved into Stuyvesant Heights or want to improve your property's security, we offer professional lock installation and replacement. We can walk you through the best deadbolts and smart locks to fit your door and budget.
+[[H3:Lock Upgrades]]
+You just moved into Stuyvesant Heights. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
 
 [[CTA:QUOTE]]
 
-[[H3:Automotive Locksmith Near You]]
-Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fully equipped to cut and program new keys on the spot, getting you back on the road without towing your car to a dealership.`,
+[[H3:Automotive Services]]
+Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
   {
     id: 'ocean-hill',
@@ -368,21 +368,21 @@ Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fu
     updatedAt: new Date('2026-05-06'),
     serviceAreas: ['Broadway', 'Rockaway Ave', 'Saratoga Ave', 'Eastern Pkwy', 'Atlantic Ave', 'Hull St', 'Somers St'],
     neighborhoods: ['Ocean Hill', 'Bed-Stuy'],
-    content: `[[H2:Fast & Reliable Locksmith in Ocean Hill]]
-Whether you're locked out of your apartment, need to change the locks on a new business, or lost your car keys, we are your local Ocean Hill locksmith. We understand how stressful lock and key issues can be, which is why we prioritize fast arrival times and honest pricing.
+    content: `[[H2:Fast Locksmith in Ocean Hill]]
+You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Ocean Hill locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
 [[H3:Emergency Lockout Services]]
-Locked out in Ocean Hill? Don't panic. Our mobile technicians are always nearby and can usually reach you within 20 to 30 minutes. We use damage-free techniques to get you back inside quickly.
+You are locked out in Ocean Hill. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
 
 [[CTA:PHONE]]
 
-[[H3:Residential & Commercial Lock Upgrades]]
-If you've just moved into Ocean Hill or want to improve your property's security, we offer professional lock installation and replacement. We can walk you through the best deadbolts and smart locks to fit your door and budget.
+[[H3:Lock Upgrades]]
+You just moved into Ocean Hill. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
 
 [[CTA:QUOTE]]
 
-[[H3:Automotive Locksmith Near You]]
-Car lockouts, lost transponder keys, and ignition issues happen. Our vans are fully equipped to cut and program new keys on the spot, getting you back on the road without towing your car to a dealership.`,
+[[H3:Automotive Services]]
+Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
 ];
 
@@ -395,16 +395,16 @@ export const blogPosts: BlogPost[] = [
     slug: 'locked-out-car',
     image: '/images/blog/car-lockout.png',
     description: "The most comprehensive guide to handling a car lockout in Bed-Stuy and NYC. From basic DIY safety to advanced Lishi decoding and 20-minute professional response strategies.",
-    content: `[[H2:What to Do When You're Locked Out]]
-Being locked out of your car is frustrating. First, take a deep breath and check all the doors and the trunk. Sometimes, a back door might be unlocked.
+    content: `[[H2:What to Do First]]
+You are locked out of your car. This is frustrating. Take a deep breath. Check all the doors and the trunk. A back door is sometimes unlocked.
 
-[[H3:Don't Try to Force It]]
-It's tempting to use a coat hanger or wedge, but modern car doors have complex wiring and airbags inside the panels. Trying to force the door open can cause hundreds of dollars in damage.
+[[H3:Avoid Force]]
+A coat hanger or wedge seems like a good idea. Modern car doors have complex wiring and airbags inside the panels. Forcing the door open causes expensive damage.
 
 [[CTA:PHONE]]
 
-[[H3:Call a Local Professional]]
-A professional locksmith has the right tools to unlock your car safely and quickly. We use specialized air wedges and precise decoding tools to open your door without leaving a scratch.`,
+[[H3:Call a Professional]]
+A professional locksmith has the right tools. We unlock your car safely and quickly. We use specialized air wedges and precise decoding tools. We open your door. We do not leave a scratch.`,
     keywords: ['locked out of car', 'car lockout Bed-Stuy', 'professional car unlock NYC', 'non-destructive entry', 'Lishi decoding', 'Brooklyn locksmith'],
     publishedAt: new Date('2026-05-01'),
     updatedAt: new Date('2026-05-01'),
@@ -417,14 +417,14 @@ A professional locksmith has the right tools to unlock your car safely and quick
     slug: 'prevent-lockouts',
     image: '/images/blog/prevent-lockouts.png',
     description: 'A deep dive into the psychology and technology of lockout prevention. From 2026 smart fobs to the "Key-in-Hand" rule, learn how to secure your freedom.',
-    content: `[[H2:Simple Habits to Avoid Getting Locked Out]]
-We see it every day: keys locked in the trunk, or left on the driver's seat. A few simple habits can save you a lot of hassle.
+    content: `[[H2:Simple Habits]]
+We see it every day. You lock keys in the trunk. You leave them on the driver seat. A few simple habits save you a lot of hassle.
 
 [[H3:The Carabiner Trick]]
-Keep your car keys attached to a carabiner and clip it to your belt loop or bag. If they are always attached to you, you can't lock them in the car.
+Keep your car keys attached to a carabiner. Clip it to your belt loop or bag. The keys are always attached to you. You cannot lock them in the car.
 
-[[H3:Get a Spare Key Made]]
-The best prevention is a spare key. Keep it at home or give it to a trusted friend or family member. 
+[[H3:Get a Spare Key]]
+The best prevention is a spare key. Keep it at home. Give it to a trusted friend or family member.
 
 [[CTA:QUOTE]]`,
     keywords: ['prevent car lockout', 'spare key strategy', 'smart lock benefits', 'lockout prevention NYC', 'digital keys 2026', 'NFC car keys'],
@@ -439,16 +439,16 @@ The best prevention is a spare key. Keep it at home or give it to a trusted frie
     slug: 'car-key-replacement-guide',
     image: '/images/blog/car-key-replacement.png',
     description: 'Lost your only car key? Modern keys are complex computers. Learn how laser cutting and transponder programming work in this 2500-word authority guide.',
-    content: `[[H2:Lost Your Car Keys? Here's What You Need]]
-Losing your only car key can feel like a disaster, but we can help you get a new one without towing your car to the dealership.
+    content: `[[H2:Lost Your Car Keys]]
+You lost your only car key. We can help you get a new one. You do not tow your car to the dealership.
 
-[[H3:What We Need to Make a New Key]]
-To cut and program a new key on the spot, we'll need to know the make, model, and year of your car. We'll also need to see proof of ownership, like your registration and ID.
+[[H3:What We Need]]
+We cut and program a new key on the spot. We need to know the make and model of your car. We need the year of your car. We need to see proof of ownership. We need your registration and ID.
 
 [[CTA:PHONE]]
 
-[[H3:Transponder and Smart Keys]]
-Most modern cars use keys with chips inside them. We have the computer equipment in our vans to program these keys to your car's computer, completely deleting the lost key so it can't be used to steal your car.`,
+[[H3:Transponder Keys]]
+Most modern cars use keys with chips inside them. We have computer equipment in our vans. We program these keys to your car computer. We delete the lost key. Nobody can use it to steal your car.`,
     keywords: ['car key replacement', 'transponder key programming', 'laser cut keys', 'lost car keys Brooklyn', 'VIN key decoding', 'NYC automotive locksmith'],
     publishedAt: new Date('2026-05-03'),
     updatedAt: new Date('2026-05-03'),
@@ -461,16 +461,16 @@ Most modern cars use keys with chips inside them. We have the computer equipment
     slug: 'ignition-problems',
     image: '/images/blog/ignition-problems.png',
     description: "When your key won't turn, it's a mechanical emergency. Learn the technical science of ignition wafers, steering locks, and why a locksmith is your best choice for repair.",
-    content: `[[H2:Why Your Car Key Won't Turn]]
-If your key is stuck in the ignition or won't turn, don't force it. You could break the key off inside the cylinder, making the problem much worse.
+    content: `[[H2:Key Stuck]]
+Your key is stuck in the ignition. Your key will not turn. Do not force it. You can break the key off inside the cylinder. This makes the problem much worse.
 
 [[H3:Common Causes]]
-Sometimes the steering wheel is locked tightly against the ignition mechanism. Try gently wiggling the steering wheel back and forth while turning the key. If that doesn't work, the key might be worn out, or the internal pins in the ignition might be damaged.
+The steering wheel is sometimes locked tightly against the ignition mechanism. Gently wiggle the steering wheel back and forth. Turn the key at the same time. The key might be worn out. The internal pins in the ignition might be damaged.
 
 [[CTA:PHONE]]
 
-[[H3:We Can Come to You]]
-Ignition repair is tricky, but our mobile technicians can diagnose and fix the problem right where your car is parked.`,
+[[H3:Mobile Service]]
+Ignition repair is tricky. Our mobile technicians diagnose and fix the problem. We do this right where your car is parked.`,
     keywords: ['car ignition repair', 'stuck ignition key', 'ignition cylinder replacement', 'Brooklyn automotive locksmith', 're-pinning ignition', 'steering lock failure'],
     publishedAt: new Date('2026-05-04'),
     updatedAt: new Date('2026-05-04'),
@@ -483,16 +483,16 @@ Ignition repair is tricky, but our mobile technicians can diagnose and fix the p
     slug: 'home-security-checklist',
     image: '/images/blog/home-security.png',
     description: "Secure your brownstone or condo with our 2500-word deep dive into professional residential security. From strike plate physics to smart home integration.",
-    content: `[[H2:A Simple Home Security Checklist]]
-Keeping your home safe doesn't have to be complicated. Start by checking the basics.
+    content: `[[H2:Home Security Checklist]]
+Keeping your home safe is simple. Start by checking the basics.
 
 [[H3:Check Your Deadbolts]]
-Every exterior door should have a deadbolt. Make sure the bolt fully extends into the door frame. If you have to push or pull the door hard to lock it, the strike plate needs to be adjusted.
+Every exterior door needs a deadbolt. The bolt must fully extend into the door frame. You push or pull the door hard to lock it. The strike plate needs adjustment.
 
 [[CTA:QUOTE]]
 
-[[H3:Secure Your Windows and Sliding Doors]]
-Don't forget the back of the house. Sliding doors should have a rod in the track or a specialized pin lock. Make sure all ground-floor windows lock securely.`,
+[[H3:Secure Windows]]
+Do not forget the back of the house. Sliding doors need a rod in the track. They need a specialized pin lock. All ground-floor windows must lock securely.`,
     keywords: ['home security checklist', 'Brooklyn residential security', 'brownstone security tips', 'high security locks NYC', 'strike plate reinforcement', 'smart lock installation'],
     publishedAt: new Date('2026-05-05'),
     updatedAt: new Date('2026-05-05'),
@@ -505,16 +505,16 @@ Don't forget the back of the house. Sliding doors should have a rod in the track
     slug: 'lock-replacement-guide',
     image: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80',
     description: "Upgrade your security with confidence. Our 2500-word guide covers every technical aspect of lock replacement for Brooklyn properties, from Grade 1 hardware to smart integration.",
-    content: `[[H2:When Is It Time for New Locks?]]
-Locks wear out over time. If you have to jiggle your key to make it work, the lock is nearing the end of its life.
+    content: `[[H2:Time for New Locks]]
+Locks wear out over time. You jiggle your key to make it work. The lock is nearing the end of its life.
 
-[[H3:Moving Into a New Place]]
-The number one rule of moving into a new apartment or house is to change the locks. You never know who the previous tenants gave spare keys to.
+[[H3:Moving In]]
+The number one rule of moving into a new apartment is to change the locks. You never know who has spare keys.
 
 [[CTA:BOOKING]]
 
-[[H3:Upgrading for Better Security]]
-Older locks can be easily picked or bumped. Upgrading to modern, pick-resistant deadbolts is a simple way to drastically improve your home's security.`,
+[[H3:Better Security]]
+Older locks are easily picked or bumped. You upgrade to modern pick-resistant deadbolts. This improves your home security.`,
     keywords: ['lock replacement guide', 'when to change locks', 'high security door locks Brooklyn', 'ANSI Grade 1 locks', 'new home lock upgrade', 'NYC lock installation'],
     publishedAt: new Date('2026-05-06'),
     updatedAt: new Date('2026-05-06'),
@@ -528,16 +528,16 @@ Older locks can be easily picked or bumped. Upgrading to modern, pick-resistant 
     slug: 'lock-repair-vs-replacement',
     image: 'https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&q=80',
     description: "Don't overspend on security. Our 2500-word deep dive helps you choose between repair and replacement based on mechanical health, historic value, and total cost of ownership.",
-    content: `[[H2:Should You Fix It or Replace It?]]
-When a lock stops working, you might wonder if you should just buy a new one. 
+    content: `[[H2:Fix It or Replace It]]
+A lock stops working. You wonder what to do. You can buy a new one or fix the old one.
 
 [[H3:When to Repair]]
-If the lock is high-quality but just sticky, it might just need cleaning and lubrication. Sometimes the door has sagged and the lock just needs to be realigned with the frame.
+The lock is high-quality but sticky. It just needs cleaning and lubrication. The door sags. The lock just needs realignment with the frame.
 
 [[CTA:PHONE]]
 
 [[H3:When to Replace]]
-If the internal parts are rusted or worn down, or if the lock is a cheap, easily bypassed model, replacement is the safer and more cost-effective choice in the long run.`,
+The internal parts are rusted. The internal parts are worn down. The lock is a cheap model. Replacement is the safer choice. It saves money in the long run.`,
     keywords: ['lock repair vs replacement', 'cost to fix locks NYC', 'rekeying vs replacing', 'historic lock preservation', 'locksmith advice Brooklyn', 'mortise lock repair'],
     publishedAt: new Date('2026-05-07'),
     updatedAt: new Date('2026-05-07'),
@@ -550,16 +550,16 @@ If the internal parts are rusted or worn down, or if the lock is a cheap, easily
     slug: 'high-security-locks',
     image: 'https://images.unsplash.com/photo-1614362948307-319d9b7f1225?auto=format&fit=crop&q=80',
     description: "Don't settle for standard protection. Our 2500-word authority guide explores the world of UL 437 rated locks, pick-proof technology, and patented key control for Brooklyn properties.",
-    content: `[[H2:What Makes a Lock 'High Security'?]]
-Not all locks are created equal. The deadbolts you buy at a big box store offer basic protection, but high-security locks offer a completely different level of safety.
+    content: `[[H2:High Security]]
+Not all locks are created equal. The deadbolts at a hardware store offer basic protection. High-security locks offer a different level of safety.
 
-[[H3:Pick and Drill Resistance]]
-High-security locks use complex pin systems that are nearly impossible to pick. They also feature hardened steel inserts that stop drills from destroying the lock cylinder.
+[[H3:Pick Resistance]]
+High-security locks use complex pin systems. They are nearly impossible to pick. They feature hardened steel inserts. These stop drills from destroying the lock cylinder.
 
 [[CTA:QUOTE]]
 
 [[H3:Key Control]]
-One of the best features of high-security locks (like Medeco or Mul-T-Lock) is key control. It is physically impossible to get a copy of the key made without a special authorization card.`,
+High-security locks have key control. You cannot get a copy of the key made without a special authorization card.`,
     keywords: ['high security locks', 'Mul-T-Lock Brooklyn', 'Medeco locks NYC', 'UL 437 standards', 'pick proof locks', 'patented key control', 'locksmith expertise'],
     publishedAt: new Date('2026-05-08'),
     updatedAt: new Date('2026-05-08'),
@@ -572,16 +572,16 @@ One of the best features of high-security locks (like Medeco or Mul-T-Lock) is k
     slug: 'emergency-locksmith-tips',
     image: 'https://images.unsplash.com/photo-1543674892-7d64d45df18b?auto=format&fit=crop&q=80',
     description: "Don't fall for a scam during a crisis. Our 2500-word survival guide explains NYC locksmith laws, how to spot 'Bait and Switch' tactics, and how to verify professional credentials.",
-    content: `[[H2:How to Find a Reliable Locksmith in an Emergency]]
-When you're locked out, it's easy to just call the first number you see online. But taking a few seconds to verify the locksmith can save you from a scam.
+    content: `[[H2:Find a Reliable Locksmith]]
+You are locked out. You call the first number you see online. Verify the locksmith first. This saves you from a scam.
 
-[[H3:Look for Local Roots]]
-Make sure the locksmith actually has a local presence and isn't just an out-of-state call center. Ask them for a realistic arrival time and a clear price estimate.
+[[H3:Local Roots]]
+The locksmith needs a local presence. Avoid out-of-state call centers. Ask them for a realistic arrival time. Ask for a clear price estimate.
 
 [[CTA:PHONE]]
 
 [[H3:Verify Licensing]]
-In New York City, locksmiths are required to be licensed by the Department of Consumer Affairs (DCWP). A professional locksmith will always be happy to show you their license.`,
+In New York City, locksmiths require a license. The Department of Consumer Affairs issues this. A professional locksmith shows you their license.`,
     keywords: ['emergency locksmith tips', 'avoid locksmith scams NYC', 'licensed locksmith Brooklyn', '24 hour locksmith Bed-Stuy', 'lockout help', 'NYC locksmith law'],
     publishedAt: new Date('2026-05-09'),
     updatedAt: new Date('2026-05-09'),
@@ -594,16 +594,16 @@ In New York City, locksmiths are required to be licensed by the Department of Co
     slug: 'lock-maintenance',
     image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80',
     description: "Save thousands in replacement costs. Our 2500-word deep dive explains the technical science of lock lubrication, door alignment, and preventative care for Brooklyn properties.",
-    content: `[[H2:How to Keep Your Locks Working Smoothly]]
-A little maintenance goes a long way in preventing a lockout.
+    content: `[[H2:Lock Maintenance]]
+A little maintenance prevents a lockout.
 
 [[H3:Use the Right Lubricant]]
-Never use WD-40 in a lock! It attracts dirt and dust, which will eventually jam the pins. Use a dry Teflon (PTFE) or graphite powder lubricant once a year to keep the key turning smoothly.
+Do not use WD-40 in a lock. It attracts dirt and dust. It jams the pins. Use a dry Teflon or graphite powder lubricant once a year. The key turns smoothly.
 
 [[CTA:BOOKING]]
 
-[[H3:Check the Door Alignment]]
-If you have to lift or push the door to turn the deadbolt, you are putting a lot of stress on the lock mechanism. Having the door realigned or the strike plate adjusted will save your lock from breaking.`,
+[[H3:Door Alignment]]
+You lift or push the door to turn the deadbolt. You put a lot of stress on the lock mechanism. Realign the door. Adjust the strike plate. This saves your lock from breaking.`,
     keywords: ['lock maintenance guide', 'how to lubricate locks', 'door alignment tips', 'PTFE vs Graphite', 'NYC home maintenance', 'extend lock life', 'smart lock battery care'],
     publishedAt: new Date('2026-05-10'),
     updatedAt: new Date('2026-05-10'),
@@ -616,16 +616,16 @@ If you have to lift or push the door to turn the deadbolt, you are putting a lot
     slug: 'bed-stuy-locksmith-guide',
     image: 'https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&q=80',
     description: "We've been part of the Bed-Stuy community since 2010. Our 2500-word guide explores the specific security trends of our neighborhood and how to protect our historic assets.",
-    content: `[[H2:Your Local Security Partner]]
-We've been serving the Bed-Stuy community for years. We know the neighborhood, we know the historic brownstone doors, and we know our neighbors.
+    content: `[[H2:Your Local Partner]]
+We serve the Bed-Stuy community. We know the neighborhood. We know the historic brownstone doors. We know our neighbors.
 
-[[H3:More Than Just Emergency Service]]
-While we are always here if you get locked out, our real passion is helping our community stay safe. We offer free security walk-throughs to point out vulnerabilities and offer common-sense solutions.
+[[H3:More Than Emergencies]]
+We are always here for a lockout. Our real passion is community safety. We offer free security walk-throughs. We point out vulnerabilities. We offer common-sense solutions.
 
 [[CTA:PHONE]]
 
 [[H3:Supporting Local]]
-When you hire us, you're hiring a local business that cares about the community. We're proud to be the locksmith Bed-Stuy trusts.`,
+You hire us. You hire a local business. We care about the community. We are the locksmith Bed-Stuy trusts.`,
     keywords: ['Bed-Stuy locksmith guide', 'Brooklyn community safety', 'brownstone security specialist', 'local locksmith Bed-Stuy', 'historic lock repair', 'NYC neighborhood security'],
     publishedAt: new Date('2026-05-11'),
     updatedAt: new Date('2026-05-11'),
