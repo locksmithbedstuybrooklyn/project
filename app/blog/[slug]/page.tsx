@@ -1,4 +1,5 @@
 import { blogPosts, services } from '@/lib/content';
+import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -23,40 +24,139 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();
 
+  const articleSchema = generateArticleSchema(post);
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Blog', url: '/blog' },
+    { name: post.title, url: `/blog/${post.slug}` },
+  ]);
+
   const related = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
-  // Simple parser for headings and links
+  // Advanced parser for 2500-word guides
   const renderContent = (content: string) => {
-    return content.split('\n\n').map((block, i) => {
-      if (block.startsWith('### ')) {
-        return <h3 key={i} className="text-2xl font-bold text-gray-900 mt-10 mb-4 uppercase italic tracking-tight">{block.replace('### ', '')}</h3>;
-      }
-      if (block.startsWith('## ')) {
-        return <h2 key={i} className="text-3xl font-black text-trust-blue mt-12 mb-6 uppercase italic tracking-tighter border-l-4 border-action-orange pl-4">{block.replace('## ', '')}</h2>;
-      }
-      
-      // Parse links [text](/url)
-      const parts = block.split(/(\[.*?\]\(.*?\))/g);
-      return (
-        <p key={i} className="mb-6 text-gray-700 leading-relaxed text-lg">
-          {parts.map((part, j) => {
-            const linkMatch = part.match(/\[(.*?)\]\((.*?)\)/);
-            if (linkMatch) {
-              return (
-                <Link key={j} href={linkMatch[2]} className="text-trust-blue font-bold hover:text-action-orange transition-colors underline decoration-2 underline-offset-4">
-                  {linkMatch[1]}
+    // Extract headers for TOC
+    const headers = content.split('\n\n')
+      .filter(block => block.startsWith('## '))
+      .map(block => block.replace('## ', ''));
+
+    const blocks = content.split('\n\n');
+    
+    return (
+      <>
+        {/* Table of Contents */}
+        <div className="mb-12 p-8 bg-blue-50 rounded-[2rem] border border-blue-100">
+          <h2 className="text-xl font-black uppercase italic text-trust-blue mb-6 tracking-tight">Table of Contents</h2>
+          <nav className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+            {headers.map((h, idx) => (
+              <a 
+                key={idx} 
+                href={`#section-${idx}`} 
+                className="text-gray-700 hover:text-action-orange font-bold text-sm flex items-center gap-2 group transition-colors"
+              >
+                <span className="w-6 h-6 rounded-full bg-white border border-blue-200 flex items-center justify-center text-[10px] group-hover:bg-action-orange group-hover:text-white transition-all">
+                  {idx + 1}
+                </span>
+                {h}
+              </a>
+            ))}
+          </nav>
+        </div>
+
+        {blocks.map((block, i) => {
+          // Dynamic CTAs
+          if (block === '[[CTA:PHONE]]') {
+            return (
+              <div key={i} className="my-12 p-10 bg-gradient-to-br from-trust-blue to-blue-900 text-white rounded-[2.5rem] shadow-2xl relative overflow-hidden">
+                <div className="relative z-10 text-center">
+                  <h3 className="text-2xl font-black mb-4 uppercase italic">Need Immediate Assistance?</h3>
+                  <p className="text-blue-100 mb-8 max-w-xl mx-auto font-medium">Our dispatchers are standing by 24/7. Average arrival time in Bed-Stuy is 15-20 minutes.</p>
+                  <a href="tel:(718)568-6597" className="inline-flex items-center gap-3 bg-action-orange hover:bg-orange-600 text-white font-black px-10 py-5 rounded-2xl transition-all uppercase italic text-xl shadow-lg">
+                    <Phone size={24} />
+                    Call (718) 568-6597
+                  </a>
+                </div>
+              </div>
+            );
+          }
+
+          if (block === '[[CTA:QUOTE]]') {
+            return (
+              <div key={i} className="my-12 p-10 bg-white border-2 border-dashed border-gray-200 rounded-[2.5rem] text-center">
+                <h3 className="text-2xl font-black mb-4 uppercase italic text-gray-900">Planning a Security Upgrade?</h3>
+                <p className="text-gray-600 mb-8 max-w-xl mx-auto">Get a detailed, transparent price estimate for your specific lock replacement or installation project.</p>
+                <Link href="/quote" className="inline-block bg-trust-blue hover:bg-blue-800 text-white font-black px-10 py-5 rounded-2xl transition-all uppercase italic text-lg shadow-md">
+                  Request Free Quote
                 </Link>
-              );
-            }
-            return part;
-          })}
-        </p>
-      );
-    });
+              </div>
+            );
+          }
+
+          if (block === '[[CTA:BOOKING]]') {
+            return (
+              <div key={i} className="my-12 p-10 bg-gray-900 text-white rounded-[2.5rem] flex flex-col md:flex-row items-center gap-8 shadow-2xl">
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-2xl font-black mb-2 uppercase italic text-action-orange">Skip the Wait</h3>
+                  <p className="text-gray-400">Schedule your appointment online and get a priority slot with our master technicians.</p>
+                </div>
+                <Link href="/booking" className="bg-white text-gray-900 hover:bg-gray-200 font-black px-10 py-5 rounded-2xl transition-all uppercase italic text-lg flex-shrink-0">
+                  Book Online Now
+                </Link>
+              </div>
+            );
+          }
+
+          // Headers with anchors for TOC
+          if (block.startsWith('### ')) {
+            return <h3 key={i} className="text-2xl font-bold text-gray-900 mt-12 mb-4 uppercase italic tracking-tight">{block.replace('### ', '')}</h3>;
+          }
+          
+          if (block.startsWith('## ')) {
+            const hText = block.replace('## ', '');
+            const hIdx = headers.indexOf(hText);
+            return (
+              <h2 
+                key={i} 
+                id={`section-${hIdx}`}
+                className="text-3xl font-black text-trust-blue mt-16 mb-8 uppercase italic tracking-tighter border-l-4 border-action-orange pl-6 scroll-mt-32"
+              >
+                {hText}
+              </h2>
+            );
+          }
+          
+          // Parse links [text](/url)
+          const parts = block.split(/(\[.*?\]\(.*?\))/g);
+          return (
+            <p key={i} className="mb-8 text-gray-700 leading-relaxed text-lg">
+              {parts.map((part, j) => {
+                const linkMatch = part.match(/\[(.*?)\]\((.*?)\)/);
+                if (linkMatch) {
+                  return (
+                    <Link key={j} href={linkMatch[2]} className="text-trust-blue font-bold hover:text-action-orange transition-colors underline decoration-2 underline-offset-4">
+                      {linkMatch[1]}
+                    </Link>
+                  );
+                }
+                return part;
+              })}
+            </p>
+          );
+        })}
+      </>
+    );
   };
 
   return (
     <div className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero Header */}
       <section className="bg-gray-900 text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-30">
