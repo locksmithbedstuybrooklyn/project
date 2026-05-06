@@ -1,6 +1,11 @@
 import { locations, services, testimonials } from '@/lib/content';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { renderContent } from '@/lib/parser';
+import { Shield, Phone, Clock, Star, MapPin, ChevronRight, ArrowRight } from 'lucide-react';
+import Button from '@/components/common/Button';
+import { generateBreadcrumbSchema } from '@/lib/schema';
 
 export async function generateStaticParams() {
   return locations.map((l) => ({ slug: l.slug }));
@@ -11,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const location = locations.find((l) => l.slug === slug);
   if (!location) return {};
   return {
-    title: `Locksmith ${location.name} | Car & Home Locksmith | (718) 568-6597`,
+    title: `Expert Locksmith ${location.name} | 24/7 Rapid Response | (718) 568-6597`,
     description: location.description,
   };
 }
@@ -23,111 +28,170 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
   const localReview = testimonials.find((t) => t.location.toLowerCase().includes(location.name.toLowerCase().split(' ')[0]));
 
+  // Generate TOC from headers
+  const toc = location.content
+    .split('\n')
+    .filter((line) => line.startsWith('## '))
+    .map((line) => {
+      const title = line.replace('## ', '');
+      const id = title.toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, '-');
+      return { title, id };
+    });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Locations', url: '/locations' },
+    { name: location.name, url: `/locations/${location.slug}` },
+  ]);
+
   return (
-    <>
-      <section className="bg-gradient-to-r from-trust-blue to-blue-900 text-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-blue-300 mb-2 text-sm font-semibold uppercase tracking-wide">📍 Service Area</p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{location.name} Locksmith</h1>
-          <p className="text-xl text-blue-100 mb-8 max-w-2xl">{location.description}</p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="tel:(718)568-6597" className="inline-block bg-action-orange text-white font-bold px-8 py-4 rounded-lg text-lg hover:bg-orange-600 transition-colors text-center">
-              Call (718) 568-6597
+    <div className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      {/* Hero Header */}
+      <section className="bg-gray-900 text-white pt-40 pb-24 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-30">
+          <Image 
+            src={location.image}
+            alt={location.name}
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/60 via-gray-900/90 to-gray-900"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex items-center gap-2 text-action-orange font-black uppercase italic tracking-widest text-xs mb-6">
+            <MapPin size={14} />
+            Neighborhood Service Authority
+          </div>
+          <h1 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter uppercase italic leading-none">
+            {location.name} <span className="text-action-orange">Expertise</span>
+          </h1>
+          <p className="text-xl md:text-3xl text-blue-100 mb-12 max-w-3xl font-medium leading-relaxed">
+            {location.description}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6">
+            <a href="tel:(718)568-6597">
+              <Button size="large" className="w-full bg-action-orange hover:bg-orange-600 text-white font-black px-12 py-6 rounded-2xl text-xl shadow-xl uppercase italic">
+                <Phone className="mr-2 inline-block" size={24} />
+                Call (718) 568-6597
+              </Button>
             </a>
-            <Link href="/quote" className="inline-block bg-white text-trust-blue font-bold px-8 py-4 rounded-lg text-lg hover:bg-blue-50 transition-colors text-center">
-              Get Free Quote
+            <Link href="/quote">
+              <Button size="large" variant="secondary" className="w-full bg-white text-gray-900 font-black px-12 py-6 rounded-2xl text-xl hover:bg-blue-50 transition-all uppercase italic">
+                Get Expert Quote
+              </Button>
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-16">
+      {/* Trust bar */}
+      <div className="bg-gray-100 border-y border-gray-200 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-8 justify-center text-[10px] font-black uppercase tracking-widest text-gray-500 italic">
+          <span className="flex items-center gap-2"><Shield size={12} className="text-safety-green" /> Local Bed-Stuy Units</span>
+          <span className="flex items-center gap-2"><Clock size={12} className="text-safety-green" /> 20-Min Response</span>
+          <span className="flex items-center gap-2"><Star size={12} className="text-safety-green" /> Licensed &amp; Insured</span>
+          <span className="flex items-center gap-2"><Shield size={12} className="text-safety-green" /> Fair Pricing</span>
+        </div>
+      </div>
+
+      <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="lg:col-span-2 space-y-10">
-              {/* About */}
-              <div>
-                <h2 className="text-2xl font-bold mb-4">Your Local {location.name} Locksmith</h2>
-                <p className="text-gray-700 leading-relaxed text-lg">{location.description}</p>
-                <p className="text-gray-700 leading-relaxed mt-4">
-                  We handle all types of locksmith emergencies in {location.name}. Car lockouts, residential lockouts, lock repairs, key replacements, and 24-hour emergency service — whatever you need, we're here.
-                </p>
-              </div>
-
-              {/* Services */}
-              <div>
-                <h2 className="text-2xl font-bold mb-6">Services Available in {location.name}</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {services.map((s) => (
-                    <Link key={s.id} href={`/services/${s.slug}`} className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-trust-blue hover:bg-blue-50 transition-colors">
-                      <span className="text-2xl">{s.icon}</span>
-                      <span className="font-semibold text-gray-800">{s.name}</span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-
-              {/* Service areas */}
-              <div>
-                <h2 className="text-2xl font-bold mb-4">Streets We Cover in {location.name}</h2>
-                <ul className="grid grid-cols-2 gap-2">
-                  {location.serviceAreas.map((area) => (
-                    <li key={area} className="flex items-center gap-2 text-gray-700">
-                      <span className="text-safety-green">✓</span> {area}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Review */}
-              {localReview && (
-                <div>
-                  <h2 className="text-2xl font-bold mb-4">What {location.name} Customers Say</h2>
-                  <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
-                    <div className="flex gap-1 mb-2">{Array.from({ length: localReview.rating }).map((_, i) => <span key={i} className="text-yellow-400">★</span>)}</div>
-                    <p className="text-gray-700 italic mb-2">"{localReview.content}"</p>
-                    <p className="font-semibold text-sm text-gray-800">— {localReview.author}, {localReview.location}</p>
-                  </div>
-                </div>
-              )}
-            </div>
-
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-16">
             {/* Sidebar */}
-            <div>
-              <div className="sticky top-24 space-y-6">
-                <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
-                  <h3 className="text-xl font-bold mb-4">Get Help in {location.name}</h3>
-                  <a href="tel:(718)568-6597" className="block w-full text-center bg-action-orange text-white font-bold px-6 py-3 rounded-lg text-lg hover:bg-orange-600 transition-colors mb-3">
-                    📞 Call (718) 568-6597
-                  </a>
-                  <Link href="/quote" className="block w-full text-center border-2 border-trust-blue text-trust-blue font-bold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors">
-                    Get Free Quote
-                  </Link>
-                  <ul className="mt-6 space-y-2 text-sm text-gray-700">
-                    <li>✓ 20-minute response</li>
-                    <li>✓ Available 24/7</li>
-                    <li>✓ Licensed &amp; insured</li>
-                    <li>✓ No hidden fees</li>
-                  </ul>
+            <aside className="lg:col-span-1">
+              <div className="sticky top-32 space-y-12">
+                <div>
+                  <h3 className="text-xs font-black uppercase tracking-[0.2em] text-gray-400 mb-8 italic">Neighborhood Roadmap</h3>
+                  <nav className="space-y-4">
+                    {toc.map((item) => (
+                      <a 
+                        key={item.id} 
+                        href={`#${item.id}`}
+                        className="group flex items-center gap-3 text-gray-500 hover:text-trust-blue transition-colors"
+                      >
+                        <div className="w-2 h-2 rounded-full bg-gray-200 group-hover:bg-trust-blue group-hover:scale-150 transition-all"></div>
+                        <span className="text-sm font-bold uppercase italic tracking-tight">{item.title}</span>
+                      </a>
+                    ))}
+                  </nav>
                 </div>
 
-                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
-                  <h3 className="text-lg font-bold mb-4">Other Neighborhoods</h3>
+                <div className="bg-gray-50 p-8 rounded-3xl border border-gray-200">
+                  <h3 className="text-sm font-black uppercase tracking-widest mb-6 italic">Streets We Cover</h3>
                   <ul className="space-y-2">
-                    {locations.filter((l) => l.slug !== location.slug).slice(0, 5).map((l) => (
-                      <li key={l.id}>
-                        <Link href={`/locations/${l.slug}`} className="text-trust-blue hover:underline text-sm font-medium">
-                          📍 {l.name}
-                        </Link>
+                    {location.serviceAreas.map((area) => (
+                      <li key={area} className="flex items-center gap-2 text-xs font-bold text-gray-600">
+                        <span className="text-action-orange">/</span> {area}
                       </li>
                     ))}
                   </ul>
+                </div>
+              </div>
+            </aside>
+
+            {/* Main Content */}
+            <div className="lg:col-span-3">
+              <article className="prose prose-lg max-w-none">
+                {renderContent(location.content)}
+              </article>
+
+              {/* Local Review */}
+              {localReview && (
+                <div className="mt-24 p-10 md:p-16 bg-trust-blue rounded-[3rem] text-white shadow-2xl relative overflow-hidden">
+                   <div className="absolute top-0 right-0 p-8 opacity-10">
+                     <Star size={120} />
+                   </div>
+                   <div className="relative z-10 text-center md:text-left">
+                     <h2 className="text-3xl font-black mb-8 uppercase italic tracking-tight">Verified Local Experience</h2>
+                     <div className="flex justify-center md:justify-start gap-1 mb-8">
+                       {Array.from({ length: localReview.rating }).map((_, i) => <Star key={i} size={24} fill="white" className="text-action-orange" />)}
+                     </div>
+                     <p className="text-xl md:text-2xl font-medium italic mb-10 leading-relaxed">"{localReview.content}"</p>
+                     <p className="text-sm font-black uppercase tracking-widest italic">— {localReview.author}, {localReview.location}</p>
+                   </div>
+                </div>
+              )}
+
+              {/* Local Services Grid */}
+              <div className="mt-24">
+                <h2 className="text-3xl font-black mb-12 uppercase italic tracking-tight">Services in {location.name}</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {services.map((s) => (
+                    <Link key={s.id} href={`/services/${s.slug}`} className="group flex items-center justify-between p-6 bg-white border border-gray-200 rounded-2xl hover:border-trust-blue hover:shadow-xl transition-all duration-300">
+                      <div className="flex items-center gap-4">
+                        <span className="text-3xl">{s.icon}</span>
+                        <span className="font-black uppercase italic tracking-tight text-gray-900">{s.name}</span>
+                      </div>
+                      <ArrowRight size={18} className="text-gray-300 group-hover:text-trust-blue group-hover:translate-x-2 transition-all" />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-    </>
+
+      {/* Footer CTA */}
+      <section className="py-24 bg-gray-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-6xl font-black mb-8 uppercase italic tracking-tighter">Emergency in {location.name}?</h2>
+          <p className="text-xl text-blue-100 mb-12 font-medium">
+            Don't wait for a "dispatch center" to find a technician. We're already on the streets of {location.name}.
+          </p>
+          <a href="tel:(718)568-6597">
+            <Button size="large" className="bg-action-orange hover:bg-orange-600 px-12 py-8 text-2xl font-black uppercase italic shadow-2xl">
+              (718) 568-6597
+            </Button>
+          </a>
+        </div>
+      </section>
+    </div>
   );
 }

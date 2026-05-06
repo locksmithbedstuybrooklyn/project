@@ -3,8 +3,11 @@ export interface Service {
   name: string;
   slug: string;
   description: string;
+  content: string; // Long-form markdown content
   icon: string;
+  image: string;
   keywords: string[];
+  updatedAt: Date;
 }
 
 export interface Location {
@@ -12,8 +15,11 @@ export interface Location {
   name: string;
   slug: string;
   description: string;
+  content: string; // Long-form neighborhood profile
+  image: string;
   serviceAreas: string[];
   neighborhoods: string[];
+  updatedAt: Date;
 }
 
 export interface BlogPost {

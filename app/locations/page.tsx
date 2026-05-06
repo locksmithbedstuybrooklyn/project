@@ -17,7 +17,7 @@ export default function LocationsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Service Areas</h1>
           <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto">
-            Hyper-local locksmith services in Bed-Stuy and surrounding neighborhoods.
+            Local locksmith services in Bed-Stuy and surrounding neighborhoods.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:(718)568-6597">
@@ -42,7 +42,7 @@ export default function LocationsPage() {
               We serve Bed-Stuyvesant and a 5-mile radius around it. This includes Crown Heights, Prospect Heights, Williamsburg, Greenpoint, Bushwick, Astoria, and Long Island City. Same fast response time everywhere. Same honest pricing. Same professional service.
             </p>
             <p>
-              Being hyper-local means we know your neighborhood. We understand the buildings, the streets, the parking challenges. We're familiar with local lock types and security needs. When you call, you're calling neighbors who care about your community.
+              Being Local means we know your neighborhood. We understand the buildings, the streets, the parking challenges. We're familiar with local lock types and security needs. When you call, you're calling neighbors who care about your community.
             </p>
             <p>
               Our service area covers approximately 8 neighborhoods across Brooklyn and Queens. We respond within 20 minutes in most cases. We're available 24/7, including nights, weekends, and holidays. Check your location below to confirm we serve your area.
@@ -118,7 +118,7 @@ export default function LocationsPage() {
             </div>
             <div className="flex items-center gap-3 bg-white/10 px-6 py-3 rounded-full backdrop-blur-sm">
               <MapPin className="text-action-orange" size={20} />
-              <span className="font-bold">Hyper-Local Experts</span>
+              <span className="font-bold">Local Experts</span>
             </div>
           </div>
         </div>

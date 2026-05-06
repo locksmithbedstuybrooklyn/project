@@ -12,47 +12,47 @@ export const metadata: Metadata = {
 
 export default function ServiceAreasPage() {
   const primaryAreas = [
-    { 
-      name: 'Bed-Stuyvesant', 
-      zips: '11221, 11213', 
+    {
+      name: 'Bed-Stuyvesant',
+      zips: '11221, 11213',
       streets: ['Stuyvesant Avenue', 'Myrtle Avenue', 'Nostrand Avenue', 'Halsey Street', 'Madison Street', 'Marcy Avenue', 'Tompkins Avenue', 'Hancock Street']
     },
-    { 
-      name: 'Crown Heights', 
-      zips: '11213, 11216', 
+    {
+      name: 'Crown Heights',
+      zips: '11213, 11216',
       streets: ['Nostrand Avenue', 'Utica Avenue', 'Franklin Avenue', 'Classon Avenue', 'Underhill Avenue', 'Prospect Place', 'St. Johns Place']
     },
-    { 
-      name: 'Prospect Heights', 
-      zips: '11215', 
+    {
+      name: 'Prospect Heights',
+      zips: '11215',
       streets: ['Vanderbilt Avenue', 'Flatbush Avenue', 'Classon Avenue', 'Underhill Avenue', 'Prospect Place', 'Sterling Place', 'St. Johns Place']
     }
   ];
 
   const extendedAreas = [
-    { 
-      name: 'Williamsburg', 
-      zips: '11211, 11249', 
+    {
+      name: 'Williamsburg',
+      zips: '11211, 11249',
       streets: ['Bedford Avenue', 'North 6th Street', 'North 7th Street', 'North 8th Street', 'Wythe Avenue', 'Kent Avenue', 'East River Waterfront']
     },
-    { 
-      name: 'Greenpoint', 
-      zips: '11222', 
+    {
+      name: 'Greenpoint',
+      zips: '11222',
       streets: ['Franklin Street', 'McGraw Avenue', 'Greenpoint Avenue', 'Noble Street', 'Calyer Street', 'Huron Street', 'Newtown Creek']
     },
-    { 
-      name: 'Bushwick', 
-      zips: '11206, 11237', 
+    {
+      name: 'Bushwick',
+      zips: '11206, 11237',
       streets: ['Knickerbocker Avenue', 'Myrtle Avenue', 'Wyckoff Avenue', 'Dekalb Avenue', 'Jefferson Street', 'Troutman Street', 'Cypress Avenue']
     },
-    { 
-      name: 'Astoria, Queens', 
-      zips: '11369, 11370', 
+    {
+      name: 'Astoria, Queens',
+      zips: '11369, 11370',
       streets: ['Ditmars Boulevard', 'Steinway Street', '30th Avenue', 'Broadway', 'Astoria Park', 'Vernon Boulevard', '23rd Avenue']
     },
-    { 
-      name: 'Long Island City, Queens', 
-      zips: '11101, 11109', 
+    {
+      name: 'Long Island City, Queens',
+      zips: '11101, 11109',
       streets: ['Jackson Avenue', 'Queens Plaza', 'Greenpoint Avenue', 'Thomson Avenue', '44th Drive', '45th Avenue', 'Waterfront Park']
     }
   ];
@@ -92,18 +92,18 @@ export default function ServiceAreasPage() {
                 We serve Bed-Stuyvesant and a 5-mile radius around it. This includes 8 neighborhoods across Brooklyn and Queens. Same fast response time everywhere. Same honest pricing. Same professional service.
               </p>
               <p>
-                Being hyper-local means we know your neighborhood. We understand the buildings, the streets, the parking challenges. We're familiar with local lock types and security needs. When you call, you're calling neighbors who care about your community.
+                Being Local means we know your neighborhood. We understand the buildings, the streets, the parking challenges. We're familiar with local lock types and security needs. When you call, you're calling neighbors who care about your community.
               </p>
               <p>
                 Call (718) 568-6597 to confirm we serve your area. We're available 24/7. We respond within 20 minutes in most cases.
               </p>
             </div>
-            
+
             <div className="bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-100 shadow-sm text-center">
-               <h3 className="text-2xl font-bold mb-6 text-gray-900">Average Response Time</h3>
-               <div className="text-6xl font-black text-trust-blue mb-4">20</div>
-               <p className="text-xl font-bold text-action-orange uppercase tracking-widest">Minutes or Less</p>
-               <p className="mt-6 text-gray-600">Across our entire 5-mile service radius.</p>
+              <h3 className="text-2xl font-bold mb-6 text-gray-900">Average Response Time</h3>
+              <div className="text-6xl font-black text-trust-blue mb-4">20</div>
+              <p className="text-xl font-bold text-action-orange uppercase tracking-widest">Minutes or Less</p>
+              <p className="mt-6 text-gray-600">Across our entire 5-mile service radius.</p>
             </div>
           </div>
 
@@ -112,16 +112,16 @@ export default function ServiceAreasPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {primaryAreas.map((area, i) => (
                 <Card key={i} className="p-8 border-gray-100 shadow-md">
-                   <h3 className="text-xl font-bold text-trust-blue mb-2">{area.name}</h3>
-                   <p className="text-sm text-gray-500 mb-6">{area.zips}</p>
-                   <ul className="space-y-2">
-                     {area.streets.map((street, si) => (
-                       <li key={si} className="flex items-center gap-2 text-gray-600 text-sm">
-                         <CheckCircle className="text-safety-green flex-shrink-0" size={14} />
-                         <span>{street}</span>
-                       </li>
-                     ))}
-                   </ul>
+                  <h3 className="text-xl font-bold text-trust-blue mb-2">{area.name}</h3>
+                  <p className="text-sm text-gray-500 mb-6">{area.zips}</p>
+                  <ul className="space-y-2">
+                    {area.streets.map((street, si) => (
+                      <li key={si} className="flex items-center gap-2 text-gray-600 text-sm">
+                        <CheckCircle className="text-safety-green flex-shrink-0" size={14} />
+                        <span>{street}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </Card>
               ))}
             </div>
@@ -132,38 +132,38 @@ export default function ServiceAreasPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {extendedAreas.map((area, i) => (
                 <Card key={i} className="p-8 border-gray-100 shadow-md">
-                   <h3 className="text-xl font-bold text-trust-blue mb-2">{area.name}</h3>
-                   <p className="text-sm text-gray-500 mb-6">{area.zips}</p>
-                   <ul className="space-y-2">
-                     {area.streets.map((street, si) => (
-                       <li key={si} className="flex items-center gap-2 text-gray-600 text-sm">
-                         <CheckCircle className="text-safety-green flex-shrink-0" size={14} />
-                         <span>{street}</span>
-                       </li>
-                     ))}
-                   </ul>
+                  <h3 className="text-xl font-bold text-trust-blue mb-2">{area.name}</h3>
+                  <p className="text-sm text-gray-500 mb-6">{area.zips}</p>
+                  <ul className="space-y-2">
+                    {area.streets.map((street, si) => (
+                      <li key={si} className="flex items-center gap-2 text-gray-600 text-sm">
+                        <CheckCircle className="text-safety-green flex-shrink-0" size={14} />
+                        <span>{street}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </Card>
               ))}
             </div>
           </div>
 
           <div className="bg-gray-900 text-white p-12 rounded-3xl mb-20 text-center">
-             <h2 className="text-3xl font-bold mb-8">All Services Available Everywhere</h2>
-             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-                {[
-                  'Car Lockout', 'Car Key Replacement', 'Ignition Repair', 
-                  'Residential Lockout', 'Lock Replacement', 'Lock Repair', 
-                  'Lock Installation', '24-Hour Emergency'
-                ].map((service, i) => (
-                  <div key={i} className="flex items-center gap-2 text-blue-100">
-                    <CheckCircle className="text-action-orange flex-shrink-0" size={16} />
-                    <span className="font-semibold text-sm">{service}</span>
-                  </div>
-                ))}
-             </div>
-             <div className="max-w-xl mx-auto text-left">
-                <QuoteForm />
-             </div>
+            <h2 className="text-3xl font-bold mb-8">All Services Available Everywhere</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+              {[
+                'Car Lockout', 'Car Key Replacement', 'Ignition Repair',
+                'Residential Lockout', 'Lock Replacement', 'Lock Repair',
+                'Lock Installation', '24-Hour Emergency'
+              ].map((service, i) => (
+                <div key={i} className="flex items-center gap-2 text-blue-100">
+                  <CheckCircle className="text-action-orange flex-shrink-0" size={16} />
+                  <span className="font-semibold text-sm">{service}</span>
+                </div>
+              ))}
+            </div>
+            <div className="max-w-xl mx-auto text-left">
+              <QuoteForm />
+            </div>
           </div>
         </div>
       </section>

@@ -74,23 +74,23 @@ export default function ServicesPage() {
           <h2 className="text-3xl font-black text-center mb-16 uppercase italic">Our Service Pillars</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { 
-                title: 'Automotive', 
+              {
+                title: 'Automotive',
                 items: ['Car Lockouts', 'Key Replacement', 'Ignition Repair', 'Programming'],
                 icon: '🚗'
               },
-              { 
-                title: 'Residential', 
+              {
+                title: 'Residential',
                 items: ['Home Lockouts', 'Installation', 'Replacement', 'Rekeying'],
                 icon: '🏠'
               },
-              { 
-                title: 'Commercial', 
+              {
+                title: 'Commercial',
                 items: ['Master Keys', 'Access Control', 'Mortise Locks', 'High-Security'],
                 icon: '🏢'
               },
-              { 
-                title: 'Emergency', 
+              {
+                title: 'Emergency',
                 items: ['24/7 Response', 'Break-in Repairs', 'Key Extractions', 'Weekend Help'],
                 icon: '🚨'
               }
@@ -122,7 +122,7 @@ export default function ServicesPage() {
                 Minimum Hassle
               </h2>
               <p className="text-xl text-blue-100 mb-12 leading-relaxed max-w-xl">
-                We combine technical mastery with hyper-local response times. Our consolidated service model ensures that you receive the most thorough security evaluation possible, every time we visit.
+                We combine technical mastery with Local response times. Our consolidated service model ensures that you receive the most thorough security evaluation possible, every time we visit.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {[
@@ -139,24 +139,24 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="relative">
-               <div className="absolute -inset-4 bg-action-orange rounded-[3rem] blur-3xl opacity-20"></div>
-               <div className="bg-white text-trust-blue p-12 rounded-[3rem] shadow-2xl relative z-10">
-                 <h3 className="text-3xl font-black mb-8 uppercase italic tracking-tight">Request Service</h3>
-                 <div className="mb-10 p-6 bg-blue-50 rounded-2xl border border-blue-100">
-                    <p className="text-gray-600 font-medium leading-relaxed italic">
-                      "I needed multiple locks rekeyed and a new smart lock installed. They handled it all in one visit and explained everything clearly. Truly professional."
-                    </p>
-                    <p className="mt-4 font-black text-trust-blue">— David L., Williamsburg</p>
-                 </div>
-                 <Link href="/quote">
-                   <Button variant="primary" size="large" className="w-full py-8 text-2xl font-black uppercase italic bg-action-orange hover:bg-orange-600">
-                     Get Free Quote
-                   </Button>
-                 </Link>
-                 <a href="tel:(718)568-6597" className="block text-center mt-8 text-xl font-black hover:text-orange-600 transition-colors">
-                    (718) 568-6597
-                 </a>
-               </div>
+              <div className="absolute -inset-4 bg-action-orange rounded-[3rem] blur-3xl opacity-20"></div>
+              <div className="bg-white text-trust-blue p-12 rounded-[3rem] shadow-2xl relative z-10">
+                <h3 className="text-3xl font-black mb-8 uppercase italic tracking-tight">Request Service</h3>
+                <div className="mb-10 p-6 bg-blue-50 rounded-2xl border border-blue-100">
+                  <p className="text-gray-600 font-medium leading-relaxed italic">
+                    "I needed multiple locks rekeyed and a new smart lock installed. They handled it all in one visit and explained everything clearly. Truly professional."
+                  </p>
+                  <p className="mt-4 font-black text-trust-blue">— David L., Williamsburg</p>
+                </div>
+                <Link href="/quote">
+                  <Button variant="primary" size="large" className="w-full py-8 text-2xl font-black uppercase italic bg-action-orange hover:bg-orange-600">
+                    Get Free Quote
+                  </Button>
+                </Link>
+                <a href="tel:(718)568-6597" className="block text-center mt-8 text-xl font-black hover:text-orange-600 transition-colors">
+                  (718) 568-6597
+                </a>
+              </div>
             </div>
           </div>
         </div>
