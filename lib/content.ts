@@ -284,56 +284,7 @@ You just moved into Bushwick. You want to improve your property security. We off
 [[H3:Automotive Services]]
 Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
   },
-  {
-    id: 'astoria',
-    name: 'Astoria',
-    slug: 'astoria',
-    description: 'Trusted locksmith service for Astoria and Northwest Queens. Fast response for car keys and home security.',
-    image: 'https://images.unsplash.com/photo-1543674892-7d64d45df18b?auto=format&fit=crop&q=80',
-    updatedAt: new Date('2026-05-06'),
-    serviceAreas: ['Ditmars Blvd', 'Steinway St', '30th Ave', 'Broadway', 'Astoria Park', 'Vernon Blvd', '23rd Ave'],
-    neighborhoods: ['Astoria', 'Queens'],
-    content: `[[H2:Fast Locksmith in Astoria]]
-You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Astoria locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
 
-[[H3:Emergency Lockout Services]]
-You are locked out in Astoria. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
-
-[[CTA:PHONE]]
-
-[[H3:Lock Upgrades]]
-You just moved into Astoria. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
-
-[[CTA:QUOTE]]
-
-[[H3:Automotive Services]]
-Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
-  },
-  {
-    id: 'long-island-city',
-    name: 'Long Island City',
-    slug: 'long-island-city',
-    description: 'High-tech security for Long Island City residents and businesses. Fast response on Jackson Ave and Queens Plaza.',
-    image: 'https://images.unsplash.com/photo-1543674892-7d64d45df18b?auto=format&fit=crop&q=80',
-    updatedAt: new Date('2026-05-06'),
-    serviceAreas: ['Jackson Ave', 'Queens Plaza', 'Greenpoint Ave', 'Thomson Ave', '44th Drive', '45th Ave', 'Waterfront Park'],
-    neighborhoods: ['Long Island City', 'LIC', 'Queens'],
-    content: `[[H2:Fast Locksmith in Long Island City]]
-You are locked out of your apartment. You need to change the locks on a new business. You lost your car keys. We are your local Long Island City locksmith. Lock and key issues are stressful. We prioritize fast arrival times. We offer honest pricing.
-
-[[H3:Emergency Lockout Services]]
-You are locked out in Long Island City. Do not panic. Our mobile technicians are always nearby. We usually reach you within 30 minutes. We use damage-free techniques. We get you back inside quickly.
-
-[[CTA:PHONE]]
-
-[[H3:Lock Upgrades]]
-You just moved into Long Island City. You want to improve your property security. We offer professional lock installation and replacement. We show you the best deadbolts and smart locks. We fit your door and budget.
-
-[[CTA:QUOTE]]
-
-[[H3:Automotive Services]]
-Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are fully equipped. We cut and program new keys on the spot. You get back on the road. You avoid a tow truck.`,
-  },
   {
     id: 'stuyvesant-heights',
     name: 'Stuyvesant Heights',
