@@ -106,10 +106,10 @@ export default function HighSecurityLocksBlogPage() {
           <h3 className="text-2xl font-bold mb-8">Related Resources</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
             {[
-              { name: 'Security Installation', href: '/services/lock-installation/security' },
+              { name: 'Security Installation', href: '/services/lock-installation' },
               { name: 'Lock Installation Hub', href: '/services/lock-installation' },
-              { name: 'Residential Install', href: '/services/lock-installation/residential' },
-              { name: 'Commercial Install', href: '/services/lock-installation/commercial' }
+              { name: 'Residential Install', href: '/services/lock-installation' },
+              { name: 'Commercial Install', href: '/services/lock-installation' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>
                 <Card hover className="p-8 border-gray-100 h-full flex flex-col justify-center">

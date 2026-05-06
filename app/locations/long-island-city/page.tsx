@@ -107,7 +107,7 @@ export default function LongIslandCityLocationPage() {
             {[
               { name: 'Bed-Stuy Hub', href: '/locations/bed-stuy' },
               { name: 'Astoria', href: '/locations/astoria' },
-              { name: 'Car Lockout', href: '/services/car-lockout' },
+              { name: 'Car Lockout', href: '/services/automotive-locksmith' },
               { name: 'Commercial Locksmith', href: '/services/commercial-locksmith' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>

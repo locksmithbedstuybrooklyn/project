@@ -105,9 +105,9 @@ export default function ResidentialLockSecurityBlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
             {[
               { name: 'Lock Installation Service', href: '/services/lock-installation' },
-              { name: 'Home Lock Replacement', href: '/services/lock-replacement/residential' },
-              { name: 'High-Security Locks', href: '/services/lock-installation/security' },
-              { name: 'Deadbolt Installation', href: '/services/lock-replacement/deadbolt' }
+              { name: 'Home Lock Replacement', href: '/services/lock-replacement' },
+              { name: 'High-Security Locks', href: '/services/lock-installation' },
+              { name: 'Deadbolt Installation', href: '/services/lock-replacement' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>
                 <Card hover className="p-8 border-gray-100 h-full flex flex-col justify-center">

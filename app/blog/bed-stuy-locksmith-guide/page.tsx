@@ -95,9 +95,9 @@ export default function BedStuyLocksmithGuideBlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
             {[
               { name: 'Bed-Stuy Location', href: '/locations/bed-stuy' },
-              { name: 'Car Lockout Service', href: '/services/car-lockout' },
+              { name: 'Car Lockout Service', href: '/services/automotive-locksmith' },
               { name: 'Residential Lockout', href: '/services/residential-lockout' },
-              { name: '24-Hour Locksmith', href: '/services/24-hour-locksmith' },
+              { name: '24-Hour Locksmith', href: '/services/24-hour-emergency-locksmith' },
               { name: 'All Services', href: '/services' },
               { name: 'Request Quote', href: '/quote' }
             ].map((link) => (

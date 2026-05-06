@@ -107,9 +107,9 @@ export default function CarKeyReplacementGuideBlogPage() {
           <h3 className="text-2xl font-bold mb-8">Related Links</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
             {[
-              { name: 'Car Key Replacement Service', href: '/services/car-key-replacement' },
+              { name: 'Car Key Replacement Service', href: '/services/automotive-locksmith' },
               { name: 'Automotive Locksmith', href: '/services/automotive-locksmith' },
-              { name: 'Car Lockout Service', href: '/services/car-lockout' },
+              { name: 'Car Lockout Service', href: '/services/automotive-locksmith' },
               { name: 'Request Quote', href: '/quote' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>

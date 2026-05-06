@@ -26,11 +26,13 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400">
-              <li><Link href="/services/car-lockout" className="hover:text-white">Car Lockout</Link></li>
+              <li><Link href="/services/automotive-locksmith" className="hover:text-white">Automotive Locksmith</Link></li>
               <li><Link href="/services/residential-lockout" className="hover:text-white">Residential Lockout</Link></li>
+              <li><Link href="/services/lock-installation" className="hover:text-white">Lock Installation</Link></li>
               <li><Link href="/services/lock-replacement" className="hover:text-white">Lock Replacement</Link></li>
               <li><Link href="/services/lock-repair" className="hover:text-white">Lock Repair</Link></li>
-              <li><Link href="/services/24-hour-locksmith" className="hover:text-white">24-Hour Service</Link></li>
+              <li><Link href="/services/lock-rekeying" className="hover:text-white">Lock Rekeying</Link></li>
+              <li><Link href="/services/24-hour-emergency-locksmith" className="hover:text-white">24/7 Emergency</Link></li>
             </ul>
           </div>
 

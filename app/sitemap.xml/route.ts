@@ -51,39 +51,15 @@ export async function GET() {
     <priority>0.8</priority>
   </url>
 
-  <!-- Primary Service Pages -->
-  <url>
-    <loc>https://locksmithbedstuy.com/services/car-lockout</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/car-key-replacement</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/ignition-repair</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
+  <!-- Consolidated Pillar Service Pages -->
   <url>
     <loc>https://locksmithbedstuy.com/services/automotive-locksmith</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/24-hour-locksmith</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services/residential-lockout</loc>
+    <loc>https://locksmithbedstuy.com/services/lock-installation</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -101,78 +77,22 @@ export async function GET() {
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services/lock-installation</loc>
+    <loc>https://locksmithbedstuy.com/services/lock-rekeying</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services/commercial-locksmith</loc>
+    <loc>https://locksmithbedstuy.com/services/residential-lockout</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Lock Services Sub-Pages -->
-  <url>
-    <loc>https://locksmithbedstuy.com/services/lock-replacement/residential</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://locksmithbedstuy.com/services/lock-replacement/commercial</loc>
+    <loc>https://locksmithbedstuy.com/services/24-hour-emergency-locksmith</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/lock-replacement/deadbolt</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/lock-replacement/rekeying</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/lock-repair/residential</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/lock-repair/commercial</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/lock-repair/emergency</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/lock-installation/residential</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/lock-installation/commercial</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://locksmithbedstuy.com/services/lock-installation/security</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
   </url>
 
   <!-- Location Pages -->

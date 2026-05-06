@@ -110,7 +110,7 @@ export default function BushwickLocationPage() {
             {[
               { name: 'Bed-Stuy Hub', href: '/locations/bed-stuy' },
               { name: 'Greenpoint', href: '/locations/greenpoint' },
-              { name: 'Car Lockout', href: '/services/car-lockout' },
+              { name: 'Car Lockout', href: '/services/automotive-locksmith' },
               { name: 'Residential Lockout', href: '/services/residential-lockout' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>

@@ -17,13 +17,7 @@ export async function POST(req: NextRequest) {
     // 2. Send email confirmation
     // 3. Send Telegram notification
     
-    console.log('--- NEW BOOKING REQUEST ---');
-    console.log('Service:', service, '-', subService);
-    console.log('Appointment:', date, 'at', time);
-    console.log('Customer:', name, '(', phone, ',', email, ')');
-    console.log('Address:', address);
-    console.log('Notes:', notes);
-    console.log('---------------------------');
+    // Process booking request (in a real app, this would send an email or save to DB)
 
     // Simulate delay
     await new Promise((resolve) => setTimeout(resolve, 1500));

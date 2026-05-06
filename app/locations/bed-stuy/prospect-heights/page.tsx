@@ -111,7 +111,7 @@ export default function ProspectHeightsLocationPage() {
             {[
               { name: 'Bed-Stuy Hub', href: '/locations/bed-stuy' },
               { name: 'Crown Heights', href: '/locations/bed-stuy/crown-heights' },
-              { name: 'Car Lockout', href: '/services/car-lockout' },
+              { name: 'Car Lockout', href: '/services/automotive-locksmith' },
               { name: 'Lock Installation', href: '/services/lock-installation' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>

@@ -101,10 +101,10 @@ export default function EmergencyLocksmithTipsBlogPage() {
           <h3 className="text-2xl font-bold mb-8">Service Links</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 text-left">
             {[
-              { name: '24-Hour Service', href: '/services/24-hour-locksmith' },
-              { name: 'Car Lockout', href: '/services/car-lockout' },
+              { name: '24-Hour Service', href: '/services/24-hour-emergency-locksmith' },
+              { name: 'Car Lockout', href: '/services/automotive-locksmith' },
               { name: 'Home Lockout', href: '/services/residential-lockout' },
-              { name: 'Emergency Repair', href: '/services/lock-repair/emergency' },
+              { name: 'Emergency Repair', href: '/services/lock-repair' },
               { name: 'Contact', href: '/contact' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>

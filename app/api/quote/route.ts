@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
 
     // In production, send to email / CRM / Formspree here
     // For now, log and return success
-    console.log('Quote request received:', { name, phone, email, serviceType, location, description });
+    // Process quote request (in a real app, this would send an email)
 
     return NextResponse.json({ success: true, message: 'Quote request received' }, { status: 200 });
   } catch (error) {

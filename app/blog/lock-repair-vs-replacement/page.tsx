@@ -99,8 +99,8 @@ export default function LockRepairVsReplacementBlogPage() {
             {[
               { name: 'Lock Repair Service', href: '/services/lock-repair' },
               { name: 'Lock Replacement Service', href: '/services/lock-replacement' },
-              { name: 'Residential Repair', href: '/services/lock-repair/residential' },
-              { name: 'Residential Replacement', href: '/services/lock-replacement/residential' }
+              { name: 'Residential Repair', href: '/services/lock-repair' },
+              { name: 'Residential Replacement', href: '/services/lock-replacement' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>
                 <Card hover className="p-8 border-gray-100 h-full flex flex-col justify-center">

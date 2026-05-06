@@ -110,8 +110,8 @@ export default function LockedOutCarBlogPage() {
           <h3 className="text-2xl font-bold mb-8 text-gray-900">Related Resources</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
             {[
-              { name: 'Car Lockout Service', href: '/services/car-lockout' },
-              { name: '24-Hour Locksmith', href: '/services/24-hour-locksmith' },
+              { name: 'Car Lockout Service', href: '/services/automotive-locksmith' },
+              { name: '24-Hour Locksmith', href: '/services/24-hour-emergency-locksmith' },
               { name: 'Contact Us', href: '/contact' },
               { name: 'Get a Quote', href: '/quote' }
             ].map((link) => (

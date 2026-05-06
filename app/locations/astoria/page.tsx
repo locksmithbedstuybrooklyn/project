@@ -112,7 +112,7 @@ export default function AstoriaLocationPage() {
             {[
               { name: 'Bed-Stuy Hub', href: '/locations/bed-stuy' },
               { name: 'Long Island City', href: '/locations/long-island-city' },
-              { name: 'Car Lockout', href: '/services/car-lockout' },
+              { name: 'Car Lockout', href: '/services/automotive-locksmith' },
               { name: 'Lock Installation', href: '/services/lock-installation' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>

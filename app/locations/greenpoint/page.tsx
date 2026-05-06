@@ -108,7 +108,7 @@ export default function GreenpointLocationPage() {
               { name: 'Bed-Stuy Hub', href: '/locations/bed-stuy' },
               { name: 'Williamsburg', href: '/locations/williamsburg' },
               { name: 'Bushwick', href: '/locations/bushwick' },
-              { name: 'Car Lockout', href: '/services/car-lockout' }
+              { name: 'Car Lockout', href: '/services/automotive-locksmith' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>
                 <Card hover className="p-8 border-gray-100 h-full flex flex-col justify-center">

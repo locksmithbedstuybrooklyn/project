@@ -103,9 +103,9 @@ export default function PreventLockoutsBlogPage() {
           <h3 className="text-2xl font-bold mb-8">Quick Links</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
             {[
-              { name: 'Car Lockout Service', href: '/services/car-lockout' },
-              { name: 'Car Key Replacement', href: '/services/car-key-replacement' },
-              { name: '24-Hour Locksmith', href: '/services/24-hour-locksmith' },
+              { name: 'Car Lockout Service', href: '/services/automotive-locksmith' },
+              { name: 'Car Key Replacement', href: '/services/automotive-locksmith' },
+              { name: '24-Hour Locksmith', href: '/services/24-hour-emergency-locksmith' },
               { name: 'Request Quote', href: '/quote' }
             ].map((link) => (
               <Link key={link.name} href={link.href}>
