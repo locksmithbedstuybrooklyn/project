@@ -3,7 +3,6 @@ import { Service, Location, BlogPost, Testimonial } from '@/types';
 // ─── SERVICES ─────────────────────────────────────────────────────────────────
 
 export const services: Service[] = [
-export const services: Service[] = [
   {
     id: 'automotive-locksmith',
     name: 'Automotive Locksmith',
