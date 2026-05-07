@@ -26,7 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: BASE_URL, changeFrequency: 'weekly' as const, priority: 1.0 },
     { url: `${BASE_URL}/services`, changeFrequency: 'monthly' as const, priority: 0.9 },
     { url: `${BASE_URL}/locations`, changeFrequency: 'monthly' as const, priority: 0.9 },
-    { url: `${BASE_URL}/service-areas`, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE_URL}/about`, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE_URL}/contact`, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE_URL}/booking`, changeFrequency: 'monthly' as const, priority: 0.8 },
