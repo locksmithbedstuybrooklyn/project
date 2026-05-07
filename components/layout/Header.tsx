@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <>
       {/* Top Trust Bar */}
-      <div className="bg-gray-950 text-white py-2 overflow-hidden border-b border-white/5">
+      <div className="hidden md:block bg-gray-950 text-white py-2 overflow-hidden border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-[0.2em] italic">
             <div className="flex items-center gap-6">
@@ -32,7 +32,7 @@ export default function Header() {
               </div>
             </div>
             <div className="flex gap-6">
-              <span className="text-action-orange hidden sm:inline">24/7 Emergency Dispatch</span>
+              <span className="text-action-orange">24/7 Emergency Dispatch</span>
               <a href="tel:(718)568-6597" className="hover:text-action-orange transition-colors">(718) 568-6597</a>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function Header() {
                 { name: 'Services', href: '/services' },
                 { name: 'Locations', href: '/locations' },
                 { name: 'Pricing', href: '/price-estimator' },
-                { name: 'Authority Blog', href: '/blog' },
+                { name: 'Blog', href: '/blog' },
               ].map((link) => (
                 <Link 
                   key={link.name} 
@@ -93,14 +93,16 @@ export default function Header() {
             </div>
  
             {/* Mobile Menu Button */}
-            <div className="lg:hidden flex items-center gap-3">
-              <MasterBadge variant="compact" />
+            <div className="lg:hidden flex items-center gap-2">
+              <a href="tel:(718)568-6597" className="w-10 h-10 rounded-full bg-action-orange text-white flex items-center justify-center shadow-lg active:scale-95 transition-transform" aria-label="Call Now">
+                <Phone size={18} />
+              </a>
               <button
                 className="p-2 text-gray-900 hover:text-action-orange transition-colors"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label="Toggle menu"
               >
-                {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
+                {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
               </button>
             </div>
           </div>
@@ -108,8 +110,8 @@ export default function Header() {
  
         {/* Mobile Navigation */}
         <div 
-          className={`fixed inset-0 top-[116px] bg-white z-40 transition-all duration-500 lg:hidden ${
-            isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-full pointer-events-none'
+          className={`absolute top-full left-0 w-full bg-white shadow-2xl border-t border-gray-100 transition-all duration-300 lg:hidden ${
+            isMenuOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-4 invisible'
           }`}
         >
           <div className="p-8 space-y-8">
@@ -118,14 +120,14 @@ export default function Header() {
                 { name: 'All Services', href: '/services' },
                 { name: 'Service Areas', href: '/locations' },
                 { name: 'Price Estimator', href: '/price-estimator' },
-                { name: 'Authority Blog', href: '/blog' },
-                { name: 'About Expertise', href: '/about' },
-                { name: 'Contact Unit', href: '/contact' },
+                { name: 'Helpful Guides', href: '/blog' },
+                { name: 'About Us', href: '/about' },
+                { name: 'Contact', href: '/contact' },
               ].map((link) => (
                 <Link 
                   key={link.name} 
                   href={link.href} 
-                  className="flex items-center justify-between text-3xl font-black uppercase italic tracking-tighter text-gray-900 group"
+                  className="flex items-center justify-between text-2xl font-black uppercase italic tracking-tighter text-gray-900 group"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}

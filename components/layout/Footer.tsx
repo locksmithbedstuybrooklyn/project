@@ -14,7 +14,7 @@ export default function Footer() {
               Bed-Stuy <span className="text-action-orange">Locksmith</span>
             </h3>
             <p className="text-gray-400 text-sm font-medium leading-relaxed mb-8">
-              Brooklyn's technical authority in non-destructive entry, high-security hardware, and automotive electronic systems. Licensed, insured, and neighborhood-rooted since 2010.
+              Reliable local locksmith service in Brooklyn. We provide fast, damage-free entry and hardware installation. Licensed and insured since 2010.
             </p>
             <div className="space-y-4">
               <a href="tel:(718)568-6597" className="group flex items-center gap-4 text-xl font-black italic hover:text-action-orange transition-colors">
@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { name: 'Automotive Systems', href: '/services/automotive-locksmith' },
-                { name: 'Residential Authority', href: '/services/residential-lockout' },
+                { name: 'Residential Locks', href: '/services/residential-lockout' },
                 { name: 'Hardware Installation', href: '/services/lock-installation' },
                 { name: 'Cylinder Rekeying', href: '/services/lock-rekeying' },
                 { name: 'High-Security Upgrade', href: '/services/lock-replacement' },
@@ -53,12 +53,11 @@ export default function Footer() {
 
           {/* Neighborhood Hubs */}
           <div>
-            <h4 className="text-xs font-black uppercase tracking-[0.25em] text-gray-500 mb-8 italic">Regional Hubs</h4>
+            <h4 className="text-xs font-black uppercase tracking-[0.25em] text-gray-500 mb-8 italic">Service Areas</h4>
             <ul className="grid grid-cols-1 gap-3">
               {[
                 'Bed-Stuy', 'Crown Heights', 'Williamsburg', 
-                'Bushwick', 'Greenpoint', 'Prospect Heights',
-                'Astoria', 'Long Island City'
+                'Bushwick', 'Greenpoint', 'Prospect Heights'
               ].map((loc) => (
                 <li key={loc}>
                   <Link href={`/locations/${loc.toLowerCase().replace(/\s+/g, '-')}`} className="group text-sm font-bold text-gray-400 hover:text-white flex items-center gap-2 transition-all italic uppercase tracking-tight">
@@ -75,7 +74,7 @@ export default function Footer() {
             <h4 className="text-xs font-black uppercase tracking-[0.25em] text-gray-500 mb-8 italic">Resource Center</h4>
             <ul className="space-y-3">
               {[
-                { name: 'Masterclass Blog', href: '/blog' },
+                { name: 'Helpful Guides', href: '/blog' },
                 { name: 'Price Estimator', href: '/price-estimator' },
                 { name: 'Security Audits', href: '/quote' },
                 { name: 'Technical FAQ', href: '/faq' },
@@ -101,10 +100,8 @@ export default function Footer() {
               <span className="flex items-center gap-2"><Clock size={12} className="text-trust-blue" /> 20-Min Response</span>
               <span className="flex items-center gap-2"><Shield size={12} className="text-safety-green" /> Licensed &amp; Insured</span>
             </div>
-            <div className="text-[10px] font-black text-gray-600 uppercase tracking-widest italic text-center md:text-right">
-              &copy; {new Date().getFullYear()} BED-STUY LOCKSMITH AUTHORITY. ALL RIGHTS RESERVED. 
-              <br className="md:hidden" />
-              <span className="hidden md:inline ml-2">•</span> DESIGNED FOR 2026 STANDARDS.
+            <div className="text-[10px] font-black text-gray-600 uppercase tracking-widest italic text-center md:text-right mt-6 md:mt-0">
+              &copy; {new Date().getFullYear()} BED-STUY LOCKSMITH. ALL RIGHTS RESERVED.
             </div>
           </div>
         </div>
