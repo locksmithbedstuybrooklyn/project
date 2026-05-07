@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Massive Authority Hero */}
-      <section className="relative bg-gray-900 text-white pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden">
+      <section className="relative bg-gray-900 text-white pt-16 pb-12 md:pt-24 md:pb-16 overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-trust-blue/20 to-transparent"></div>
 
@@ -29,11 +29,11 @@ export default function Home() {
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 tracking-tighter uppercase italic leading-none">
                 Brooklyn <span className="text-action-orange">Locksmith</span>
               </h1>
-              <p className="text-xl md:text-3xl text-blue-100 mb-12 max-w-xl font-medium leading-tight">
+              <p className="text-xl md:text-3xl text-blue-100 mb-8 max-w-xl font-medium leading-tight">
                 We provide <span className="text-white font-bold">reliable locksmith services</span> for your home and car in Bed-Stuy.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-6 mb-16">
+              <div className="flex flex-col sm:flex-row gap-6 mb-8">
                 <a href="tel:(718)568-6597">
                   <Button size="large" className="w-full bg-action-orange hover:bg-orange-600 text-white font-black px-12 py-8 rounded-2xl text-2xl shadow-2xl shadow-orange-900/40 uppercase italic">
                     <Phone className="mr-3" size={28} />
