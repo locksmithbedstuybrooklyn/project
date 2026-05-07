@@ -56,14 +56,13 @@ export default function Header() {
             </Link>
  
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-10">
               {[
                 { name: 'Services', href: '/services' },
                 { name: 'Locations', href: '/locations' },
                 { name: 'Pricing', href: '/price-estimator' },
                 { name: 'Blog', href: '/blog' },
-                { name: 'About', href: '/about' },
-                { name: 'Contact', href: '/contact' },
+                { name: 'FAQ', href: '/faq' },
               ].map((link) => (
                 <Link 
                   key={link.name} 
@@ -78,18 +77,18 @@ export default function Header() {
  
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center space-x-6">
-              <a href="tel:(718)568-6597" className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-action-orange text-white flex items-center justify-center animate-pulse">
+              <a href="tel:(718)568-6597" className="flex items-center gap-3 group">
+                <div className="w-10 h-10 rounded-full bg-action-orange text-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-orange-500/20">
                   <Phone size={18} />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 italic">Expert Dispatch</span>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 italic">24/7 Expert Dispatch</span>
                   <span className="text-lg font-black text-gray-900 tracking-tight italic">(718) 568-6597</span>
                 </div>
               </a>
-              <Link href="/quote">
-                <Button size="medium" className="bg-gray-900 hover:bg-gray-800 text-white font-black px-8 py-4 rounded-xl uppercase italic tracking-tight shadow-lg">
-                  Free Quote
+              <Link href="/booking">
+                <Button size="medium" className="bg-trust-blue hover:bg-blue-900 text-white font-black px-10 py-4 rounded-xl uppercase italic tracking-tight shadow-xl shadow-blue-500/20 active:scale-95 transition-all">
+                  Book Online
                 </Button>
               </Link>
             </div>
@@ -112,7 +111,7 @@ export default function Header() {
  
         {/* Mobile Navigation */}
         <div 
-          className={`absolute top-full left-0 w-full bg-white shadow-2xl border-t border-gray-100 transition-all duration-300 lg:hidden ${
+          className={`absolute top-full left-0 w-full bg-white shadow-3xl border-t border-gray-100 transition-all duration-500 lg:hidden ${
             isMenuOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-4 invisible'
           }`}
         >
@@ -123,8 +122,7 @@ export default function Header() {
                 { name: 'Service Areas', href: '/locations' },
                 { name: 'Price Estimator', href: '/price-estimator' },
                 { name: 'Helpful Guides', href: '/blog' },
-                { name: 'About Us', href: '/about' },
-                { name: 'Contact', href: '/contact' },
+                { name: 'Common FAQs', href: '/faq' },
               ].map((link) => (
                 <Link 
                   key={link.name} 
@@ -139,16 +137,16 @@ export default function Header() {
             </nav>
             
             <div className="pt-12 space-y-6">
+              <Link href="/booking" className="block" onClick={() => setIsMenuOpen(false)}>
+                <Button size="large" className="w-full bg-trust-blue text-white font-black py-6 rounded-2xl text-2xl uppercase italic shadow-2xl">
+                  Book Online Now
+                </Button>
+              </Link>
               <a href="tel:(718)568-6597" className="block">
-                <Button size="large" className="w-full bg-action-orange hover:bg-orange-600 text-white font-black py-6 rounded-2xl text-xl uppercase italic shadow-2xl">
+                <Button size="large" variant="secondary" className="w-full border-2 border-action-orange text-action-orange font-black py-6 rounded-2xl text-2xl uppercase italic">
                   Call Dispatch
                 </Button>
               </a>
-              <Link href="/quote" className="block" onClick={() => setIsMenuOpen(false)}>
-                <Button size="large" variant="secondary" className="w-full bg-gray-900 text-white font-black py-6 rounded-2xl text-xl uppercase italic">
-                  Get Free Quote
-                </Button>
-              </Link>
             </div>
           </div>
         </div>
