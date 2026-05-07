@@ -15,7 +15,7 @@ Disallow: /wp-content/plugins/
 Disallow: /wp-content/themes/
 
 # Sitemap location
-Sitemap: https://locksmithbedstuy.com/sitemap.xml
+Sitemap: https://www.locksmithbedstuy.com/sitemap.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1`;
