@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { sendTelegramMessage, formatTelegramMessage } from '@/lib/telegram';
 
 export const runtime = 'edge';
 
@@ -12,15 +13,20 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    // In a real app, you would:
-    // 1. Save to database
-    // 2. Send email confirmation
-    // 3. Send Telegram notification
+    // Send Telegram Notification
+    const message = formatTelegramMessage('New Booking Confirmed', {
+      name,
+      phone,
+      email,
+      service,
+      subService,
+      date,
+      time,
+      address,
+      notes
+    });
     
-    // Process booking request (in a real app, this would send an email or save to DB)
-
-    // Simulate delay
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await sendTelegramMessage(message);
 
     return NextResponse.json({ success: true, message: 'Booking confirmed' }, { status: 200 });
   } catch (error) {

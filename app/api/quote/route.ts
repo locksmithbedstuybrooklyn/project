@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { sendTelegramMessage, formatTelegramMessage } from '@/lib/telegram';
 
 export const runtime = 'edge';
 
@@ -12,9 +13,17 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
-    // In production, send to email / CRM / Formspree here
-    // For now, log and return success
-    // Process quote request (in a real app, this would send an email)
+    // Send Telegram Notification
+    const message = formatTelegramMessage('New Quote Request', {
+      name,
+      phone,
+      email,
+      service: serviceType,
+      location,
+      description
+    });
+    
+    await sendTelegramMessage(message);
 
     return NextResponse.json({ success: true, message: 'Quote request received' }, { status: 200 });
   } catch (error) {
