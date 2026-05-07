@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Phone, Clock, Shield, CheckCircle, ArrowRight, Hammer, Wrench, AlertTriangle, Zap, Building2, Home } from 'lucide-react';
+import { Phone, Clock, Shield, CheckCircle, ArrowRight, Hammer, Wrench, AlertTriangle, Zap, Building2, Home, Settings, Key } from 'lucide-react';
 import Button from '@/components/common/Button';
 import Card from '@/components/common/Card';
 import QuoteForm from '@/components/forms/QuoteForm';

@@ -30,6 +30,7 @@ Your key is stuck. Do not force it. We repair stuck ignitions for most cars. You
     slug: 'lock-installation',
     description: 'Expert lock installation for residential & commercial. Deadbolts, smart locks, mortise, and high-security hardware.',
     icon: '🔒',
+    image: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80',
     keywords: ['lock installation', 'install deadbolt', 'smart lock installation', 'high security locks', 'mortise lock install'],
     updatedAt: new Date('2026-05-06'),
     content: `[[H2:Secure Your Home]]

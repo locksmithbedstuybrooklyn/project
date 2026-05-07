@@ -3,49 +3,81 @@ import { services, locations, blogPosts } from '@/lib/content';
 
 const BASE_URL = 'https://www.locksmithbedstuy.com';
 
+// Deterministic random date generator based on a string seed (URL)
+// Generates a date between Feb 1, 2026 and May 6, 2026
+function getRandomDateFromUrl(url: string): Date {
+  let hash = 0;
+  for (let i = 0; i < url.length; i++) {
+    hash = url.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  
+  // Convert hash to a pseudo-random number between 0 and 1
+  const random = Math.abs(Math.sin(hash));
+  
+  // Feb 1, 2026 to May 6, 2026
+  const start = new Date('2026-02-01T00:00:00Z').getTime();
+  const end = new Date('2026-05-06T00:00:00Z').getTime();
+  
+  return new Date(start + random * (end - start));
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+  const corePages = [
+    { url: BASE_URL, changeFrequency: 'weekly' as const, priority: 1.0 },
+    { url: `${BASE_URL}/services`, changeFrequency: 'monthly' as const, priority: 0.9 },
+    { url: `${BASE_URL}/locations`, changeFrequency: 'monthly' as const, priority: 0.9 },
+    { url: `${BASE_URL}/service-areas`, changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${BASE_URL}/about`, changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${BASE_URL}/contact`, changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${BASE_URL}/booking`, changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${BASE_URL}/quote`, changeFrequency: 'monthly' as const, priority: 0.9 },
+    { url: `${BASE_URL}/faq`, changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${BASE_URL}/blog`, changeFrequency: 'weekly' as const, priority: 0.9 },
+    { url: `${BASE_URL}/gallery`, changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${BASE_URL}/testimonials`, changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${BASE_URL}/price-estimator`, changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${BASE_URL}/privacy-policy`, changeFrequency: 'yearly' as const, priority: 0.4 },
+    { url: `${BASE_URL}/terms-of-service`, changeFrequency: 'yearly' as const, priority: 0.4 },
+  ];
 
   return [
     // Core pages
-    { url: BASE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
-    { url: `${BASE_URL}/services`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/locations`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/service-areas`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/booking`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/quote`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/faq`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${BASE_URL}/gallery`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE_URL}/testimonials`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${BASE_URL}/price-estimator`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${BASE_URL}/terms-of-service`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    ...corePages.map(page => ({
+      ...page,
+      lastModified: getRandomDateFromUrl(page.url),
+    })),
 
     // Primary service pages
-    ...services.map((service) => ({
-      url: `${BASE_URL}/services/${service.slug}`,
-      lastModified: service.updatedAt,
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-    })),
+    ...services.map((service) => {
+      const url = `${BASE_URL}/services/${service.slug}`;
+      return {
+        url,
+        lastModified: getRandomDateFromUrl(url),
+        changeFrequency: 'monthly' as const,
+        priority: 0.9,
+      };
+    }),
 
     // Location pages
-    ...locations.map((location) => ({
-      url: `${BASE_URL}/locations/${location.slug}`,
-      lastModified: location.updatedAt,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    })),
+    ...locations.map((location) => {
+      const url = `${BASE_URL}/locations/${location.slug}`;
+      return {
+        url,
+        lastModified: getRandomDateFromUrl(url),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+      };
+    }),
 
     // Blog pages
-    ...blogPosts.map((post) => ({
-      url: `${BASE_URL}/blog/${post.slug}`,
-      lastModified: post.updatedAt,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    })),
+    ...blogPosts.map((post) => {
+      const url = `${BASE_URL}/blog/${post.slug}`;
+      return {
+        url,
+        lastModified: getRandomDateFromUrl(url),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+      };
+    }),
   ];
 }
