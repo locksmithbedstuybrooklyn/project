@@ -56,12 +56,14 @@ export default function Header() {
             </Link>
  
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-10">
+            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
               {[
                 { name: 'Services', href: '/services' },
                 { name: 'Locations', href: '/locations' },
                 { name: 'Pricing', href: '/price-estimator' },
                 { name: 'Blog', href: '/blog' },
+                { name: 'About', href: '/about' },
+                { name: 'Contact', href: '/contact' },
               ].map((link) => (
                 <Link 
                   key={link.name} 

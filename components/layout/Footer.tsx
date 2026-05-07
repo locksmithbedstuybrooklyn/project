@@ -74,6 +74,8 @@ export default function Footer() {
             <h4 className="text-xs font-black uppercase tracking-[0.25em] text-gray-500 mb-8 italic">Resource Center</h4>
             <ul className="space-y-3">
               {[
+                { name: 'About Us', href: '/about' },
+                { name: 'Contact Dispatch', href: '/contact' },
                 { name: 'Helpful Guides', href: '/blog' },
                 { name: 'Price Estimator', href: '/price-estimator' },
                 { name: 'Security Audits', href: '/quote' },
