@@ -4,6 +4,7 @@ export const runtime = 'edge';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import LocalBusinessSchema from '@/components/schema/LocalBusinessSchema';
+import Analytics from '@/components/common/Analytics';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -44,6 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="bg-white text-gray-900 font-sans antialiased">
+        <Analytics />
         <LocalBusinessSchema />
         <Header />
         <main>{children}</main>
