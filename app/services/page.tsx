@@ -8,6 +8,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Locksmith Services Bed-Stuy | Car, Residential, Commercial | 24/7',
   description: 'All locksmith services in Bed-Stuy: car unlock, key replacement, lock repair, lock installation, ignition repair, emergency service. Call (718) 568-6597.',
+  alternates: { canonical: 'https://www.locksmithbedstuy.com/services' },
 };
 
 export default function ServicesPage() {

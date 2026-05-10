@@ -7,6 +7,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Instant Locksmith Price Estimator | 2026 Transparent Pricing | Bed-Stuy',
   description: 'Get an instant, transparent price estimate for any locksmith service in Bed-Stuy and Brooklyn. No hidden fees, flat-rate options, and immediate dispatch available 24/7.',
+  alternates: { canonical: 'https://www.locksmithbedstuy.com/price-estimator' },
 };
 
 export default function PriceEstimatorPage() {

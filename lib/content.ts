@@ -343,7 +343,7 @@ Car lockouts happen. Lost keys happen. Ignition issues happen. Our vans are full
 export const blogPosts: BlogPost[] = [
   {
     id: 'locked-out-car',
-    title: 'Locked Out of Your Car? The Ultimate 2026 Guide to Safe Entry in Brooklyn',
+    title: 'Locked Out of Your Car? 2026 Ultimate Guide to Safe Entry',
     slug: 'locked-out-car',
     image: '/images/blog/car-lockout.webp',
     description: "The most comprehensive guide to handling a car lockout in Bed-Stuy and NYC. From basic DIY safety to advanced Lishi decoding and 20-minute professional response strategies.",
@@ -399,10 +399,10 @@ A car lockout is a test of patience, but with the right professional partner, it
   },
   {
     id: 'prevent-lockouts',
-    title: 'The Master Guide to Never Getting Locked Out Again: Behavioral & Tech Solutions',
+    title: 'Never Get Locked Out Again: Behavioral & Tech Solutions (2026)',
     slug: 'prevent-lockouts',
     image: '/images/blog/prevent-lockouts.webp',
-    description: 'A deep dive into the psychology and technology of lockout prevention. From 2026 smart fobs to the "Key-in-Hand" rule, learn how to secure your freedom.',
+    description: 'A deep dive into lockout prevention. From 2026 smart fobs to the "Key-in-Hand" rule, learn how to secure your freedom and security.',
     content: `[[H2:The Psychology of a Lockout]]
 Getting locked out is rarely a hardware failure—it is usually a failure of routine. In the fast-paced environment of Brooklyn, where we are constantly juggling phones, bags, and coffee, the simple act of keeping track of a key can slip. This guide provides a tiered defense system to ensure you never have to call us for a lockout again.
 
@@ -458,7 +458,7 @@ A lockout is a choice. By combining disciplined habits with modern technological
     title: 'The 2026 Ultimate Guide to Car Key Replacement: Tech, Cost, and Speed',
     slug: 'car-key-replacement-guide',
     image: '/images/blog/car-key-replacement.webp',
-    description: 'Lost your only car key? Modern keys are complex computers. Learn how laser cutting and transponder programming work in this 2500-word authority guide.',
+    description: 'Lost your car key? Learn how laser cutting and transponder programming work in this 2026 authority guide to car key replacement.',
     content: `[[H2:Introduction: Your Key is a Computer]]
 In 2026, a car key is no longer just a piece of brass. It is a sophisticated cryptographic device that communicates with your vehicle's Engine Control Unit (ECU) via encrypted radio frequencies. When you lose your only key, you aren't just missing a tool; you've lost the digital handshake required to start your engine. This guide explains the process of car key replacement from the basic logistics to the master-level programming.
 
@@ -592,7 +592,7 @@ Security is a proactive process, not a reactive one. By following this master ch
   },
   {
     id: 'lock-replacement-guide',
-    title: 'The 2026 Homeowner’s Master Guide to Lock Replacement: Hardware & Security',
+    title: 'Homeowner’s Master Guide to Lock Replacement & Security (2026)',
     slug: 'lock-replacement-guide',
     image: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80',
     description: "Upgrade your security with confidence. Our 2500-word guide covers every technical aspect of lock replacement for Brooklyn properties, from Grade 1 hardware to smart integration.",

@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Service | Bed-Stuy Locksmith',
   description: 'Terms of service for Bed-Stuy Locksmith. Please read before using our services.',
+  alternates: { canonical: 'https://www.locksmithbedstuy.com/terms-of-service' },
 };
 
 export default function TermsOfServicePage() {

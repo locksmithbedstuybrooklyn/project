@@ -9,6 +9,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Customer Reviews | Bed-Stuy Locksmith Authority | 4.9 Stars',
   description: 'Verified customer testimonials for Bed-Stuy Locksmith. Read why Brooklyn and Queens residents trust us for 24/7 emergency lockouts and security upgrades.',
+  alternates: { canonical: 'https://www.locksmithbedstuy.com/testimonials' },
 };
 
 export default function TestimonialsPage() {

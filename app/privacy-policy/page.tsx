@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | Bed-Stuy Locksmith',
   description: 'Privacy policy for Bed-Stuy Locksmith. How we protect your personal information.',
+  alternates: { canonical: 'https://www.locksmithbedstuy.com/privacy-policy' },
 };
 
 export default function PrivacyPolicyPage() {
