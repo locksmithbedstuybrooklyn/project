@@ -16,6 +16,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${post.title} | Bed-Stuy Locksmith`,
     description: post.description,
+    alternates: { canonical: `https://www.locksmithbedstuy.com/blog/${slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.description,
+      type: 'article',
+      url: `https://www.locksmithbedstuy.com/blog/${slug}`,
+      images: [{ url: post.image.startsWith('http') ? post.image : `https://www.locksmithbedstuy.com${post.image}`, alt: post.title }],
+    },
   };
 }
 

@@ -1,240 +1,269 @@
 import Link from 'next/link';
-import { Phone, Clock, Shield, CheckCircle, ArrowRight, Home, Zap, AlertTriangle, Key, MapPin } from 'lucide-react';
+import NextImage from 'next/image';
+import { Phone, Clock, Shield, CheckCircle, ArrowRight, Home, Zap, AlertTriangle, Key, MapPin, UserCheck, Lock, Unlock } from 'lucide-react';
 import Button from '@/components/common/Button';
 import Card from '@/components/common/Card';
 import QuoteForm from '@/components/forms/QuoteForm';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Professional Residential Lockout Services | Bed-Stuy | Fast 24/7 Entry',
-  description: 'Locked out of your home or apartment in Bed-Stuy? Fast, damage-free entry. 20-minute response guarantee. Available 24/7. Call (718) 568-6597.',
+  title: 'Fast Residential Lockout Bed-Stuy | Damage-Free Entry | 24/7 Service',
+  description: 'Locked out of your home or apartment in Bed-Stuy? Fast, damage-free entry. 20-minute response time. Licensed NYC #2103442. Available 24/7. Call (718) 568-6597.',
 };
 
 export default function ResidentialLockoutPage() {
   const faqs = [
-    { q: "How much does residential lockout service cost?", a: "Standard residential lockouts typically cost between $75-150. Pricing depends on the type of lock (e.g., high-security vs. standard) and the time of day." },
-    { q: "How long until you arrive?", a: "We guarantee a 20-30 minute arrival time anywhere in Bed-Stuy and the surrounding 5-mile radius." },
-    { q: "Can you unlock any residential lock?", a: "Yes, we can unlock standard deadbolts, door knobs, mortise locks, high-security cylinders, and even smart locks with backup mechanical overrides." },
-    { q: "What if I don't have ID?", a: "We are legally required to verify that you have the right to enter the property. If your ID is inside, we can often verify ownership via neighbors, building management, or by checking the ID immediately upon entry." },
-    { q: "Do you damage the door?", a: "No. We use professional non-destructive entry techniques such as picking, bypassing, or shimming. We only drill as a last resort on high-security locks, and even then, only with your permission." },
-    { q: "Can you help with apartment lockouts?", a: "Yes, we help with apartment lockouts daily. We work with all types of apartment door locks common in Brooklyn brownstones and modern buildings." },
-    { q: "What about sliding door lockouts?", a: "Yes, we can safely unlock sliding patio doors using specialized tools that don't damage the track or glass." },
-    { q: "Can you help if I'm locked out with a child inside?", a: "YES. This is an absolute emergency. Call us and tell the operator there is a child inside—we will prioritize your call above all others and dispatch the nearest unit immediately." },
-    { q: "Do you offer 24/7 service?", a: "Yes, we are available 24 hours a day, 7 days a week, including all holidays." },
-    { q: "Can you make a spare key on the spot?", a: "Yes, once we get you inside, we can create spare keys or even rekey the lock if you lost your keys and are worried about someone else finding them." }
+    { q: "How much does a residential lockout service cost?", a: "Standard residential lockouts typically cost between $75-150. The final price depends on the complexity of the lock (e.g., high-security cylinders vs. standard deadbolts) and whether it's an emergency after-hours call." },
+    { q: "How long will it take for a locksmith to arrive?", a: "We aim for a 20-minute arrival time anywhere in Bed-Stuy. We have mobile units stationed strategically across Brooklyn to ensure the fastest possible response when you're locked out." },
+    { q: "Will you damage my door or lock to get me in?", a: "No. Our technicians specialize in non-destructive entry. We use advanced picking, bypassing, and shimming techniques to open your door without causing any damage to your hardware or frame." },
+    { q: "What if I don't have my ID with me?", a: "We must verify residency for your safety. If your ID is inside, we can often verify your identity via neighbors, building management, or by checking the ID immediately once we gain entry." },
+    { q: "Can you unlock high-security locks or smart locks?", a: "Yes. Our team is trained to handle all types of residential security, from traditional Medeco/Mul-T-Lock cylinders to modern electronic and smart locks." }
+  ];
+
+  const lockoutProcess = [
+    { title: "Emergency Call", desc: "Call (718) 568-6597. Tell us your location and the situation." },
+    { title: "Rapid Dispatch", desc: "The nearest available technician is sent to your address immediately." },
+    { title: "Verification", desc: "For security, we verify your identity and proof of residency on-site." },
+    { title: "Damage-Free Entry", desc: "Our expert opens your door using professional, non-destructive tools." },
+    { title: "Security Check", desc: "We check your lock functionality and offer tips to prevent future issues." }
   ];
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white text-slate-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-trust-blue via-blue-900 to-blue-950 text-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="inline-flex items-center gap-2 bg-blue-500/20 backdrop-blur-sm px-4 py-2 rounded-full text-blue-300 text-sm font-bold mb-8 border border-blue-400/30">
-            <Home size={16} />
-            <span>24/7 Home Access</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-            Professional Residential <br />
-            <span className="text-action-orange uppercase">Lockout Services</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl leading-relaxed">
-            Locked out of your home or apartment? Don't panic. Bed-Stuy's fastest emergency locksmiths are ready to get you back inside safely and without damage.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6">
-            <a href="tel:(718)568-6597" className="w-full sm:w-auto">
-              <Button size="large" className="bg-action-orange hover:bg-orange-600 w-full text-lg font-bold py-6 px-10 shadow-2xl animate-pulse">
-                <Phone className="mr-2" size={24} />
-                Call (718) 568-6597
-              </Button>
-            </a>
-            <Link href="/quote" className="w-full sm:w-auto">
-              <Button variant="secondary" size="large" className="bg-white/10 hover:bg-white/20 text-white border-white/30 w-full text-lg py-6 px-10 backdrop-blur-sm">
-                Get a Quote
-              </Button>
-            </Link>
-          </div>
+      <section className="relative min-h-[85vh] flex items-center pt-20 overflow-hidden bg-slate-900">
+        <div className="absolute inset-0 z-0">
+          <NextImage 
+            src="/images/emergency-locksmith.webp" 
+            alt="Emergency Residential Lockout Bed-Stuy"
+            fill
+            className="object-cover opacity-40 grayscale"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
         </div>
-      </section>
 
-      {/* Introduction */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center mb-24">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Fast, Reliable, Damage-Free Entry</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Bed-Stuy Locksmith provides professional residential lockout services. Whether you're locked out of your brownstone, apartment, or modern condo, we provide fast, non-destructive entry with a 20-minute response guarantee. We're available 24/7 with transparent pricing and professional, licensed technicians who understand the urgency of getting you back into your home.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-blue-600/10 backdrop-blur-md px-4 py-2 rounded-full border border-blue-500/30 mb-8">
+              <Unlock className="text-blue-400" size={16} />
+              <span className="text-blue-300 text-sm font-black tracking-widest uppercase italic">24/7 Home Access Priority</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-8xl font-black text-white leading-[0.9] mb-8 tracking-tighter uppercase italic">
+              Locked Out? <br />
+              <span className="text-blue-600 underline decoration-blue-600/30 underline-offset-8 italic">Back Inside Fast.</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-2xl font-medium italic uppercase tracking-tight">
+              Don't stay on the sidewalk. Bed-Stuy's residential experts provide damage-free entry 24/7. 20-minute response goal.
             </p>
-          </div>
 
-          {/* Section 1 & 2: Scenarios */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
-             <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-8">Home Entry Experts</h2>
-                <div className="space-y-6">
-                   <p className="text-lg text-gray-600">We handle all types of residential entry points and lock mechanisms found across Brooklyn:</p>
-                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      {[
-                        "Apartment Door Entry",
-                        "Brownstone Front Doors",
-                        "Sliding Patio Doors",
-                        "Garage Door Locks",
-                        "Keyless/Smart Locks",
-                        "Window Lock Issues"
-                      ].map((item, i) => (
-                        <div key={i} className="flex items-center gap-3 p-4 bg-gray-50 rounded-2xl border border-gray-100">
-                          <CheckCircle className="text-safety-green" size={20} />
-                          <span className="font-bold text-gray-800">{item}</span>
-                        </div>
-                      ))}
-                   </div>
-                   <div className="p-8 bg-blue-50 border-l-4 border-trust-blue rounded-r-2xl mt-8">
-                      <p className="text-blue-900 italic font-medium leading-relaxed">
-                         "Lost my keys at 1 AM. They were here in 15 minutes and got me in without changing the lock. Professional and fair price!" — <span className="font-bold">Maria R., Bed-Stuy</span>
-                      </p>
-                   </div>
-                </div>
-             </div>
-             <div className="relative">
-                <Card className="p-10 border-gray-100 shadow-2xl relative z-10">
-                   <h3 className="text-2xl font-bold mb-8">Need Help Now?</h3>
-                   <QuoteForm />
-                </Card>
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-action-orange/10 rounded-full blur-2xl"></div>
-             </div>
-          </div>
+            <div className="flex flex-col sm:flex-row gap-6">
+              <a href="tel:(718)568-6597">
+                <Button size="large" className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto h-20 px-12 text-2xl font-black shadow-[0_0_40px_rgba(37,99,235,0.3)] border-0 uppercase italic">
+                  <Phone className="mr-3" size={28} />
+                  (718) 568-6597
+                </Button>
+              </a>
+              <Link href="/quote">
+                <Button variant="secondary" size="large" className="bg-white/10 hover:bg-white/20 text-white border-white/20 backdrop-blur-md w-full sm:w-auto h-20 px-12 text-2xl font-black uppercase italic tracking-tighter">
+                  Request Quote
+                </Button>
+              </Link>
+            </div>
 
-          {/* Section 3: Emergency Situations */}
-          <div className="mb-32">
-             <div className="bg-red-600 text-white rounded-[3rem] p-12 md:p-20 relative overflow-hidden shadow-xl">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
-                   <div>
-                      <AlertTriangle size={64} className="mb-8" />
-                      <h2 className="text-3xl md:text-5xl font-bold mb-8 text-balance uppercase tracking-tight">Critical Emergency?</h2>
-                      <p className="text-xl mb-10 leading-relaxed text-red-50">
-                         Is there a child or elderly person locked inside? Are your stove or appliances on? This is a priority one emergency.
-                      </p>
-                      <a href="tel:(718)568-6597">
-                        <Button size="large" className="bg-white text-red-600 hover:bg-gray-100 font-bold px-12 py-6 text-xl">
-                          Priority Dispatch: (718) 568-6597
-                        </Button>
-                      </a>
-                   </div>
-                   <div className="bg-black/10 border border-white/20 p-10 rounded-3xl backdrop-blur-md">
-                      <h4 className="text-2xl font-bold mb-6">Our Emergency Protocol</h4>
-                      <ul className="space-y-4">
-                         <li className="flex items-center gap-3"><Zap size={20} className="text-action-orange" /> Nearest tech diverted immediately</li>
-                         <li className="flex items-center gap-3"><Zap size={20} className="text-action-orange" /> 15-minute target arrival</li>
-                         <li className="flex items-center gap-3"><Zap size={20} className="text-action-orange" /> Real-time location tracking</li>
-                         <li className="flex items-center gap-3"><Zap size={20} className="text-action-orange" /> Guaranteed entry within minutes</li>
-                      </ul>
-                   </div>
-                </div>
-             </div>
-          </div>
-
-          {/* Section 5: What to do */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
-             <div className="order-2 lg:order-1">
-                <div className="grid grid-cols-1 gap-6">
-                   {[
-                     { step: "01", title: "Stay Calm & Call", desc: "Don't try to break in. Call us at (718) 568-6597 and explain your situation." },
-                     { step: "02", title: "Verify Residence", desc: "Have your ID or proof of residency ready for when our technician arrives." },
-                     { step: "03", title: "Wait in Safety", desc: "Wait for our marked vehicle. We'll arrive in 20-30 minutes and begin entry immediately." },
-                     { step: "04", title: "Reset & Secure", desc: "Once inside, we can make spare keys or rekey your locks if keys were lost." }
-                   ].map((item, i) => (
-                     <div key={i} className="flex gap-6 items-start p-6 bg-gray-50 rounded-2xl border border-gray-100">
-                        <span className="text-4xl font-black text-blue-200">{item.step}</span>
-                        <div>
-                           <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                           <p className="text-gray-600">{item.desc}</p>
-                        </div>
-                     </div>
-                   ))}
-                </div>
-             </div>
-             <div className="order-1 lg:order-2">
-                <h2 className="text-3xl font-bold text-gray-900 mb-8">What to Do When Locked Out</h2>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                   Getting locked out is stressful, but taking the wrong steps can make it much worse. Modern locks and doors are expensive to repair if forced incorrectly.
-                </p>
-                <div className="flex items-center gap-4 p-6 bg-action-orange/5 rounded-2xl border border-action-orange/20 mb-8">
-                   <Shield className="text-action-orange flex-shrink-0" size={32} />
-                   <p className="text-gray-800 font-medium italic">"Attempting to pick your own lock with hairpins or screwdrivers can permanently damage the cylinder, requiring a full replacement instead of a simple unlock."</p>
-                </div>
-                <Link href="/blog/emergency-locksmith-tips">
-                  <Button variant="outline" className="border-trust-blue text-trust-blue hover:bg-trust-blue hover:text-white">View Full Lockout Tips</Button>
-                </Link>
-             </div>
-          </div>
-
-          {/* Section 6: Process */}
-          <div className="bg-gray-50 p-12 md:p-20 rounded-[3rem] mb-32">
-             <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold">Why We Are Bed-Stuy's #1 Choice</h2>
-             </div>
-             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {[
-                  { title: "20-Min Arrival", icon: <Clock size={32} /> },
-                  { title: "Damage-Free", icon: <Shield size={32} /> },
-                  { title: "Marked Vans", icon: <MapPin size={32} /> },
-                  { title: "Licensed Pros", icon: <Key size={32} /> }
-                ].map((item, i) => (
-                  <div key={i} className="bg-white p-8 rounded-3xl text-center border border-gray-100 shadow-sm">
-                     <div className="text-trust-blue mb-6 flex justify-center">{item.icon}</div>
-                     <h4 className="font-bold text-gray-900 uppercase tracking-tighter">{item.title}</h4>
-                  </div>
-                ))}
-             </div>
-          </div>
-
-          {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mb-32">
-            <h2 className="text-3xl font-bold text-center mb-16 uppercase tracking-widest text-gray-400">Lockout FAQ</h2>
-            <div className="space-y-6">
-              {faqs.map((faq, i) => (
-                <div key={i} className="group">
-                  <div className="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">{faq.q}</h3>
-                    <p className="text-gray-700 leading-relaxed">{faq.a}</p>
-                  </div>
-                </div>
-              ))}
+            <div className="mt-16 flex flex-wrap gap-10 items-center border-t border-white/10 pt-10">
+              <div className="flex items-center gap-3">
+                <Shield className="text-blue-500" size={24} />
+                <span className="text-slate-400 font-bold uppercase italic tracking-widest text-sm">NYC Licensed #2103442</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Home className="text-blue-500" size={24} />
+                <span className="text-slate-400 font-bold uppercase italic tracking-widest text-sm">Bed-Stuy Brownstone Experts</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-trust-blue text-white overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Don't Wait in the Cold</h2>
-          <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Call Bed-Stuy's most reliable residential lockout specialists now. We'll have you back inside in no time.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+      {/* Main Content Section */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-24 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full mb-8 border border-blue-100">
+                <Shield className="text-blue-600" size={20} />
+                <span className="text-blue-700 text-sm font-black uppercase italic tracking-widest">Damage-Free Guarantee</span>
+              </div>
+              <h2 className="text-3xl md:text-6xl font-black text-slate-900 mb-8 leading-[1.1] uppercase italic tracking-tighter">
+                Professional <br /> <span className="text-blue-600">Home Entry</span>
+              </h2>
+              <p className="text-lg text-slate-600 mb-10 leading-relaxed font-medium italic">
+                It happens to the best of us: the door clicks shut, and you're on the outside. At Locksmith Bed Stuy, we specialize in damage-free residential entry for brownstones, apartments, and modern condos.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-6 mb-12">
+                {[
+                  "Apartment Doors",
+                  "Brownstone Entries",
+                  "Sliding Patio Doors",
+                  "High-Security Locks",
+                  "Smart Lock Overrides",
+                  "Bedroom & Internal Locks"
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200 group hover:border-blue-500 transition-colors">
+                    <CheckCircle className="text-blue-600" size={20} />
+                    <span className="font-bold text-slate-800 italic uppercase tracking-tight text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+              <a href="tel:(718)568-6597">
+                <Button size="large" className="bg-slate-900 text-white hover:bg-black h-16 px-10 font-bold uppercase italic border-0">Dispatch Now</Button>
+              </a>
+            </div>
+
+            <div className="relative">
+              <div className="absolute -inset-10 bg-slate-100 rounded-full blur-3xl opacity-50"></div>
+              <div className="relative bg-white border border-slate-200 rounded-[3rem] p-12 shadow-2xl overflow-hidden">
+                <div className="absolute top-0 right-0 p-12 opacity-5 scale-150 rotate-12">
+                  <Key size={200} className="text-blue-600" />
+                </div>
+                <div className="relative z-10">
+                  <h3 className="text-3xl font-black mb-10 italic uppercase tracking-tighter underline decoration-blue-600 decoration-4 underline-offset-8">Request Access</h3>
+                  <QuoteForm />
+                  <div className="mt-10 pt-10 border-t border-slate-100 text-center">
+                    <p className="text-slate-400 font-bold uppercase italic text-xs tracking-widest mb-4">Fastest Response</p>
+                    <a href="tel:(718)568-6597" className="text-blue-600 font-black text-3xl hover:underline italic">
+                      (718) 568-6597
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Critical Emergency Banner */}
+      <section className="bg-red-600 py-16 text-white overflow-hidden relative">
+        <div className="absolute inset-0 opacity-10 flex items-center justify-center pointer-events-none">
+          <AlertTriangle size={400} />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="flex flex-col lg:flex-row items-center gap-12 text-center lg:text-left">
+            <div className="bg-white/10 p-6 rounded-full animate-pulse">
+              <AlertTriangle size={64} className="text-white" />
+            </div>
+            <div className="flex-1">
+              <h2 className="text-3xl md:text-5xl font-black italic uppercase tracking-tighter mb-4 leading-tight">Priority Emergency Dispatch</h2>
+              <p className="text-xl font-bold italic text-red-100 uppercase tracking-tight">Child inside? Stove on? Senior emergency? We divert the nearest unit immediately.</p>
+            </div>
             <a href="tel:(718)568-6597">
-              <Button size="large" className="bg-action-orange hover:bg-orange-600 font-bold px-12 py-6 text-xl shadow-xl">
-                <Phone className="mr-2" size={24} />
-                Call (718) 568-6597
+              <Button size="large" className="bg-white text-red-600 hover:bg-slate-100 h-20 px-12 text-2xl font-black uppercase italic border-0 shadow-2xl">
+                Priority Call
               </Button>
             </a>
           </div>
         </div>
       </section>
 
+      {/* Process Section */}
+      <section className="py-24 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-4 italic tracking-tighter uppercase underline decoration-blue-600 underline-offset-8 italic">Our Fast Process</h2>
+            <p className="text-slate-500 text-lg italic font-medium uppercase tracking-widest">Streamlined for zero stress.</p>
+          </div>
+
+          <div className="grid md:grid-cols-5 gap-10">
+            {lockoutProcess.map((step, i) => (
+              <div key={i} className="text-center group">
+                <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 rotate-3 group-hover:rotate-0">
+                  <span className="font-black text-2xl italic">0{i + 1}</span>
+                </div>
+                <h4 className="text-lg font-black text-slate-900 mb-2 uppercase italic tracking-tight">{step.title}</h4>
+                <p className="text-slate-500 text-sm font-medium leading-relaxed italic">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Local Expertise / Verification Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-slate-900 rounded-[4rem] p-12 md:p-24 text-white relative overflow-hidden border border-white/5">
+            <div className="absolute top-0 right-0 p-24 opacity-5 rotate-12 scale-150">
+              <UserCheck size={300} />
+            </div>
+            <div className="max-w-3xl relative z-10">
+              <h2 className="text-3xl md:text-6xl font-black italic uppercase tracking-tighter mb-10 leading-tight">Verification <br /> <span className="text-blue-500">For Your Safety</span></h2>
+              <p className="text-slate-400 text-xl mb-12 font-medium italic leading-relaxed">
+                As a licensed New York locksmith, we are legally required to verify your right to enter the property. If your ID is inside, don't worry—we can verify via neighbors, building management, or immediately upon entry.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-8">
+                <div className="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
+                  <Shield size={32} className="text-blue-500 mb-6" />
+                  <h4 className="text-xl font-bold italic uppercase tracking-tight mb-4">Secure Protocols</h4>
+                  <p className="text-slate-400 text-sm italic font-medium leading-relaxed">We protect your home by ensuring we never grant access to unauthorized individuals.</p>
+                </div>
+                <div className="bg-white/5 p-8 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
+                  <UserCheck size={32} className="text-blue-500 mb-6" />
+                  <h4 className="text-xl font-bold italic uppercase tracking-tight mb-4">Professionalism</h4>
+                  <p className="text-slate-400 text-sm italic font-medium leading-relaxed">Our technicians are bonded, insured, and background-checked for your peace of mind.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-slate-50 border-y border-slate-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-20 text-center italic uppercase tracking-tighter">Lockout FAQ</h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-3xl p-10 shadow-sm hover:shadow-md transition-all group">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 italic leading-tight group-hover:text-blue-600 transition-colors">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed font-medium italic border-l-4 border-blue-100 pl-8">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 bg-blue-600 text-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-4xl md:text-8xl font-black mb-10 leading-[0.9] tracking-tighter uppercase italic">Back Inside <br /> In Minutes.</h2>
+          <p className="text-xl md:text-2xl text-blue-100 mb-12 max-w-2xl mx-auto font-medium italic uppercase tracking-widest">
+            Dispatching expert locksmiths to Bed-Stuy 24/7.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="tel:(718)568-6597">
+              <Button size="large" className="bg-white text-blue-600 hover:bg-slate-50 h-20 px-12 text-3xl font-black uppercase italic border-0 shadow-2xl transform hover:scale-105 active:scale-95 transition-all">
+                <Phone className="mr-3" size={36} />
+                (718) 568-6597
+              </Button>
+            </a>
+          </div>
+          <p className="mt-10 text-blue-200 font-bold italic uppercase tracking-widest text-sm">24/7 Availability • 20-Min Arrival • NYC #2103442</p>
+        </div>
+      </section>
+
       {/* Related Links */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-12">
             {[
               { name: "Lock Installation", href: "/services/lock-installation" },
               { name: "Lock Replacement", href: "/services/lock-replacement" },
-              { name: "Lock Repair", href: "/services/lock-repair" },
-              { name: "Automotive Locksmith", href: "/services/automotive-locksmith" }
+              { name: "Lock Rekeying", href: "/services/lock-rekeying" },
+              { name: "Emergency Locksmith", href: "/services/24-hour-emergency-locksmith" }
             ].map((link, i) => (
-              <Link key={i} href={link.href} className="text-trust-blue font-bold hover:text-blue-800 flex items-center gap-2">
+              <Link key={i} href={link.href} className="text-blue-600 font-black hover:text-blue-800 flex items-center gap-2 italic uppercase tracking-tight text-sm">
                 {link.name} <ArrowRight size={16} />
               </Link>
             ))}
@@ -244,3 +273,4 @@ export default function ResidentialLockoutPage() {
     </div>
   );
 }
+

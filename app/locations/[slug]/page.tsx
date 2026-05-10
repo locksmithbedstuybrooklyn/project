@@ -18,6 +18,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `Expert Locksmith ${location.name} | 24/7 Rapid Response | (718) 568-6597`,
     description: location.description,
+    alternates: { canonical: `https://www.locksmithbedstuy.com/locations/${slug}` },
+    openGraph: {
+      title: `Locksmith ${location.name} | Bed-Stuy Locksmith`,
+      description: location.description,
+      url: `https://www.locksmithbedstuy.com/locations/${slug}`,
+      type: 'website',
+    },
   };
 }
 

@@ -20,7 +20,9 @@ export function generateArticleSchema(post: any) {
       name: SITE_NAME,
       logo: {
         '@type': 'ImageObject',
-        url: `${SITE_URL}/images/logo.png`,
+        url: `${SITE_URL}/icon-192x192.png`,
+        width: 192,
+        height: 192,
       },
     },
     datePublished: post.publishedAt.toISOString(),
@@ -42,7 +44,7 @@ export function generateLocalBusinessSchema() {
     telephone: PHONE,
     email: 'info@locksmithbedstuy.com',
     url: SITE_URL,
-    image: `${SITE_URL}/images/og-image.png`,
+    image: `${SITE_URL}/images/og-image.webp`,
     description: 'Expert emergency locksmith in Bed-Stuy. 24/7 car unlock, lock replacement, and high-security installations. 20-minute response time.',
     priceRange: '$$',
     openingHoursSpecification: {

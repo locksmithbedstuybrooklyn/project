@@ -16,17 +16,36 @@ export const metadata: Metadata = {
     'Fast emergency locksmith service in Bed-Stuy. Car unlock, key replacement, lock repair. 20-minute response. Available 24/7. Call (718) 568-6597.',
   keywords: ['locksmith', 'bed stuy', 'brooklyn', 'emergency locksmith', 'car unlock', 'lock repair'],
   metadataBase: new URL('https://www.locksmithbedstuy.com'),
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+    other: [{ rel: 'mask-icon', url: '/favicon.svg' }],
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: 'Bed-Stuy Locksmith | Emergency Service 24/7',
     description: 'Fast emergency locksmith service in Bed-Stuy. 20-minute response. Available 24/7.',
     type: 'website',
     url: 'https://www.locksmithbedstuy.com',
     siteName: 'Bed-Stuy Locksmith',
+    images: [
+      {
+        url: 'https://www.locksmithbedstuy.com/images/og-image.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Bed-Stuy Locksmith - Expert Emergency Service in Brooklyn',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Bed-Stuy Locksmith | Emergency Service 24/7',
     description: 'Fast emergency locksmith service in Bed-Stuy. Call (718) 568-6597.',
+    images: ['https://www.locksmithbedstuy.com/images/og-image.webp'],
   },
   alternates: {
     canonical: 'https://www.locksmithbedstuy.com',

@@ -1,242 +1,237 @@
 import Link from 'next/link';
-import { Phone, Clock, Shield, CheckCircle, ArrowRight, RotateCcw, Key, Building2, Home, DollarSign, Zap } from 'lucide-react';
+import Image from 'next/image';
+import { Phone, Clock, Shield, CheckCircle, ArrowRight, RotateCcw, Key, Building2, Home, DollarSign, Zap, ListChecks, UserPlus, Users, Briefcase } from 'lucide-react';
 import Button from '@/components/common/Button';
 import Card from '@/components/common/Card';
 import QuoteForm from '@/components/forms/QuoteForm';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Professional Lock Rekeying Services | Bed-Stuy | Cost-Effective Security',
-  description: 'Change your keys without replacing your locks. 50% cheaper than replacement. Residential & commercial rekeying in Bed-Stuy. Call (718) 568-6597.',
+  title: 'Professional Lock Rekeying Bed-Stuy | 50% Cheaper Than Replacement',
+  description: 'Change your keys without replacing your locks. Expert rekeying for residential & commercial properties in Bed-Stuy. 24/7 service. Call (718) 568-6597.',
 };
 
 export default function LockRekeyingPage() {
   const faqs = [
-    { q: "How much does rekeying cost?", a: "Residential rekeying typically costs $50-100 per lock. For large-scale commercial systems, we provide custom quotes based on the number of cylinders and complexity." },
-    { q: "How long does rekeying take?", a: "Standard residential rekeying takes about 15-30 minutes per lock. A full house or small office can usually be completed in under 2 hours." },
-    { q: "Can you rekey any lock?", a: "We can rekey the vast majority of pin-tumbler locks, including deadbolts, door knobs, and mortise cylinders. Some very cheap or specialty electronic locks may not be rekeyable." },
-    { q: "What's the difference between rekeying and replacement?", a: "Rekeying changes the internal pins so old keys no longer work and a new key does. Replacement involves installing entirely new hardware. Rekeying is significantly cheaper." },
-    { q: "Should I rekey or replace my locks?", a: "If your locks work perfectly but you've moved or lost a key, rekeying is best. If the lock is broken, worn, or you want a style/technology upgrade, replacement is necessary." },
-    { q: "Can you rekey locks on apartment doors?", a: "Yes, we can rekey apartment locks. However, you should check your lease or get landlord permission as they usually require a copy of the new key." },
-    { q: "Do you rekey commercial locks?", a: "Yes, we specialize in commercial cylinder rekeying, including master key systems for offices, retail, and warehouses." },
-    { q: "Can you create a master key system?", a: "Absolutely. We can design and implement a system where individual keys open specific doors, while one master key opens everything." },
-    { q: "How long do rekeyed locks last?", a: "Rekeying does not shorten the life of a lock. In fact, we often clean and lubricate the mechanism during the process, which can help it last longer." },
-    { q: "Can you rekey multiple locks to the same key?", a: "Yes, as long as the locks use the same keyway (the same brand/style of key), we can match them all to a single convenient key." }
+    { q: "What is the difference between rekeying and lock replacement?", a: "Rekeying involves changing the internal pins of your existing lock so that only a new key will work. Replacement involves removing the entire hardware and installing a new unit. Rekeying is typically 50% cheaper and ideal if your current hardware is in good condition." },
+    { q: "How long does it take to rekey a lock?", a: "Standard residential rekeying takes about 15-20 minutes per cylinder. A full house with 4-5 locks can usually be completed in under an hour." },
+    { q: "Can all locks be rekeyed to the same key?", a: "Yes, as long as the locks are from the same manufacturer or use the same 'keyway' (the same brand/style of key). This is a great way to simplify your keychain." },
+    { q: "Should I rekey my locks if I move into a new apartment?", a: "Absolutely. You can never be sure who has copies of the old keys. Rekeying ensures that previous tenants, contractors, or owners no longer have access to your home." },
+    { q: "Do you offer commercial rekeying for master key systems?", a: "Yes, we specialize in designing and implementing master key systems for offices and retail spaces, allowing granular access control for employees and management." }
+  ];
+
+  const rekeyingProcess = [
+    { title: "Assessment", desc: "Inspection of your current locks to ensure they are suitable for rekeying." },
+    { title: "Disassembly", desc: "The lock cylinder is carefully removed and disassembled by our expert." },
+    { title: "Pin Replacement", desc: "Internal pins are replaced with new ones matching your fresh key." },
+    { title: "Reassembly", desc: "The cylinder is reinserted and lubricated for long-term smooth operation." },
+    { title: "Testing", desc: "Rigorous testing of the new key to ensure 100% reliable functionality." }
   ];
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-trust-blue via-blue-900 to-blue-950 text-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1543674892-7d64d45df18b?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="inline-flex items-center gap-2 bg-blue-500/20 backdrop-blur-sm px-4 py-2 rounded-full text-blue-300 text-sm font-bold mb-8 border border-blue-400/30">
-            <RotateCcw size={16} />
-            <span>Smart Security Resets</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-            Professional Lock <br />
-            <span className="text-action-orange uppercase">Rekeying Services</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl leading-relaxed">
-            Change your keys, not your locks. Save up to 50% on security upgrades with expert rekeying for your home or business in Bed-Stuy.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6">
-            <a href="tel:(718)568-6597" className="w-full sm:w-auto">
-              <Button size="large" className="bg-action-orange hover:bg-orange-600 w-full text-lg font-bold py-6 px-10 shadow-lg">
-                <Phone className="mr-2" size={24} />
-                Call (718) 568-6597
-              </Button>
-            </a>
-            <Link href="/quote" className="w-full sm:w-auto">
-              <Button variant="secondary" size="large" className="bg-white/10 hover:bg-white/20 text-white border-white/30 w-full text-lg py-6 px-10 backdrop-blur-sm">
-                Get Rekeying Quote
-              </Button>
-            </Link>
-          </div>
+      <section className="relative min-h-[80vh] flex items-center pt-20 overflow-hidden bg-slate-900">
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/images/emergency-locksmith.webp" 
+            alt="Professional Lock Rekeying Bed-Stuy"
+            fill
+            className="object-cover opacity-20 grayscale"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-transparent"></div>
         </div>
-      </section>
 
-      {/* Introduction */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center mb-24">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Reset Your Access with Expert Rekeying</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Bed-Stuy Locksmith provides professional lock rekeying services as a cost-effective alternative to full hardware replacement. We change the internal pins so your locks work with new keys while keeping your existing, high-quality hardware. It's the perfect solution for new homeowners, businesses with employee turnover, or anyone who wants to simplify their keychain.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-blue-600/10 backdrop-blur-md px-4 py-2 rounded-full border border-blue-500/30 mb-8">
+              <DollarSign className="text-blue-400" size={16} />
+              <span className="text-blue-300 text-sm font-bold tracking-widest uppercase italic">Cost-Effective Security Resets</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-8xl font-black text-white leading-[0.9] mb-8 tracking-tighter uppercase italic">
+              New Keys. <br />
+              <span className="text-blue-500">Same Locks.</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-slate-300 mb-10 leading-relaxed max-w-2xl font-medium">
+              Ensure you're the only one with access. Professional rekeying is 50% cheaper than replacement—perfect for new homeowners, landlords, and businesses.
             </p>
-          </div>
 
-          {/* Section 1: What is Rekeying */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
-             <div className="order-2 lg:order-1">
-                <div className="bg-gray-50 p-10 rounded-[3rem] border border-gray-100 relative">
-                   <div className="absolute -top-6 -left-6 w-24 h-24 bg-action-orange text-white rounded-3xl flex items-center justify-center shadow-xl rotate-12">
-                      <DollarSign size={48} />
-                   </div>
-                   <h3 className="text-2xl font-bold mb-6 pt-6">Why Choose Rekeying?</h3>
-                   <ul className="space-y-6">
-                      <li className="flex items-start gap-4">
-                         <div className="bg-trust-blue text-white p-2 rounded-lg mt-1"><Zap size={20} /></div>
-                         <div>
-                            <p className="font-bold text-gray-900">50% Lower Cost</p>
-                            <p className="text-gray-600">Since you're not paying for heavy metal hardware, the cost is significantly lower than a full replacement.</p>
-                         </div>
-                      </li>
-                      <li className="flex items-start gap-4">
-                         <div className="bg-trust-blue text-white p-2 rounded-lg mt-1"><Zap size={20} /></div>
-                         <div>
-                            <p className="font-bold text-gray-900">Immediate Security</p>
-                            <p className="text-gray-600">Old keys instantly become useless, ensuring that previous owners, tenants, or employees no longer have access.</p>
-                         </div>
-                      </li>
-                      <li className="flex items-start gap-4">
-                         <div className="bg-trust-blue text-white p-2 rounded-lg mt-1"><Zap size={20} /></div>
-                         <div>
-                            <p className="font-bold text-gray-900">Key Consolidation</p>
-                            <p className="text-gray-600">We can often rekey all your doors to work with a single key, eliminating the need for a bulky keychain.</p>
-                         </div>
-                      </li>
-                   </ul>
-                </div>
-             </div>
-             <div className="order-1 lg:order-2">
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">How it Works</h2>
-                <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-                   <p>Rekeying is a surgical procedure for your lock. Our technicians carefully remove the cylinder, dump the old tumblers (pins), and replace them with a new configuration that matches a fresh key.</p>
-                   <p>This process renders all previously issued keys completely non-functional without the need to remove or replace the decorative lock body or internal latching mechanism.</p>
-                   <div className="grid grid-cols-2 gap-4 pt-6">
-                      {["Deadbolts", "Door Knobs", "Mortise Cylinders", "Rim Cylinders", "Padlocks", "Storefront Locks"].map((item, i) => (
-                        <div key={i} className="flex items-center gap-2">
-                          <CheckCircle className="text-safety-green flex-shrink-0" size={18} />
-                          <span className="font-semibold">{item}</span>
-                        </div>
-                      ))}
-                   </div>
-                </div>
-             </div>
-          </div>
-
-          {/* Section 2: Residential */}
-          <div className="mb-32">
-             <div className="bg-trust-blue text-white rounded-[3rem] p-12 md:p-20 relative overflow-hidden shadow-2xl">
-                <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-400/10 -skew-x-12 translate-x-1/4"></div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
-                   <div>
-                      <Home className="text-action-orange mb-8" size={64} />
-                      <h2 className="text-3xl md:text-5xl font-bold mb-8">Residential Rekeying</h2>
-                      <p className="text-xl text-blue-100 mb-10 leading-relaxed">
-                         Just moved to Bed-Stuy? Don't leave your safety to chance with old keys. We rekey entire homes and apartments in a single visit.
-                      </p>
-                      <ul className="space-y-4 mb-10">
-                         {["Perfect for new homeowners", "Emergency service after key loss", "One-key convenience across all doors", "Includes lock cleaning & lubrication"].map((item, i) => (
-                           <li key={i} className="flex items-center gap-3">
-                             <CheckCircle className="text-action-orange" size={24} />
-                             <span className="text-lg font-bold">{item}</span>
-                           </li>
-                         ))}
-                      </ul>
-                      <a href="tel:(718)568-6597">
-                        <Button size="large" className="bg-action-orange hover:bg-orange-600 font-bold px-12">Rekey My Home Now</Button>
-                      </a>
-                   </div>
-                   <div className="bg-white p-10 rounded-3xl text-gray-900 shadow-xl self-center">
-                      <h4 className="text-2xl font-bold mb-6">Home Rates</h4>
-                      <div className="space-y-6">
-                         <div className="flex justify-between items-center pb-4 border-b border-gray-100">
-                            <span className="font-semibold">Single Cylinder</span>
-                            <span className="font-bold text-trust-blue">$50 - $75</span>
-                         </div>
-                         <div className="flex justify-between items-center pb-4 border-b border-gray-100">
-                            <span className="font-semibold">Whole House (4+ locks)</span>
-                            <span className="font-bold text-trust-blue">Custom Discount</span>
-                         </div>
-                         <div className="flex justify-between items-center">
-                            <span className="font-semibold">Service Call Fee</span>
-                            <span className="font-bold text-trust-blue">$29 - $49</span>
-                         </div>
-                      </div>
-                      <div className="mt-8 p-4 bg-blue-50 rounded-xl text-sm text-blue-900 italic">
-                         *Pricing varies by lock brand and security level.
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-
-          {/* Section 3: Commercial */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-32">
-             <div>
-                <Building2 className="text-trust-blue mb-8" size={64} />
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Commercial Master Key Systems</h2>
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                   Managing a business requires granular control over who enters which space. We design and implement master key systems that simplify access while maintaining high security.
-                </p>
-                <div className="space-y-4 mb-8">
-                   {[
-                     "Grand Master systems for large buildings",
-                     "Restricted keyways to prevent duplication",
-                     "Immediate rekeying after employee turnover",
-                     "Detailed access level mapping",
-                     "High-security IC (Interchangeable) cores"
-                   ].map((item, i) => (
-                     <div key={i} className="flex items-center gap-3">
-                       <CheckCircle className="text-trust-blue" size={20} />
-                       <span className="font-semibold text-gray-800">{item}</span>
-                     </div>
-                   ))}
-                </div>
-             </div>
-             <div className="bg-gray-50 p-12 rounded-[2rem] border border-gray-100 shadow-lg">
-                <h3 className="text-2xl font-bold mb-8">Request Commercial Rekey</h3>
-                <QuoteForm />
-             </div>
-          </div>
-
-          {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mb-32">
-            <h2 className="text-3xl font-bold text-center mb-16 uppercase tracking-widest text-gray-400">Rekeying FAQ</h2>
-            <div className="space-y-6">
-              {faqs.map((faq, i) => (
-                <div key={i} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">{faq.q}</h3>
-                  <p className="text-gray-700 leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
+            <div className="flex flex-col sm:flex-row gap-5">
+              <a href="tel:(718)568-6597">
+                <Button size="large" className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto h-20 px-12 text-2xl font-black shadow-2xl">
+                  <Phone className="mr-3" size={28} />
+                  (718) 568-6597
+                </Button>
+              </a>
+              <Link href="/quote">
+                <Button variant="secondary" size="large" className="bg-white/10 hover:bg-white/20 text-white border-white/20 backdrop-blur-md w-full sm:w-auto h-20 px-12 text-2xl font-black">
+                  Request Quote
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-trust-blue text-white overflow-hidden relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Smart Security Starts with New Keys</h2>
-          <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Protect your property without the high cost of replacement. Call Bed-Stuy's rekeying experts today.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="tel:(718)568-6597">
-              <Button size="large" className="bg-action-orange hover:bg-orange-600 font-bold px-12 py-6 text-xl shadow-xl">
-                <Phone className="mr-2" size={24} />
-                Call (718) 568-6597
-              </Button>
-            </a>
+      {/* Benefits Section */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-4 uppercase italic tracking-tighter">Why Choose Rekeying?</h2>
+            <p className="text-slate-500 text-lg">Smart security management for modern Brooklyn living.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { title: "Cost-Effective", icon: <DollarSign size={40} className="text-blue-600" />, desc: "Significantly more affordable than replacing all your locks, especially for multiple doors." },
+              { title: "Immediate Security", icon: <Shield size={40} className="text-blue-600" />, desc: "Instantly invalidates old or lost keys, ensuring unauthorized entry is impossible." },
+              { title: "Key Consolidation", icon: <Key size={40} className="text-blue-600" />, desc: "Option to have multiple locks operate on a single key for ultimate convenience." },
+              { title: "Hardware Integrity", icon: <RotateCcw size={40} className="text-blue-600" />, desc: "Maintain your existing lock hardware and historical aesthetic while updating security." },
+              { title: "Tenant Turnover", icon: <Users size={40} className="text-blue-600" />, desc: "Essential for landlords to ensure security between occupants without hardware waste." },
+              { title: "Quick Service", icon: <Zap size={40} className="text-blue-600" />, desc: "Faster than full lock replacement, getting your property secured in minutes, not hours." }
+            ].map((item, i) => (
+              <Card key={i} className="p-10 border-slate-100 hover:border-blue-500 transition-all group rounded-[2.5rem] bg-slate-50/30">
+                <div className="mb-6 group-hover:scale-110 transition-transform">{item.icon}</div>
+                <h4 className="text-xl font-bold text-slate-900 mb-4 uppercase italic tracking-tight">{item.title}</h4>
+                <p className="text-slate-600 leading-relaxed font-medium">{item.desc}</p>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* Residential & Commercial Scenarios */}
+      <section className="py-24 bg-slate-50 border-y border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 bg-blue-100 px-4 py-2 rounded-full mb-8">
+                <Home className="text-blue-600" size={20} />
+                <span className="text-blue-700 text-sm font-black uppercase italic">Homeowner Peace of Mind</span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-8 leading-tight uppercase italic tracking-tighter">
+                Residential <br /> <span className="text-blue-600">Rekeying</span>
+              </h2>
+              <p className="text-lg text-slate-600 mb-10 leading-relaxed font-medium">
+                Whether you've just purchased a home, had a roommate move out, or lost your keys, our residential rekeying is fast and reliable. We can rekey deadbolts, knobs, and historic mortise locks.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-6 mb-12">
+                {[
+                  { title: "New Property", icon: <UserPlus size={24} className="text-blue-500" /> },
+                  { title: "Lost Keys", icon: <Key size={24} className="text-blue-500" /> },
+                  { title: "Roommate Change", icon: <Users size={24} className="text-blue-500" /> },
+                  { title: "Key Consolidation", icon: <RotateCcw size={24} className="text-blue-500" /> }
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-xl border border-slate-200">
+                    {item.icon}
+                    <span className="font-bold text-slate-800 italic uppercase tracking-tight text-sm">{item.title}</span>
+                  </div>
+                ))}
+              </div>
+              <Link href="/quote">
+                <Button size="large" className="bg-slate-900 text-white hover:bg-black h-16 px-10 font-bold uppercase italic">Rekey My Home</Button>
+              </Link>
+            </div>
+
+            <div className="bg-slate-900 text-white rounded-[3rem] p-12 md:p-16 relative overflow-hidden">
+              <div className="absolute top-0 right-0 p-12 opacity-5">
+                <Building2 size={200} />
+              </div>
+              <div className="relative z-10">
+                <Briefcase className="text-blue-400 mb-8" size={48} />
+                <h3 className="text-3xl font-black mb-8 italic uppercase tracking-tighter">Commercial Systems</h3>
+                <p className="text-slate-400 mb-10 text-lg font-medium">Manage your business security effectively. Rekeying is essential for employee turnover and master key system modifications.</p>
+                <div className="space-y-4 mb-12">
+                  {[
+                    "Employee Access Control",
+                    "Master Key System Integration",
+                    "Property Management Turnover",
+                    "Restricted Keyway Systems"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-3">
+                      <CheckCircle className="text-blue-400" size={20} />
+                      <span className="font-bold italic uppercase tracking-tight text-slate-200">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <Link href="/booking">
+                  <Button size="large" className="bg-blue-600 hover:bg-blue-700 text-white h-16 w-full font-bold uppercase italic border-0">Commercial Appointment</Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-4 italic tracking-tighter uppercase underline decoration-blue-500 underline-offset-8">Our Meticulous Process</h2>
+            <p className="text-slate-500 text-lg italic">Precision and expertise in every cylinder.</p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            {rekeyingProcess.map((step, i) => (
+              <div key={i} className="text-center group">
+                <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                  <span className="font-black text-2xl italic">0{i + 1}</span>
+                </div>
+                <h4 className="text-lg font-black text-slate-900 mb-2 uppercase italic tracking-tight">{step.title}</h4>
+                <p className="text-slate-500 text-sm font-medium leading-relaxed">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-16 text-center italic uppercase tracking-tight">Rekeying FAQ</h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-2xl p-10 shadow-sm hover:shadow-md transition-all">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 italic leading-tight">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed border-l-4 border-blue-500 pl-6 font-medium">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 bg-blue-600 text-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-4xl md:text-7xl font-black mb-8 leading-tight tracking-tighter uppercase italic">Secure Your Home for 50% Less</h2>
+          <p className="text-xl md:text-2xl text-blue-100 mb-12 max-w-2xl mx-auto font-medium">
+            Professional rekeying is the smartest way to reset your security. Call Bed-Stuy's experts today for a free quote.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="tel:(718)568-6597">
+              <Button size="large" className="bg-white text-blue-600 hover:bg-slate-50 h-20 px-12 text-2xl font-black shadow-2xl transform hover:scale-105 active:scale-95 transition-all">
+                (718) 568-6597
+              </Button>
+            </a>
+          </div>
+          <p className="mt-8 text-blue-200 font-bold tracking-widest uppercase text-sm">24/7 Response • Licensed NYC #2103442</p>
+        </div>
+      </section>
+
       {/* Related Links */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-10">
             {[
-              { name: "Lock Installation", href: "/services/lock-installation" },
               { name: "Lock Replacement", href: "/services/lock-replacement" },
+              { name: "Lock Installation", href: "/services/lock-installation" },
               { name: "Lock Repair", href: "/services/lock-repair" },
-              { name: "24-Hour Emergency Service", href: "/services/24-hour-emergency-locksmith" }
+              { name: "Emergency Locksmith", href: "/services/24-hour-emergency-locksmith" }
             ].map((link, i) => (
-              <Link key={i} href={link.href} className="text-trust-blue font-bold hover:text-blue-800 flex items-center gap-2">
+              <Link key={i} href={link.href} className="text-blue-600 font-bold hover:text-blue-800 flex items-center gap-2">
                 {link.name} <ArrowRight size={16} />
               </Link>
             ))}

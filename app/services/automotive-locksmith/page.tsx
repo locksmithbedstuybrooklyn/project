@@ -1,266 +1,247 @@
 import Link from 'next/link';
-import { Phone, Clock, Shield, CheckCircle, ArrowRight, Car, Key, Settings, Zap } from 'lucide-react';
+import Image from 'next/image';
+import { Phone, Clock, Shield, CheckCircle, ArrowRight, Car, Key, Settings, Zap, Wrench, Award, AlertTriangle, Cpu, Gauge } from 'lucide-react';
 import Button from '@/components/common/Button';
 import Card from '@/components/common/Card';
 import QuoteForm from '@/components/forms/QuoteForm';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Automotive Locksmith Services in Bed-Stuy | Car Keys & Lockouts',
-  description: 'Professional car lockout, key replacement, and ignition repair services in Bed-Stuy. 24/7 mobile service, 20-minute response. Call (718) 568-6597.',
+  title: 'Automotive Locksmith Bed-Stuy | Car Keys & Programming | 24/7 Service',
+  description: 'Fast 24/7 mobile car locksmith in Bed-Stuy. Car lockouts, transponder key programming, ignition repair. 20-min response. Call (718) 568-6597.',
 };
 
 export default function AutomotiveLocksmithPage() {
   const faqs = [
-    { q: "How long does car lockout service take?", a: "Typically 10-15 minutes once we arrive. Total time from call to access is usually 20-30 minutes." },
-    { q: "Can you unlock any car?", a: "Yes, we can unlock all vehicle types and models from the 1990s to current year." },
-    { q: "What if my key is broken?", a: "We can remove broken key pieces and create a new key. This typically takes 30-45 minutes." },
-    { q: "How much does car key replacement cost?", a: "Standard keys: $50-100. Transponder keys: $100-200. Key fobs: $150-300." },
-    { q: "Do you program transponder keys?", a: "Yes, we program all types of transponder keys on-site." },
-    { q: "Can you help with lost car keys?", a: "Yes, we can create new keys even if you've lost all copies." },
-    { q: "What's the difference between transponder and standard keys?", a: "Transponder keys have a microchip that communicates with your vehicle's security system. Standard keys are simple metal keys without electronics." },
-    { q: "How long do car keys last?", a: "Well-made car keys typically last 5-10 years with normal use." },
-    { q: "Can you make a spare key without the original?", a: "Yes, we can create spare keys using your vehicle identification number (VIN)." },
-    { q: "What should I do if my ignition is stuck?", a: "Don't force it. Call us immediately at (718) 568-6597. Forcing it can break the key and damage the ignition." }
+    { q: "How long does a car lockout service take?", a: "Typically, it takes our technicians 10-15 minutes to gain access once they arrive. Our total response time in Bed-Stuy is usually 20-30 minutes from your initial call." },
+    { q: "Can you program transponder keys for any car?", a: "Yes, we carry advanced diagnostic and programming equipment that allows us to create and program transponder keys and key fobs for over 95% of vehicle makes and models, including domestic and foreign brands." },
+    { q: "Is it cheaper to use a locksmith than the dealership?", a: "In almost all cases, yes. We provide the same high-security keys and programming as the dealership but without the 'premium' markup and the need for expensive towing since we come to you." },
+    { q: "What if my key broke inside the ignition?", a: "Don't try to pull it out yourself—you might damage the cylinder. Our locksmiths use specialized extraction tools to safely remove the fragment and can cut you a replacement key on the spot." },
+    { q: "Do you handle high-security laser-cut keys?", a: "Absolutely. We are equipped with precision laser-cutting machinery to accurately duplicate and replace the high-security 'sidewinder' keys found in modern vehicles." }
   ];
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white text-slate-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-trust-blue via-blue-900 to-blue-950 text-white py-24 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="inline-flex items-center gap-2 bg-blue-500/20 backdrop-blur-sm px-4 py-2 rounded-full text-blue-300 text-sm font-bold mb-8 border border-blue-400/30">
-            <Car size={16} />
-            <span>Complete Automotive Solutions</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-            Professional Automotive <br />
-            <span className="text-action-orange uppercase">Locksmith Services</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl leading-relaxed">
-            Locked out? Lost keys? Ignition issues? Bed-Stuy's most trusted mobile automotive experts are available 24/7 to get you back on the road.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6">
-            <a href="tel:(718)568-6597" className="w-full sm:w-auto">
-              <Button size="large" className="bg-action-orange hover:bg-orange-600 w-full text-lg font-bold py-6 px-10">
-                <Phone className="mr-2" size={24} />
-                Call (718) 568-6597
-              </Button>
-            </a>
-            <Link href="/quote" className="w-full sm:w-auto">
-              <Button variant="secondary" size="large" className="bg-white/10 hover:bg-white/20 text-white border-white/30 w-full text-lg py-6 px-10 backdrop-blur-sm">
-                Get Free Quote
-              </Button>
-            </Link>
+      <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-slate-900">
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/images/automotive-locksmith.webp" 
+            alt="Automotive Locksmith Bed-Stuy Car Key Programming"
+            fill
+            className="object-cover opacity-50 grayscale"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-2 bg-blue-600/10 backdrop-blur-md px-4 py-2 rounded-full border border-blue-500/30 mb-8">
+              <Car className="text-blue-400" size={16} />
+              <span className="text-blue-300 text-sm font-black tracking-widest uppercase italic">24/7 Mobile Car Experts</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-8xl font-black text-white leading-[0.9] mb-8 tracking-tighter uppercase italic">
+              Dealership Tech. <br />
+              <span className="text-blue-600 underline decoration-blue-600/30 underline-offset-8 italic">At Your Door.</span>
+            </h1>
+            
+            <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-2xl font-medium italic uppercase tracking-tight">
+              Locked out? Lost your keys? Ignition stuck? We bring high-tech car key and lockout solutions directly to your location 24/7.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-6">
+              <a href="tel:(718)568-6597">
+                <Button size="large" className="bg-blue-600 hover:bg-blue-700 text-white w-full sm:w-auto h-20 px-12 text-2xl font-black shadow-[0_0_40px_rgba(37,99,235,0.3)] border-0 uppercase italic">
+                  <Phone className="mr-3" size={28} />
+                  (718) 568-6597
+                </Button>
+              </a>
+              <Link href="/quote">
+                <Button variant="secondary" size="large" className="bg-white/10 hover:bg-white/20 text-white border-white/20 backdrop-blur-md w-full sm:w-auto h-20 px-12 text-2xl font-black uppercase italic tracking-tighter">
+                  Request Quote
+                </Button>
+              </Link>
+            </div>
+
+            <div className="mt-16 flex flex-wrap gap-10 items-center border-t border-white/10 pt-10">
+              <div className="flex items-center gap-3">
+                <Shield className="text-blue-500" size={24} />
+                <span className="text-slate-400 font-bold uppercase italic tracking-widest text-sm">NYC Licensed #2103442</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <Gauge className="text-blue-500" size={24} />
+                <span className="text-slate-400 font-bold uppercase italic tracking-widest text-sm">All Makes & Models</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Introduction */}
-      <section className="py-20 bg-white">
+      {/* Intro Section */}
+      <section className="py-24 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center mb-20">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Expert Care for Every Vehicle</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Bed-Stuy Locksmith provides comprehensive automotive locksmith services for all vehicle types. Whether you're locked out of your car, need a new key, or have ignition problems, our licensed professionals are available 24/7 with a 20-minute response guarantee. We serve Bed-Stuy and the surrounding 5-mile radius with damage-free solutions and transparent pricing.
-            </p>
-          </div>
-
-          {/* Section 1: Car Lockout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+          <div className="grid lg:grid-cols-2 gap-24 items-center">
             <div>
-              <div className="w-16 h-16 bg-blue-50 text-trust-blue rounded-2xl flex items-center justify-center mb-6">
-                <Zap size={32} />
+              <div className="inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full mb-8 border border-blue-100">
+                <Zap className="text-blue-600" size={20} />
+                <span className="text-blue-700 text-sm font-black uppercase italic tracking-widest">Rapid 20-Min Response</span>
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Car Lockout Services (Emergency)</h2>
-              <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
-                <p>
-                  Car lockouts are one of the most common emergencies we handle. A car lockout occurs when you're unable to access your vehicle because the doors are locked. This can happen for several reasons: you accidentally locked your keys inside, you lost your keys, or the lock mechanism malfunctioned.
-                </p>
-                <p>
-                  When you're locked out, stay calm and avoid attempting DIY solutions that might damage your vehicle. Don't try to force the door open or use makeshift tools—this can result in expensive repairs. Instead, call us immediately at <strong>(718) 568-6597</strong>.
-                </p>
-                <ul className="space-y-4 pt-4">
-                  {[
-                    "20-30 Minute Guaranteed Arrival",
-                    "Damage-Free Unlocking Techniques",
-                    "Verification of Identity & Ownership",
-                    "All Makes & Models Serviced"
-                  ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle className="text-safety-green mt-1 flex-shrink-0" size={20} />
-                      <span className="font-semibold">{item}</span>
-                    </li>
-                  ))}
-                </ul>
+              <h2 className="text-3xl md:text-6xl font-black text-slate-900 mb-8 leading-[1.1] uppercase italic tracking-tighter">
+                Don't Tow It. <br /> <span className="text-blue-600">We Solve It.</span>
+              </h2>
+              <p className="text-lg text-slate-600 mb-10 leading-relaxed font-medium italic">
+                Being stranded due to a car lockout, lost keys, or a faulty ignition can ruin your day. At Locksmith Bed Stuy, we specialize in providing rapid, reliable, and damage-free automotive services across Brooklyn.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-6 mb-12">
+                {[
+                  "Emergency Car Unlocking",
+                  "Transponder Key Programming",
+                  "Key Fob Replacement",
+                  "Ignition Repair & Replace",
+                  "Laser-Cut Key Duplication",
+                  "Broken Key Extraction"
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200 group hover:border-blue-500 transition-colors">
+                    <CheckCircle className="text-blue-600" size={20} />
+                    <span className="font-bold text-slate-800 italic uppercase tracking-tight text-sm">{item}</span>
+                  </div>
+                ))}
               </div>
+              <a href="tel:(718)568-6597">
+                <Button size="large" className="bg-slate-900 text-white hover:bg-black h-16 px-10 font-bold uppercase italic border-0">Call Mobile Unit</Button>
+              </a>
             </div>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-blue-100 rounded-3xl -rotate-2"></div>
-              <Card className="relative z-10 p-10 border-gray-100 shadow-2xl">
-                <h3 className="text-2xl font-bold mb-6">Emergency Help</h3>
-                <QuoteForm />
-              </Card>
-            </div>
-          </div>
 
-          {/* Section 2: Car Key Services */}
-          <div className="mb-32">
-            <div className="bg-gray-900 text-white rounded-[3rem] p-12 md:p-20 overflow-hidden relative">
-              <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/10 skew-x-12 translate-x-1/2"></div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative z-10">
-                <div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-8">Car Key Replacement & Programming</h2>
-                  <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                    Lost your keys or need a spare? We create high-quality replacement keys on-site for any vehicle, from vintage classics to the latest smart-fob systems.
-                  </p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    {[
-                      { title: "Standard Keys", price: "$50-100" },
-                      { title: "Transponder Keys", price: "$100-200" },
-                      { title: "Key Fobs", price: "$150-300" },
-                      { title: "Proximity Keys", price: "Custom Quote" }
-                    ].map((item, i) => (
-                      <div key={i} className="bg-white/10 p-6 rounded-2xl border border-white/20">
-                        <p className="font-bold mb-1">{item.title}</p>
-                        <p className="text-action-orange font-black">{item.price}</p>
-                      </div>
-                    ))}
-                  </div>
+            <div className="relative">
+              <div className="absolute -inset-10 bg-slate-100 rounded-full blur-3xl opacity-50"></div>
+              <div className="relative bg-white border border-slate-200 rounded-[3rem] p-12 shadow-2xl overflow-hidden">
+                <div className="absolute top-0 right-0 p-12 opacity-5 scale-150 rotate-12">
+                  <Car size={200} className="text-blue-600" />
                 </div>
-                <div className="space-y-8">
-                  <div className="flex gap-6 items-start">
-                    <div className="w-12 h-12 bg-action-orange rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Key className="text-white" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-2">On-Site Programming</h4>
-                      <p className="text-blue-100">No need to tow your car to the dealership. We program chips and remotes right where you are.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-6 items-start">
-                    <div className="w-12 h-12 bg-action-orange rounded-xl flex items-center justify-center flex-shrink-0">
-                      <Shield className="text-white" size={24} />
-                    </div>
-                    <div>
-                      <h4 className="text-xl font-bold mb-2">30-Day Guarantee</h4>
-                      <p className="text-blue-100">All our keys are guaranteed to work perfectly. If there's an issue, we'll replace it free.</p>
-                    </div>
-                  </div>
-                  <div className="pt-8">
-                    <a href="tel:(718)568-6597">
-                      <Button size="large" className="bg-action-orange hover:bg-orange-600 font-bold px-12">
-                        Get New Keys Now
-                      </Button>
+                <div className="relative z-10">
+                  <h3 className="text-3xl font-black mb-10 italic uppercase tracking-tighter underline decoration-blue-600 decoration-4 underline-offset-8">Quick Vehicle Quote</h3>
+                  <QuoteForm />
+                  <div className="mt-10 pt-10 border-t border-slate-100 text-center">
+                    <p className="text-slate-400 font-bold uppercase italic text-xs tracking-widest mb-4">Fastest Response</p>
+                    <a href="tel:(718)568-6597" className="text-blue-600 font-black text-3xl hover:underline italic">
+                      (718) 568-6597
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Section 3: Ignition Repair */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-32">
+      {/* Technical Authority: Transponder Keys */}
+      <section className="py-24 bg-slate-900 text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-center">
+          <Cpu size={600} />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div className="order-2 lg:order-1">
-              <Card className="p-10 border-gray-100 shadow-xl bg-gray-50">
-                <h3 className="text-2xl font-bold mb-8">Ignition Service Rates</h3>
-                <div className="space-y-4">
+              <div className="bg-white/5 border border-white/10 rounded-[3rem] p-12 backdrop-blur-md">
+                <h3 className="text-3xl font-black italic uppercase tracking-tighter mb-8 text-blue-500 leading-none">Smart Key <br /> Programming</h3>
+                <p className="text-slate-400 text-lg mb-10 font-medium italic leading-relaxed">
+                  Modern vehicles utilize transponder chips that communicate with the engine's immobilizer. If your key isn't programmed correctly, your car won't start. We carry the same high-end diagnostic tools as major dealerships.
+                </p>
+                <div className="space-y-6">
                   {[
-                    { label: "Minor Repair & Cleaning", price: "$100-300" },
-                    { label: "Cylinder Replacement", price: "$200-400" },
-                    { label: "Switch Replacement", price: "$300-500" },
-                    { label: "Emergency After-Hours", price: "+$25-50" }
+                    { title: "Transponder Chips", desc: "Expert coding for immobilizer-sync keys." },
+                    { title: "Key Fob Pairing", desc: "Full programming for push-to-start and proximity fobs." },
+                    { title: "Laser Cutting", desc: "Precision 'Sidewinder' key duplication on-site." }
                   ].map((item, i) => (
-                    <div key={i} className="flex justify-between items-center py-4 border-b border-gray-200 last:border-0">
-                      <span className="font-semibold text-gray-700">{item.label}</span>
-                      <span className="font-bold text-trust-blue">{item.price}</span>
+                    <div key={i} className="flex gap-6 items-start">
+                      <div className="bg-blue-600/20 p-3 rounded-xl">
+                        <Cpu className="text-blue-500" size={24} />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-xl italic uppercase tracking-tight text-slate-100 mb-1">{item.title}</h4>
+                        <p className="text-slate-400 text-sm italic font-medium">{item.desc}</p>
+                      </div>
                     </div>
                   ))}
                 </div>
-                <div className="mt-10 p-6 bg-blue-100 rounded-2xl text-blue-900 text-sm">
-                  <p className="font-bold mb-2">💡 Pro Tip:</p>
-                  If your key won't turn, don't force it! Forcing it can break the internal pins or the key itself, turning a simple repair into a full replacement.
-                </div>
-              </Card>
+              </div>
             </div>
             <div className="order-1 lg:order-2">
-              <div className="w-16 h-16 bg-blue-50 text-trust-blue rounded-2xl flex items-center justify-center mb-6">
-                <Settings size={32} />
+              <div className="inline-flex items-center gap-2 bg-blue-600/10 backdrop-blur-md px-4 py-2 rounded-full border border-blue-500/30 mb-8">
+                <Cpu className="text-blue-400" size={16} />
+                <span className="text-blue-300 text-sm font-black tracking-widest uppercase italic">Advanced Tech Only</span>
               </div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Ignition Repair & Replacement</h2>
-              <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
-                <p>
-                  Ignition problems are more serious than simple lockouts. Your ignition system is crucial for starting and running your vehicle safely. Common issues include keys that won't turn, keys stuck in the cylinder, or a complete failure of the ignition switch.
-                </p>
-                <p>
-                  Our technicians diagnose these problems by examining the cylinder, testing the electrical switch, and checking for mechanical wear. We carry replacement parts for major brands and can often resolve the issue in a single visit.
-                </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6">
-                  {[
-                    "Stuck Key Extraction",
-                    "Ignition Cylinder Repair",
-                    "Switch Replacement",
-                    "Electrical Diagnosis",
-                    "Worn Key Refurbishing",
-                    "System Testing"
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-2">
-                      <CheckCircle className="text-safety-green" size={18} />
-                      <span className="font-medium">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Section 4: Vehicle Types */}
-          <div className="text-center mb-32">
-            <h2 className="text-3xl font-bold mb-12">Vehicles We Service</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-              {["Sedans", "SUVs", "Trucks", "Luxury Cars", "Classic Cars", "Motorcycles"].map((v, i) => (
-                <div key={i} className="p-8 bg-gray-50 rounded-3xl border border-gray-100 hover:border-trust-blue transition-colors group">
-                  <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-sm group-hover:bg-trust-blue group-hover:text-white transition-colors">
-                    <Car size={24} />
-                  </div>
-                  <p className="font-bold text-gray-900">{v}</p>
-                </div>
-              ))}
-            </div>
-            <p className="mt-10 text-gray-500 font-medium italic">
-              We work with all major brands including Toyota, Honda, Ford, Chevy, BMW, Mercedes, Audi, Lexus, and more.
-            </p>
-          </div>
-
-          {/* FAQ Section */}
-          <div className="max-w-4xl mx-auto mb-32">
-            <h2 className="text-3xl font-bold text-center mb-16">Automotive Locksmith FAQ</h2>
-            <div className="space-y-6">
-              {faqs.map((faq, i) => (
-                <div key={i} className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">{faq.q}</h3>
-                  <p className="text-gray-700 leading-relaxed">{faq.a}</p>
-                </div>
-              ))}
+              <h2 className="text-3xl md:text-7xl font-black italic uppercase tracking-tighter mb-10 leading-[0.9]">Beyond <br /> <span className="text-blue-500">Traditional</span> <br /> Cutting.</h2>
+              <p className="text-slate-400 text-xl mb-12 font-medium italic leading-relaxed">
+                Whether it's a 2024 luxury model or a reliable older vehicle, we have the software to interface with your car's ECU and create a working key in minutes.
+              </p>
+              <Link href="/blog/car-key-replacement-guide">
+                <Button variant="outline" className="border-blue-600 text-blue-500 hover:bg-blue-600 hover:text-white h-16 px-10 font-bold uppercase italic">Key Guide</Button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-24 bg-gray-50 border-t border-gray-100">
+      {/* Ignition Repair Section */}
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-            {[
-              { title: "15+ Years Exp", icon: <Shield size={32} /> },
-              { title: "20-Min Arrival", icon: <Clock size={32} /> },
-              { title: "Damage-Free", icon: <Zap size={32} /> },
-              { title: "Transparent Pricing", icon: <Settings size={32} /> }
-            ].map((item, i) => (
-              <div key={i} className="text-center p-10 bg-white rounded-3xl shadow-sm border border-gray-100">
-                <div className="text-trust-blue mb-6 flex justify-center">{item.icon}</div>
-                <h4 className="text-xl font-bold text-gray-900">{item.title}</h4>
+          <div className="flex flex-col lg:flex-row gap-20 items-center">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full mb-8 border border-slate-200">
+                <Settings className="text-slate-600" size={20} />
+                <span className="text-slate-700 text-sm font-black uppercase italic tracking-widest">Ignition & Electrical</span>
+              </div>
+              <h2 className="text-3xl md:text-6xl font-black text-slate-900 mb-8 leading-[1.1] uppercase italic tracking-tighter">
+                Stuck Key? <br /> <span className="text-blue-600">No Problem.</span>
+              </h2>
+              <p className="text-lg text-slate-600 mb-10 leading-relaxed font-medium italic">
+                A malfunctioning ignition can be dangerous. We diagnose and repair ignition cylinders, switches, and VAT systems on-site.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-8 mb-12">
+                <div className="p-8 bg-slate-50 rounded-3xl border border-slate-200 group hover:border-blue-500 transition-all">
+                  <Wrench size={32} className="text-blue-600 mb-6" />
+                  <h4 className="text-xl font-bold italic uppercase tracking-tight mb-4 text-slate-900">Extraction</h4>
+                  <p className="text-slate-500 text-sm italic font-medium leading-relaxed">Safely removing broken key fragments without destroying the expensive ignition cylinder.</p>
+                </div>
+                <div className="p-8 bg-slate-50 rounded-3xl border border-slate-200 group hover:border-blue-500 transition-all">
+                  <Zap size={32} className="text-blue-600 mb-6" />
+                  <h4 className="text-xl font-bold italic uppercase tracking-tight mb-4 text-slate-900">VAT System</h4>
+                  <p className="text-slate-500 text-sm italic font-medium leading-relaxed">Diagnostic troubleshooting for older Vehicle Anti-Theft systems that prevent starting.</p>
+                </div>
+              </div>
+              <Link href="/blog/ignition-problems">
+                <Button size="large" className="bg-slate-900 text-white hover:bg-black h-16 px-10 font-bold uppercase italic border-0">Ignition Troubleshooting</Button>
+              </Link>
+            </div>
+            <div className="w-full lg:w-1/3">
+              <div className="bg-blue-600 rounded-[3rem] p-12 text-white relative overflow-hidden shadow-2xl">
+                <div className="absolute top-0 right-0 p-12 opacity-10 scale-150 rotate-12">
+                  <AlertTriangle size={200} />
+                </div>
+                <h4 className="text-2xl font-black mb-6 italic uppercase tracking-tighter leading-none">Emergency <br /> Support 24/7</h4>
+                <p className="text-blue-100 mb-10 font-bold italic uppercase tracking-tight text-sm">Stranded at night? Call us for priority dispatch. We are Bed-Stuy's most reliable emergency automotive response.</p>
+                <a href="tel:(718)568-6597">
+                  <Button className="w-full bg-white text-blue-600 hover:bg-slate-100 font-black h-16 uppercase italic">(718) 568-6597</Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-slate-50 border-y border-slate-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-20 text-center italic uppercase tracking-tighter">Automotive FAQ</h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-3xl p-10 shadow-sm hover:shadow-md transition-all group">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 italic leading-tight group-hover:text-blue-600 transition-colors">{faq.q}</h3>
+                <p className="text-slate-600 leading-relaxed font-medium italic border-l-4 border-blue-100 pl-8">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -268,35 +249,35 @@ export default function AutomotiveLocksmithPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-trust-blue text-white overflow-hidden relative">
+      <section className="py-24 bg-blue-600 text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Ready to Get Back on the Road?</h2>
-          <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Don't stay stranded. Call Bed-Stuy's fastest automotive locksmith experts now for immediate, professional help.
+          <h2 className="text-4xl md:text-8xl font-black mb-10 leading-[0.9] tracking-tighter uppercase italic">Back On The <br /> Road Fast.</h2>
+          <p className="text-xl md:text-2xl text-blue-100 mb-12 max-w-2xl mx-auto font-medium italic uppercase tracking-widest">
+            Licensed. Insured. Background Checked. NYC #2103442.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="tel:(718)568-6597">
-              <Button size="large" className="bg-action-orange hover:bg-orange-600 font-bold px-12 py-6 text-xl">
-                <Phone className="mr-2" size={24} />
-                Call (718) 568-6597
+              <Button size="large" className="bg-white text-blue-600 hover:bg-slate-50 h-20 px-12 text-3xl font-black uppercase italic border-0 shadow-2xl transform hover:scale-105 active:scale-95 transition-all">
+                <Phone className="mr-3" size={36} />
+                (718) 568-6597
               </Button>
             </a>
           </div>
+          <p className="mt-10 text-blue-200 font-bold italic uppercase tracking-widest text-sm">24/7 Mobile Response • 20-Min Arrival • Dealership Tech</p>
         </div>
       </section>
 
       {/* Related Links */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      <section className="py-16 bg-white border-t border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-xl font-bold text-gray-400 uppercase tracking-widest mb-10">Related Resources</h3>
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-12">
             {[
-              { name: "Lock Replacement Guide", href: "/services/lock-replacement" },
-              { name: "Lock Repair Guide", href: "/services/lock-repair" },
-              { name: "24-Hour Emergency Service", href: "/services/24-hour-emergency-locksmith" },
-              { name: "Bed-Stuy Locksmith Guide", href: "/blog/bed-stuy-locksmith-guide" }
+              { name: "Emergency Service", href: "/services/24-hour-emergency-locksmith" },
+              { name: "Ignition Problems", href: "/blog/ignition-problems" },
+              { name: "Car Key Guide", href: "/blog/car-key-replacement-guide" },
+              { name: "Locked Out Car", href: "/blog/locked-out-car" }
             ].map((link, i) => (
-              <Link key={i} href={link.href} className="text-trust-blue font-bold hover:text-blue-800 flex items-center gap-2">
+              <Link key={i} href={link.href} className="text-blue-600 font-black hover:text-blue-800 flex items-center gap-2 italic uppercase tracking-tight text-sm">
                 {link.name} <ArrowRight size={16} />
               </Link>
             ))}

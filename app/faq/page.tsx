@@ -3,10 +3,18 @@ import Button from '@/components/common/Button';
 import Card from '@/components/common/Card';
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { generateFAQSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Locksmith FAQ | Expert Answers | Bed-Stuy Brooklyn',
   description: 'Frequently asked questions about Brooklyn locksmith services: pricing, response times, licensed technicians, and emergency support. Call (718) 568-6597.',
+  alternates: { canonical: 'https://www.locksmithbedstuy.com/faq' },
+  openGraph: {
+    title: 'Locksmith FAQ | Expert Answers | Bed-Stuy',
+    description: 'Frequently asked questions about locksmith services: pricing, response times, and emergency support in Bed-Stuy, Brooklyn.',
+    url: 'https://www.locksmithbedstuy.com/faq',
+    type: 'website',
+  },
 };
 
 export default function FAQPage() {
@@ -37,8 +45,16 @@ export default function FAQPage() {
     }
   ];
 
+  const faqSchema = generateFAQSchema(
+    faqs.map((f) => ({ question: f.question, answer: f.answer }))
+  );
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Massive Authority Hero */}
       <section className="bg-gray-900 text-white pt-32 pb-24 relative overflow-hidden text-center">
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
