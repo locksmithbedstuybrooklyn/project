@@ -10,7 +10,14 @@ export const metadata: Metadata = {
   title: 'Contact Dispatch 24/7',
   description: 'Contact us: (718) 568-6597. Available 24/7 for emergencies. Email, phone, or visit us. Fast response guaranteed.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/contact' },
-  openGraph: { url: 'https://www.locksmithbedstuy.com/contact' },
+  openGraph: {
+    title: 'Contact Dispatch 24/7 | Bed-Stuy Locksmith',
+    description: 'Contact us: (718) 568-6597. Available 24/7 for emergencies. Email, phone, or visit us. Fast response guaranteed.',
+    url: 'https://www.locksmithbedstuy.com/contact',
+    siteName: 'Bed-Stuy Locksmith',
+    type: 'website',
+    images: [{ url: 'https://www.locksmithbedstuy.com/images/og-image.webp', width: 1200, height: 630, alt: 'Bed-Stuy Locksmith - Expert Emergency Service in Brooklyn' }],
+  },
 };
 
 export default function ContactPage() {

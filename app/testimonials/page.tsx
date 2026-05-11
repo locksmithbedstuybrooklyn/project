@@ -10,7 +10,14 @@ export const metadata: Metadata = {
   title: 'Customer Reviews & Ratings',
   description: 'Verified customer testimonials for Bed-Stuy Locksmith. Read why Brooklyn and Queens residents trust us for 24/7 emergency lockouts and security upgrades.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/testimonials' },
-  openGraph: { url: 'https://www.locksmithbedstuy.com/testimonials' },
+  openGraph: {
+    title: 'Customer Reviews & Ratings | Bed-Stuy Locksmith',
+    description: 'Verified customer testimonials for Bed-Stuy Locksmith. Read why Brooklyn and Queens residents trust us for 24/7 emergency lockouts and security upgrades.',
+    url: 'https://www.locksmithbedstuy.com/testimonials',
+    siteName: 'Bed-Stuy Locksmith',
+    type: 'website',
+    images: [{ url: 'https://www.locksmithbedstuy.com/images/og-image.webp', width: 1200, height: 630, alt: 'Bed-Stuy Locksmith - Expert Emergency Service in Brooklyn' }],
+  },
 };
 
 export default function TestimonialsPage() {

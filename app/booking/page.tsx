@@ -6,7 +6,14 @@ export const metadata = {
   title: 'Book a Locksmith Online',
   description: 'Instant online booking for emergency locksmith services. 20-minute arrival in Bed-Stuy. Professional car, home, and commercial support available 24/7.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/booking' },
-  openGraph: { url: 'https://www.locksmithbedstuy.com/booking' },
+  openGraph: {
+    title: 'Book a Locksmith Online | Bed-Stuy Locksmith',
+    description: 'Instant online booking for emergency locksmith services. 20-minute arrival in Bed-Stuy. Professional car, home, and commercial support available 24/7.',
+    url: 'https://www.locksmithbedstuy.com/booking',
+    siteName: 'Bed-Stuy Locksmith',
+    type: 'website',
+    images: [{ url: 'https://www.locksmithbedstuy.com/images/og-image.webp', width: 1200, height: 630, alt: 'Bed-Stuy Locksmith - Expert Emergency Service in Brooklyn' }],
+  },
 };
 
 export default function BookingPage() {

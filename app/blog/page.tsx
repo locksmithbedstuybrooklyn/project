@@ -11,7 +11,14 @@ export const metadata: Metadata = {
   title: 'Security & Locksmith Advice',
   description: 'Read our guides on car lockouts, home security, and lock replacement. We help you stay safe in Brooklyn.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/blog' },
-  openGraph: { url: 'https://www.locksmithbedstuy.com/blog' },
+  openGraph: {
+    title: 'Security & Locksmith Advice | Bed-Stuy Locksmith',
+    description: 'Read our guides on car lockouts, home security, and lock replacement. We help you stay safe in Brooklyn.',
+    url: 'https://www.locksmithbedstuy.com/blog',
+    siteName: 'Bed-Stuy Locksmith',
+    type: 'website',
+    images: [{ url: 'https://www.locksmithbedstuy.com/images/og-image.webp', width: 1200, height: 630, alt: 'Bed-Stuy Locksmith - Expert Emergency Service in Brooklyn' }],
+  },
 };
 
 export default function BlogPage() {

@@ -9,7 +9,14 @@ export const metadata: Metadata = {
   title: 'Work Gallery & Projects',
   description: 'Visual portfolio of our professional locksmith work in Brooklyn. Residential brownstone security, commercial access control, and automotive key programming.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/gallery' },
-  openGraph: { url: 'https://www.locksmithbedstuy.com/gallery' },
+  openGraph: {
+    title: 'Work Gallery & Projects | Bed-Stuy Locksmith',
+    description: 'Visual portfolio of our professional locksmith work in Brooklyn. Residential brownstone security, commercial access control, and automotive key programming.',
+    url: 'https://www.locksmithbedstuy.com/gallery',
+    siteName: 'Bed-Stuy Locksmith',
+    type: 'website',
+    images: [{ url: 'https://www.locksmithbedstuy.com/images/og-image.webp', width: 1200, height: 630, alt: 'Bed-Stuy Locksmith - Expert Emergency Service in Brooklyn' }],
+  },
 };
 
 export default function GalleryPage() {

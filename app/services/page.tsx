@@ -11,7 +11,14 @@ export const metadata: Metadata = {
   title: 'Expert Locksmith Services',
   description: 'All locksmith services in Bed-Stuy: car unlock, key replacement, lock repair, lock installation, ignition repair, emergency service. Call (718) 568-6597.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/services' },
-  openGraph: { url: 'https://www.locksmithbedstuy.com/services' },
+  openGraph: {
+    title: 'Expert Locksmith Services | Bed-Stuy Locksmith',
+    description: 'All locksmith services in Bed-Stuy: car unlock, key replacement, lock repair, lock installation, ignition repair, emergency service. Call (718) 568-6597.',
+    url: 'https://www.locksmithbedstuy.com/services',
+    siteName: 'Bed-Stuy Locksmith',
+    type: 'website',
+    images: [{ url: 'https://www.locksmithbedstuy.com/images/og-image.webp', width: 1200, height: 630, alt: 'Bed-Stuy Locksmith - Expert Emergency Service in Brooklyn' }],
+  },
 };
 
 export default function ServicesPage() {

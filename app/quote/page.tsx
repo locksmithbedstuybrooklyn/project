@@ -10,7 +10,14 @@ export const metadata: Metadata = {
   title: 'Free Locksmith Quote',
   description: 'Get a transparent locksmith quote in seconds. Instant pricing for car lockouts, key replacement, and lock repairs in Bed-Stuy. Call (718) 568-6597.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/quote' },
-  openGraph: { url: 'https://www.locksmithbedstuy.com/quote' },
+  openGraph: {
+    title: 'Free Locksmith Quote | Bed-Stuy Locksmith',
+    description: 'Get a transparent locksmith quote in seconds. Instant pricing for car lockouts, key replacement, and lock repairs in Bed-Stuy. Call (718) 568-6597.',
+    url: 'https://www.locksmithbedstuy.com/quote',
+    siteName: 'Bed-Stuy Locksmith',
+    type: 'website',
+    images: [{ url: 'https://www.locksmithbedstuy.com/images/og-image.webp', width: 1200, height: 630, alt: 'Bed-Stuy Locksmith - Expert Emergency Service in Brooklyn' }],
+  },
 };
 
 export default function QuotePage() {

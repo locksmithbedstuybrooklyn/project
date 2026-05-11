@@ -12,7 +12,14 @@ export const metadata: Metadata = {
   title: 'Brooklyn Service Areas',
   description: 'Local locksmith service areas: Bed-Stuy, Crown Heights, Prospect Heights, Williamsburg, Greenpoint, Bushwick. 24/7 emergency response. Call (718) 568-6597.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/locations' },
-  openGraph: { url: 'https://www.locksmithbedstuy.com/locations' },
+  openGraph: {
+    title: 'Brooklyn Service Areas | Bed-Stuy Locksmith',
+    description: 'Local locksmith service areas: Bed-Stuy, Crown Heights, Prospect Heights, Williamsburg, Greenpoint, Bushwick. 24/7 emergency response. Call (718) 568-6597.',
+    url: 'https://www.locksmithbedstuy.com/locations',
+    siteName: 'Bed-Stuy Locksmith',
+    type: 'website',
+    images: [{ url: 'https://www.locksmithbedstuy.com/images/og-image.webp', width: 1200, height: 630, alt: 'Bed-Stuy Locksmith - Expert Emergency Service in Brooklyn' }],
+  },
 };
 
 export default function LocationsPage() {
