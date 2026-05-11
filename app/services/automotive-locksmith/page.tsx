@@ -213,7 +213,7 @@ export default function AutomotiveLocksmithPage() {
                   <p className="text-slate-500 text-sm italic font-medium leading-relaxed">Diagnostic troubleshooting for older Vehicle Anti-Theft systems that prevent starting.</p>
                 </div>
               </div>
-              <Link href="/blog/ignition-problems-guide">
+              <Link href="/blog/ignition-problems">
                 <Button size="large" className="bg-slate-900 text-white hover:bg-black h-16 px-10 font-bold uppercase italic border-0">Ignition Troubleshooting</Button>
               </Link>
             </div>
@@ -273,7 +273,7 @@ export default function AutomotiveLocksmithPage() {
           <div className="flex flex-wrap justify-center gap-12">
             {[
               { name: "Emergency Service", href: "/services/24-hour-emergency-locksmith" },
-              { name: "Ignition Problems", href: "/blog/ignition-problems-guide" },
+              { name: "Ignition Problems", href: "/blog/ignition-problems" },
               { name: "Car Key Guide", href: "/blog/car-key-replacement-guide" },
               { name: "Locked Out Car", href: "/blog/locked-out-car" }
             ].map((link, i) => (

@@ -21,8 +21,6 @@ const nextConfig = {
       { source: '/services/24-hour-locksmith', destination: '/services/24-hour-emergency-locksmith', permanent: true },
       { source: '/about-us', destination: '/about', permanent: true },
       { source: '/contact-us', destination: '/contact', permanent: true },
-      { source: '/locations/crown-heights', destination: '/locations/bed-stuy/crown-heights', permanent: true },
-      { source: '/locations/prospect-heights', destination: '/locations/bed-stuy/prospect-heights', permanent: true },
       { source: '/services/lock-replacement/residential', destination: '/services/lock-replacement', permanent: true },
       { source: '/services/lock-replacement/commercial', destination: '/services/lock-replacement', permanent: true },
       { source: '/services/lock-repair/residential', destination: '/services/lock-repair', permanent: true },
