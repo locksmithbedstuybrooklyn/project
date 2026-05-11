@@ -40,6 +40,7 @@ export function generateLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Locksmith',
+    '@id': `${SITE_URL}/#localbusiness`,
     name: SITE_NAME,
     telephone: PHONE,
     email: 'info@locksmithbedstuy.com',
@@ -62,13 +63,13 @@ export function generateLocalBusinessSchema() {
     },
     areaServed: [
       { '@type': 'City', name: 'Brooklyn', sameAs: 'https://www.wikidata.org/wiki/Q18419' },
-      { '@type': 'Neighborhood', name: 'Bed-Stuy', sameAs: 'https://en.wikipedia.org/wiki/Bedford%E2%80%93Stuyvesant,_Brooklyn' },
-      { '@type': 'Neighborhood', name: 'Williamsburg', sameAs: 'https://en.wikipedia.org/wiki/Williamsburg,_Brooklyn' },
-      { '@type': 'Neighborhood', name: 'Bushwick', sameAs: 'https://en.wikipedia.org/wiki/Bushwick,_Brooklyn' },
+      { '@type': 'Place', name: 'Bed-Stuy', sameAs: 'https://en.wikipedia.org/wiki/Bedford%E2%80%93Stuyvesant,_Brooklyn' },
+      { '@type': 'Place', name: 'Williamsburg', sameAs: 'https://en.wikipedia.org/wiki/Williamsburg,_Brooklyn' },
+      { '@type': 'Place', name: 'Bushwick', sameAs: 'https://en.wikipedia.org/wiki/Bushwick,_Brooklyn' },
     ],
     geo: {
       '@type': 'GeoCircle',
-      geoCenter: {
+      geoMidpoint: {
         '@type': 'GeoCoordinates',
         latitude: '40.6836',
         longitude: '-73.9412',
@@ -100,9 +101,11 @@ export function generateServiceSchema(serviceName: string, description: string, 
     url: `${SITE_URL}/services/${slug}`,
     provider: {
       '@type': 'Locksmith',
+      '@id': `${SITE_URL}/#localbusiness`,
       name: SITE_NAME,
       telephone: PHONE,
       url: SITE_URL,
+      image: `${SITE_URL}/images/og-image.webp`,
     },
     areaServed: {
       '@type': 'City',
