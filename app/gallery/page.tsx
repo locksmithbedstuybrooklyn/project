@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Work Gallery & Projects',
   description: 'Visual portfolio of our professional locksmith work in Brooklyn. Residential brownstone security, commercial access control, and automotive key programming.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/gallery' },
+  openGraph: { url: 'https://www.locksmithbedstuy.com/gallery' },
 };
 
 export default function GalleryPage() {

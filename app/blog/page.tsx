@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Security & Locksmith Advice',
   description: 'Read our guides on car lockouts, home security, and lock replacement. We help you stay safe in Brooklyn.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/blog' },
+  openGraph: { url: 'https://www.locksmithbedstuy.com/blog' },
 };
 
 export default function BlogPage() {

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Contact Dispatch 24/7',
   description: 'Contact us: (718) 568-6597. Available 24/7 for emergencies. Email, phone, or visit us. Fast response guaranteed.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/contact' },
+  openGraph: { url: 'https://www.locksmithbedstuy.com/contact' },
 };
 
 export default function ContactPage() {

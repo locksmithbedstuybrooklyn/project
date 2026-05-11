@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Expert Locksmith Services',
   description: 'All locksmith services in Bed-Stuy: car unlock, key replacement, lock repair, lock installation, ignition repair, emergency service. Call (718) 568-6597.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/services' },
+  openGraph: { url: 'https://www.locksmithbedstuy.com/services' },
 };
 
 export default function ServicesPage() {

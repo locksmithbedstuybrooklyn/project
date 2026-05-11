@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'About Us',
   description: 'Dedicated to security, rooted in community. Learn about Locksmith Bed Stuy, our mission, values, and expert team serving Brooklyn since 2010.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/about' },
+  openGraph: { url: 'https://www.locksmithbedstuy.com/about' },
 };
 
 export default function AboutPage() {

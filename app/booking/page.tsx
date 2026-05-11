@@ -6,6 +6,7 @@ export const metadata = {
   title: 'Book a Locksmith Online',
   description: 'Instant online booking for emergency locksmith services. 20-minute arrival in Bed-Stuy. Professional car, home, and commercial support available 24/7.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/booking' },
+  openGraph: { url: 'https://www.locksmithbedstuy.com/booking' },
 };
 
 export default function BookingPage() {

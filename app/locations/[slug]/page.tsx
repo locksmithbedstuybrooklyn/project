@@ -24,6 +24,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: location.description,
       url: `https://www.locksmithbedstuy.com/locations/${slug}`,
       type: 'website',
+      images: [
+        {
+          url: 'https://www.locksmithbedstuy.com/images/og-image.webp',
+          width: 1200,
+          height: 630,
+          alt: 'Bed-Stuy Locksmith - Expert Emergency Service in Brooklyn',
+        },
+      ],
     },
   };
 }
