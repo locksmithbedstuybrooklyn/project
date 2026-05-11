@@ -25,6 +25,9 @@ const nextConfig = {
       { source: '/services/lock-replacement/commercial', destination: '/services/lock-replacement', permanent: true },
       { source: '/services/lock-repair/residential', destination: '/services/lock-repair', permanent: true },
       { source: '/services/lock-installation/residential', destination: '/services/lock-installation', permanent: true },
+      { source: '/locations/bed-stuy/crown-heights', destination: '/locations/crown-heights', permanent: true },
+      { source: '/locations/bed-stuy/prospect-heights', destination: '/locations/prospect-heights', permanent: true },
+      { source: '/blog/ignition-problems', destination: '/blog/ignition-problems-guide', permanent: true },
     ];
   },
   async headers() {
