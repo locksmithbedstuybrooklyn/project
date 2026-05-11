@@ -10,7 +10,7 @@ import Image from 'next/image';
 export const runtime = 'edge';
 
 export const metadata: Metadata = {
-  title: 'Bed-Stuy Locksmith | Emergency Services | Brooklyn',
+  title: 'Emergency Car & Home Unlock 24/7',
   description: 'Fast local locksmith in Brooklyn. 20-minute emergency response. Car keys, lock replacement, and lockouts. Licensed and Insured. Call (718) 568-6597.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com' },
 };

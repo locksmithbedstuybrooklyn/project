@@ -534,7 +534,7 @@ We provide honest, transparent, and high-quality service to our neighbors in Oce
 export const blogPosts: BlogPost[] = [
   {
     id: 'locked-out-car',
-    title: 'Locked Out of Your Car? 2026 Ultimate Guide to Safe Entry',
+    title: 'Locked Out of Car? Safe Entry Guide 2026',
     slug: 'locked-out-car',
     image: '/images/blog/car-lockout.webp',
     description: "The most comprehensive guide to handling a car lockout in Bed-Stuy and NYC. From basic DIY safety to advanced Lishi decoding and 20-minute professional response strategies.",
@@ -612,7 +612,7 @@ At Locksmith Bed Stuy, we don't just "pop" doors. We provide a master-tier secur
   },
   {
     id: 'prevent-lockouts',
-    title: 'Never Get Locked Out Again: Behavioral & Tech Solutions (2026)',
+    title: 'How to Prevent Lockouts: 2026 Tech Guide',
     slug: 'prevent-lockouts',
     image: '/images/blog/prevent-lockouts.webp',
     description: 'A deep dive into lockout prevention. From 2026 smart fobs to the "Key-in-Hand" rule, learn how to secure your freedom and security.',
@@ -684,7 +684,7 @@ At Locksmith Bed Stuy, our goal is to be the partner you *don't* have to call fo
   },
   {
     id: 'car-key-replacement-guide',
-    title: 'The 2026 Ultimate Guide to Car Key Replacement: Tech, Cost, and Speed',
+    title: 'Car Key Replacement: 2026 Tech & Cost Guide',
     slug: 'car-key-replacement-guide',
     image: '/images/blog/car-key-replacement.webp',
     description: 'Lost your car key? Learn how laser cutting and transponder programming work in this 2026 authority guide to car key replacement.',
@@ -783,7 +783,7 @@ We provide dealership-level diagnostics at mobile locksmith prices. Our vans are
   },
   {
     id: 'home-security-checklist',
-    title: 'The 2026 Definitive Brooklyn Home Security Audit: A Master Checklist',
+    title: 'Brooklyn Home Security Checklist 2026',
     slug: 'home-security-checklist',
     image: '/images/blog/home-security.webp',
     description: "Secure your brownstone or condo with our 2500-word deep dive into professional residential security. From strike plate physics to smart home integration.",
@@ -850,7 +850,7 @@ Protecting your home in Brooklyn is an ongoing commitment. By following this mas
   },
   {
     id: 'lock-replacement-guide',
-    title: 'Homeowner’s Master Guide to Lock Replacement & Security (2026)',
+    title: 'Lock Replacement & Security Guide 2026',
     slug: 'lock-replacement-guide',
     image: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80',
     description: "Upgrade your security with confidence. Our 2500-word guide covers every technical aspect of lock replacement for Brooklyn properties, from Grade 1 hardware to smart integration.",
@@ -911,7 +911,7 @@ A new lock should operate with the precision of a Swiss watch. It should slide h
   },
   {
     id: 'lock-repair-vs-replacement',
-    title: 'Lock Repair vs. Replacement: The 2026 Financial & Security Audit',
+    title: 'Lock Repair vs. Replacement: 2026 Audit',
     slug: 'lock-repair-vs-replacement',
     image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80',
     description: "Save money without compromising safety. Our 2500-word deep dive explains the technical science of lock restoration, rekeying, and when to choose total hardware replacement.",
@@ -974,7 +974,7 @@ At Locksmith Bed Stuy, our goal is transparency. We don't push for expensive rep
   },
   {
     id: 'high-security-locks',
-    title: 'The Master’s Guide to High-Security Locks: Physics, Law, and 2026 Tech',
+    title: 'High-Security Locks: 2026 Tech Guide',
     slug: 'high-security-locks',
     image: 'https://images.unsplash.com/photo-1614362948307-319d9b7f1225?auto=format&fit=crop&q=80',
     description: "Don't settle for standard protection. Our 2500-word authority guide explores the world of UL 437 rated locks, pick-proof technology, and patented key control for Brooklyn properties.",
@@ -1032,7 +1032,7 @@ High-security hardware is an investment in your safety and your property value. 
   },
   {
     id: 'emergency-locksmith-tips',
-    title: 'Locked Out at 3 AM? The 2026 Survival Guide to Finding a Real Locksmith',
+    title: 'Locked Out at 3 AM? Survival Guide',
     slug: 'emergency-locksmith-tips',
     image: 'https://images.unsplash.com/photo-1543674892-7d64d45df18b?auto=format&fit=crop&q=80',
     description: "Don't fall for a scam during a crisis. Our 2500-word guide explains NYC locksmith laws, how to spot 'Bait and Switch' tactics, and how to verify professional credentials.",
@@ -1093,7 +1093,7 @@ An emergency doesn't have to be a disaster. By staying calm, verifying credentia
   },
   {
     id: 'lock-maintenance',
-    title: 'The Master Guide to Lock Maintenance: Structural Health & Longevity',
+    title: 'Guide to Lock Maintenance & Health',
     slug: 'lock-maintenance',
     image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80',
     description: 'Save thousands in replacement costs. Our 2500-word deep dive explains the technical science of lock lubrication, door alignment, and preventative care.',
@@ -1156,7 +1156,7 @@ Lock maintenance is the ultimate form of home insurance. Ten minutes of care onc
   },
   {
     id: 'bed-stuy-locksmith-guide',
-    title: 'Bed-Stuy Community Safety: Architecture, History & Security',
+    title: 'Bed-Stuy Community Safety & Security',
     slug: 'bed-stuy-locksmith-guide',
     image: 'https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&q=80',
     description: "We've been part of the Bed-Stuy community since 2010. Our 2500-word guide explores the specific security trends of our neighborhood and protecting historic brownstone assets.",

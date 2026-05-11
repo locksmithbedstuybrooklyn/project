@@ -6,7 +6,7 @@ import Card from '@/components/common/Card';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Locksmith Work Gallery | Real Security Projects | Bed-Stuy Brooklyn',
+  title: 'Work Gallery & Projects',
   description: 'Visual portfolio of our professional locksmith work in Brooklyn. Residential brownstone security, commercial access control, and automotive key programming.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/gallery' },
 };

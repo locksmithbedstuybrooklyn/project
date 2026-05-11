@@ -3,7 +3,7 @@ import { Shield, Clock, CheckCircle, Zap, Target, Award, Phone } from 'lucide-re
 import Button from '@/components/common/Button';
 
 export const metadata = {
-  title: 'Book a Locksmith | 20-Min Arrival | Bed-Stuy Brooklyn',
+  title: 'Book a Locksmith Online',
   description: 'Instant online booking for emergency locksmith services. 20-minute arrival in Bed-Stuy. Professional car, home, and commercial support available 24/7.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/booking' },
 };

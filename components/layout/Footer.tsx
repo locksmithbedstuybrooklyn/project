@@ -76,12 +76,11 @@ export default function Footer() {
               {[
                 { name: 'About Us', href: '/about' },
                 { name: 'Contact Dispatch', href: '/contact' },
-                { name: 'Helpful Guides', href: '/blog' },
-                { name: 'Price Estimator', href: '/price-estimator' },
+                { name: 'Technical Blog', href: '/blog' },
+                { name: 'Work Gallery', href: '/gallery' },
+                { name: 'Customer Reviews', href: '/testimonials' },
                 { name: 'Security Audits', href: '/quote' },
-                { name: 'Technical FAQ', href: '/faq' },
-                { name: 'Privacy Protocol', href: '/privacy-policy' },
-                { name: 'Terms of Service', href: '/terms-of-service' },
+                { name: 'Online Booking', href: '/booking' },
               ].map((link) => (
                 <li key={link.name}>
                   <Link href={link.href} className="group text-sm font-bold text-gray-400 hover:text-white flex items-center gap-2 transition-all italic uppercase tracking-tight">

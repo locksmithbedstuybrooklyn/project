@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Locksmith Service Areas | Bed-Stuy & Brooklyn | 20-Min Response',
+  title: 'Brooklyn Service Areas',
   description: 'Local locksmith service areas: Bed-Stuy, Crown Heights, Prospect Heights, Williamsburg, Greenpoint, Bushwick. 24/7 emergency response. Call (718) 568-6597.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/locations' },
 };

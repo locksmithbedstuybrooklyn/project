@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Contact Bed-Stuy Locksmith | Call (718) 568-6597 | 24/7',
+  title: 'Contact Dispatch 24/7',
   description: 'Contact us: (718) 568-6597. Available 24/7 for emergencies. Email, phone, or visit us. Fast response guaranteed.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/contact' },
 };

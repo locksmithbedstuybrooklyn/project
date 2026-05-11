@@ -8,7 +8,7 @@ import { Metadata } from 'next';
 import { generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Locksmith Advice | Bed-Stuy Brooklyn',
+  title: 'Security & Locksmith Advice',
   description: 'Read our guides on car lockouts, home security, and lock replacement. We help you stay safe in Brooklyn.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/blog' },
 };

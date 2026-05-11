@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const location = locations.find((l) => l.slug === slug);
   if (!location) return {};
   return {
-    title: `Expert Locksmith ${location.name} | 24/7 Rapid Response | (718) 568-6597`,
+    title: `Locksmith ${location.name} | 24/7 Response`,
     description: location.description,
     alternates: { canonical: `https://www.locksmithbedstuy.com/locations/${slug}` },
     openGraph: {

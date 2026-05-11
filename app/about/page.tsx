@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'About Locksmith Bed Stuy | Your Trusted Local Security Partner',
+  title: 'About Us',
   description: 'Dedicated to security, rooted in community. Learn about Locksmith Bed Stuy, our mission, values, and expert team serving Brooklyn since 2010.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/about' },
 };

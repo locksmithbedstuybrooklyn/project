@@ -30,13 +30,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/contact`, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE_URL}/booking`, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE_URL}/quote`, changeFrequency: 'monthly' as const, priority: 0.9 },
-    { url: `${BASE_URL}/faq`, changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE_URL}/blog`, changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: `${BASE_URL}/gallery`, changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${BASE_URL}/testimonials`, changeFrequency: 'monthly' as const, priority: 0.7 },
-    { url: `${BASE_URL}/price-estimator`, changeFrequency: 'monthly' as const, priority: 0.8 },
-    { url: `${BASE_URL}/privacy-policy`, changeFrequency: 'yearly' as const, priority: 0.4 },
-    { url: `${BASE_URL}/terms-of-service`, changeFrequency: 'yearly' as const, priority: 0.4 },
   ];
 
   return [

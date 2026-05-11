@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const service = services.find((s) => s.slug === fullSlug);
   if (!service) return {};
   return {
-    title: `${service.name} Bed-Stuy | 2026 Emergency & Technical Experts`,
+    title: `${service.name} Experts`,
     description: service.description,
     alternates: { canonical: `https://www.locksmithbedstuy.com/services/${fullSlug}` },
     openGraph: {

@@ -60,9 +60,9 @@ export default function Header() {
               {[
                 { name: 'Services', href: '/services' },
                 { name: 'Locations', href: '/locations' },
-                { name: 'Pricing', href: '/price-estimator' },
+                { name: 'Gallery', href: '/gallery' },
+                { name: 'Testimonials', href: '/testimonials' },
                 { name: 'Blog', href: '/blog' },
-                { name: 'FAQ', href: '/faq' },
               ].map((link) => (
                 <Link 
                   key={link.name} 
@@ -120,9 +120,9 @@ export default function Header() {
               {[
                 { name: 'All Services', href: '/services' },
                 { name: 'Service Areas', href: '/locations' },
-                { name: 'Price Estimator', href: '/price-estimator' },
+                { name: 'Work Gallery', href: '/gallery' },
+                { name: 'Reviews', href: '/testimonials' },
                 { name: 'Helpful Guides', href: '/blog' },
-                { name: 'Common FAQs', href: '/faq' },
               ].map((link) => (
                 <Link 
                   key={link.name} 
