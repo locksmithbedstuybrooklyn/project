@@ -189,7 +189,8 @@ export default function LocationsPage() {
         </div>
       </section>
     </div>
-  );
+  </div>
+);
 }
 
 
