@@ -114,21 +114,53 @@ Our technicians use specialized lock-picking techniques. We open your door. We d
 [[CTA:PHONE]]`,
   },
   {
+    id: 'automotive-locksmith',
+    name: 'Automotive Locksmith',
+    slug: 'automotive-locksmith',
+    description: 'Fast 24/7 mobile car locksmith in Bed-Stuy. Car lockouts, transponder key programming, ignition repair. 20-min response.',
+    icon: '🚗',
+    image: '/images/about-locksmith.webp',
+    keywords: ['car locksmith', 'automotive locksmith', 'car lockout', 'car key replacement', 'transponder programming', 'ignition repair'],
+    updatedAt: new Date('2026-05-06'),
+    content: `[[H2:Dealership Technology. At Your Door.]]
+Being stranded due to a car lockout, lost keys, or a faulty ignition can ruin your day. At Locksmith Bed Stuy, we specialize in providing rapid, reliable, and damage-free automotive services across Brooklyn.
+
+[[H3:Smart Key & Transponder Programming]]
+Modern vehicles utilize transponder chips that communicate with the engine's immobilizer. If your key isn't programmed correctly, your car won't start. We carry the same high-end diagnostic tools as major dealerships. Whether it's a push-to-start proximity fob or a classic transponder key, we code it on-site.
+
+[[H3:Ignition Repair & Key Extraction]]
+A malfunctioning ignition is a mechanical emergency. We diagnose and repair ignition cylinders, switches, and VAT systems right where your car is parked. If your key broke inside the lock, our precision extraction tools safely remove the fragment without destroying the expensive ignition cylinder.
+
+[[CTA:PHONE]]
+
+[[H3:Why Choose Us Over the Dealership?]]
+Don't tow it. We come to you. You avoid the high cost of towing and the premium dealership markup. We provide the exact same high-security keys and programming at a fraction of the cost and time.`,
+  },
+  {
     id: '24-hour-emergency-locksmith',
     name: '24-Hour Emergency',
     slug: '24-hour-emergency-locksmith',
-    description: 'Fast 24/7 emergency locksmith in Bed-Stuy. Car unlock, home, and business lockouts. 15-20 minute response time.',
+    description: 'Fast 24/7 emergency locksmith in Bed-Stuy. Car unlock, home, and business lockouts. 20-minute rapid response. Licensed NYC #2103442.',
     icon: '🚨',
-    image: 'https://images.unsplash.com/photo-1543674892-7d64d45df18b?auto=format&fit=crop&q=80',
-    keywords: ['24 hour locksmith', 'emergency locksmith', '24/7 locksmith', 'immediate locksmith help'],
+    image: '/images/emergency-locksmith.webp',
+    keywords: ['24 hour locksmith', 'emergency locksmith', '24/7 locksmith', 'immediate locksmith help', 'Bed-Stuy lockout service'],
     updatedAt: new Date('2026-05-06'),
-    content: `[[H2:Here For You]]
-Emergencies happen at any time. Our dispatchers and mobile units are available 24 hours a day. We work 7 days a week. We work on weekends and holidays.
+    content: `[[H2:Locked Out? 20-Min Arrival.]]
+Lock emergencies rarely happen at a convenient time. Whether it's a late-night house lockout, a broken key in the ignition, or an urgent need to secure your property after a break-in, these situations demand immediate attention. Our 24/7 units are already on patrol in Bed-Stuy.
 
-[[H3:Fast Response Times]]
-You call us in the middle of the night. You speak to a real local technician. We arrive within 30 minutes anywhere in our service area. You are not left waiting outside in the dark.
+[[H3:True 24/7 Reliability]]
+We operate 365 days a year, including all public holidays and weekends. We are one of the few true 24-hour emergency locksmiths in Brooklyn that consistently answer the phone at 4 AM. When you call, you speak to a real local expert, not a generic call center.
 
-[[CTA:PHONE]]`,
+[[H3:Damage-Free Entry Protocol]]
+Our priority is non-destructive entry. Our licensed technicians use advanced picking and bumping tools to resolve lockouts without causing unnecessary damage to your property, door frames, or vehicle hardware.
+
+[[CTA:PHONE]]
+
+[[H3:Our Rapid Protocol]]
+1. Call (718) 568-6597. We gather your location and details.
+2. Immediate Dispatch: The closest licensed unit is pinged.
+3. Rapid Arrival: We target a 20-minute window in Bed-Stuy.
+4. Expert Resolution: Professional fix with upfront pricing.`,
   },
 ];
 
