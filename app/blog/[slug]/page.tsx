@@ -39,7 +39,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     { name: post.title, url: `/blog/${post.slug}` },
   ]);
 
-  const related = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const currentIndex = blogPosts.findIndex((p) => p.slug === post.slug);
+  const related = [
+    blogPosts[(currentIndex + 1) % blogPosts.length],
+    blogPosts[(currentIndex + 2) % blogPosts.length],
+    blogPosts[(currentIndex + 3) % blogPosts.length],
+  ];
 
   // Advanced parser for 2500-word guides
   const renderContent = (content: string) => {
