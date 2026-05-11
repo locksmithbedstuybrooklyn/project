@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Free Locksmith Quote',
-  description: 'Get a transparent, no-obligation locksmith quote in seconds. Instant pricing for car lockouts, key replacement, and lock repairs in Bed-Stuy. Call (718) 568-6597.',
+  description: 'Get a transparent locksmith quote in seconds. Instant pricing for car lockouts, key replacement, and lock repairs in Bed-Stuy. Call (718) 568-6597.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/quote' },
 };
 
