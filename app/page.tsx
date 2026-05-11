@@ -12,6 +12,7 @@ export const runtime = 'edge';
 export const metadata: Metadata = {
   title: 'Bed-Stuy Locksmith | Emergency Services | Brooklyn',
   description: 'Fast local locksmith in Brooklyn. 20-minute emergency response. Car keys, lock replacement, and lockouts. Licensed and Insured. Call (718) 568-6597.',
+  alternates: { canonical: 'https://www.locksmithbedstuy.com' },
 };
 
 export default function Home() {

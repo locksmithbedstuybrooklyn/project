@@ -4,6 +4,8 @@ import Button from '@/components/common/Button';
 import { Metadata } from 'next';
 import Link from 'next/link';
 
+import { generateBreadcrumbSchema } from '@/lib/schema';
+
 export const metadata: Metadata = {
   title: 'Contact Bed-Stuy Locksmith | Call (718) 568-6597 | 24/7',
   description: 'Contact us: (718) 568-6597. Available 24/7 for emergencies. Email, phone, or visit us. Fast response guaranteed.',
@@ -11,8 +13,17 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Contact', url: '/contact' },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Massive Hero */}
       <section className="bg-gray-900 text-white py-32 border-b border-white/10 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>

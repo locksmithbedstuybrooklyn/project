@@ -47,6 +47,13 @@ export function generateLocalBusinessSchema() {
     image: `${SITE_URL}/images/og-image.webp`,
     description: 'Expert emergency locksmith in Bed-Stuy. 24/7 car unlock, lock replacement, and high-security installations. 20-minute response time.',
     priceRange: '$$',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Brooklyn',
+      addressRegion: 'NY',
+      postalCode: '11216',
+      addressCountry: 'US',
+    },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
@@ -92,12 +99,16 @@ export function generateServiceSchema(serviceName: string, description: string, 
     description,
     url: `${SITE_URL}/services/${slug}`,
     provider: {
-      '@type': 'LocalBusiness',
+      '@type': 'Locksmith',
       name: SITE_NAME,
       telephone: PHONE,
       url: SITE_URL,
     },
-    areaServed: 'Bed-Stuy, Brooklyn, New York',
+    areaServed: {
+      '@type': 'City',
+      name: 'Brooklyn',
+      sameAs: 'https://www.wikidata.org/wiki/Q18419',
+    },
     availableChannel: {
       '@type': 'ServiceChannel',
       servicePhone: { '@type': 'ContactPoint', telephone: PHONE, contactType: 'customer service' },
@@ -113,7 +124,7 @@ export function generateBreadcrumbSchema(items: { name: string; url: string }[])
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: item.url,
+      item: item.url.startsWith('http') ? item.url : `${SITE_URL}${item.url.startsWith('/') ? item.url : `/${item.url}`}`,
     })),
   };
 }

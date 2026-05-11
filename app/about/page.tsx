@@ -4,6 +4,8 @@ import Button from '@/components/common/Button';
 import { Metadata } from 'next';
 import Link from 'next/link';
 
+import { generateBreadcrumbSchema } from '@/lib/schema';
+
 export const metadata: Metadata = {
   title: 'About Locksmith Bed Stuy | Your Trusted Local Security Partner',
   description: 'Dedicated to security, rooted in community. Learn about Locksmith Bed Stuy, our mission, values, and expert team serving Brooklyn since 2010.',
@@ -11,6 +13,10 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'About', url: '/about' },
+  ]);
   const values = [
     {
       title: 'Trustworthiness',
@@ -45,7 +51,12 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50">
+    <div className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="flex flex-col min-h-screen bg-slate-50">
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center pt-20 overflow-hidden bg-[#0f172a]">
         <div className="absolute inset-0 z-0">

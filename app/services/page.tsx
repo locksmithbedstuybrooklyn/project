@@ -5,6 +5,8 @@ import Card from '@/components/common/Card';
 import Button from '@/components/common/Button';
 import { Metadata } from 'next';
 
+import { generateBreadcrumbSchema } from '@/lib/schema';
+
 export const metadata: Metadata = {
   title: 'Locksmith Services Bed-Stuy | Car, Residential, Commercial | 24/7',
   description: 'All locksmith services in Bed-Stuy: car unlock, key replacement, lock repair, lock installation, ignition repair, emergency service. Call (718) 568-6597.',
@@ -12,8 +14,17 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Services', url: '/services' },
+  ]);
+
   return (
     <div className="flex flex-col min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="bg-gradient-to-br from-trust-blue via-blue-900 to-blue-950 text-white py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">

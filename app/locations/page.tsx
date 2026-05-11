@@ -6,6 +6,8 @@ import Button from '@/components/common/Button';
 import { Metadata } from 'next';
 import Image from 'next/image';
 
+import { generateBreadcrumbSchema } from '@/lib/schema';
+
 export const metadata: Metadata = {
   title: 'Locksmith Service Areas | Bed-Stuy & Brooklyn | 20-Min Response',
   description: 'Local locksmith service areas: Bed-Stuy, Crown Heights, Prospect Heights, Williamsburg, Greenpoint, Bushwick. 24/7 emergency response. Call (718) 568-6597.',
@@ -13,8 +15,17 @@ export const metadata: Metadata = {
 };
 
 export default function LocationsPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Locations', url: '/locations' },
+  ]);
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="flex flex-col min-h-screen bg-white">
       {/* Massive Authority Hero */}
       <section className="bg-gray-900 text-white pt-32 pb-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
