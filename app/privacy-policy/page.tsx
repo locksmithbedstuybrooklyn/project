@@ -79,6 +79,8 @@ export default function PrivacyPolicyPage() {
             <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Contact Us</h3>
               <p className="font-bold">Bed-Stuy Locksmith</p>
+              <p>Address: 492 Throop Ave, Brooklyn, NY 11221</p>
+              <p>Hours: Mon-Sun 9AM - 6PM (Emergency 24/7)</p>
               <p>Phone: (718) 568-6597</p>
               <p>Email: info@locksmithbedstuy.com</p>
             </div>

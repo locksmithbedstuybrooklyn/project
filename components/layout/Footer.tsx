@@ -23,6 +23,18 @@ export default function Footer() {
                 </div>
                 (718) 568-6597
               </a>
+              <div className="flex items-center gap-4 text-gray-400 text-sm font-medium italic">
+                <div className="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center text-action-orange">
+                  <MapPin size={18} />
+                </div>
+                492 Throop Ave, Brooklyn, NY 11221
+              </div>
+              <div className="flex items-center gap-4 text-gray-400 text-sm font-medium italic">
+                <div className="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center text-action-orange">
+                  <Clock size={18} />
+                </div>
+                Mon-Sun 9AM - 6PM (Emergency 24/7)
+              </div>
               <div className="flex items-center gap-4 text-gray-400 text-xs font-black uppercase tracking-widest italic">
                 <Shield size={14} className="text-safety-green" /> DCWP License #2103442-DCA
               </div>

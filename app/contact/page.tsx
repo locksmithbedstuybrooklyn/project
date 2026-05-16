@@ -80,22 +80,23 @@ export default function ContactPage() {
                       <MapPin size={32} />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-500 font-black uppercase tracking-[0.2em] italic mb-1">Service Area</p>
-                      <p className="text-xl font-bold text-gray-900">Bed-Stuy and 5-mile radius</p>
+                      <p className="text-sm text-gray-500 font-black uppercase tracking-[0.2em] italic mb-1">Headquarters</p>
+                      <p className="text-xl font-bold text-gray-900">492 Throop Ave, Brooklyn, NY 11221</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-gray-900 text-white p-10 rounded-[2.5rem] relative overflow-hidden">
-                  <div className="absolute -bottom-8 -right-8 opacity-10">
-                    <Clock size={150} />
+                  <div className="bg-gray-900 text-white p-10 rounded-[2.5rem] relative overflow-hidden">
+                    <div className="absolute -bottom-8 -right-8 opacity-10">
+                      <Clock size={150} />
+                    </div>
+                    <Clock className="text-action-orange mb-6" size={40} />
+                    <h3 className="text-2xl font-black mb-3 uppercase italic tracking-tight">Hours</h3>
+                    <p className="text-gray-400 font-medium italic">Mon-Sun: 9AM - 6PM</p>
+                    <p className="text-safety-green font-black italic uppercase text-xs mt-2 tracking-widest">Emergency Dispatch 24/7</p>
                   </div>
-                  <Clock className="text-action-orange mb-6" size={40} />
-                  <h3 className="text-2xl font-black mb-3 uppercase italic tracking-tight">Available 24/7</h3>
-                  <p className="text-gray-400 font-medium italic">Nights, weekends, and holidays.</p>
-                </div>
                 <div className="bg-gray-900 text-white p-10 rounded-[2.5rem] relative overflow-hidden">
                   <div className="absolute -bottom-8 -right-8 opacity-10">
                     <Shield size={150} />
@@ -150,8 +151,8 @@ export default function ContactPage() {
                   <MapPin size={56} />
                 </div>
                 <div>
-                  <h3 className="text-3xl font-black mb-4 uppercase italic tracking-tighter text-gray-900">Service Area Coverage</h3>
-                  <p className="text-gray-500 font-medium mb-6 italic leading-relaxed">We are a mobile locksmith service based in Bed-Stuyvesant, Brooklyn, serving all neighborhoods within a 5-mile radius.</p>
+                  <h3 className="text-3xl font-black mb-4 uppercase italic tracking-tighter text-gray-900">Visit or Call</h3>
+                  <p className="text-gray-500 font-medium mb-6 italic leading-relaxed">Our headquarters is located at 492 Throop Ave, Brooklyn, NY 11221. We serve all neighborhoods within a 5-mile radius.</p>
                   <Link href="/locations" className="text-action-orange font-black flex items-center gap-2 hover:gap-4 uppercase tracking-widest text-sm transition-all italic">
                     View coverage map <ArrowRight size={18} />
                   </Link>

@@ -178,8 +178,25 @@ export default function LocationsPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-4xl md:text-7xl font-black mb-12 tracking-tighter uppercase italic leading-none text-gray-900">Out of <span className="text-trust-blue">Area?</span></h2>
           <p className="text-2xl text-gray-500 mb-16 font-medium italic max-w-2xl mx-auto">
-            If you are within 5 miles of Bed-Stuy, we can likely reach you. Call to confirm technician availability.
+            If you are within 5 miles of Bed-Stuy, we can likely reach you. Call to confirm technician availability or visit our local headquarters.
           </p>
+          <div className="bg-gray-50 p-12 rounded-[3rem] border border-gray-200 inline-block text-left max-w-2xl w-full mb-16">
+             <div className="flex flex-col sm:flex-row gap-8 items-center">
+                <div className="w-24 h-24 bg-gray-900 rounded-3xl flex items-center justify-center text-white shrink-0">
+                   <MapPin size={40} />
+                </div>
+                <div>
+                   <h3 className="text-2xl font-black uppercase italic tracking-tighter text-gray-900 mb-2">Main Headquarters</h3>
+                   <p className="text-gray-600 font-bold italic text-lg leading-tight">492 Throop Ave, Brooklyn, NY 11221</p>
+                   <div className="mt-2 space-y-1">
+                      <p className="text-gray-500 text-sm font-medium italic flex items-center gap-2">
+                         <Clock size={14} className="text-action-orange" /> Mon-Sun 9AM - 6PM
+                      </p>
+                      <p className="text-safety-green text-xs font-black uppercase italic tracking-widest">Emergency Dispatch 24/7</p>
+                   </div>
+                </div>
+             </div>
+          </div>
           <div className="flex flex-wrap justify-center gap-10 opacity-30 grayscale">
              <div className="flex flex-col items-center">
                 <CheckCircle size={48} className="mb-4" />

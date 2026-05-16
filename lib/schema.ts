@@ -1,6 +1,8 @@
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.locksmithbedstuy.com';
 const SITE_NAME = 'Bed-Stuy Locksmith';
 const PHONE = '(718) 568-6597';
+const ADDRESS = '492 Throop Ave, Brooklyn, NY 11221';
+const HOURS = 'Mon-Sun 9AM - 6PM (Emergency 24/7)';
 
 export function generateArticleSchema(post: any) {
   return {
@@ -50,9 +52,10 @@ export function generateLocalBusinessSchema() {
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: '492 Throop Ave',
       addressLocality: 'Brooklyn',
       addressRegion: 'NY',
-      postalCode: '11216',
+      postalCode: '11221',
       addressCountry: 'US',
     },
     openingHoursSpecification: {
