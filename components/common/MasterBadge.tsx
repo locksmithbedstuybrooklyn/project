@@ -36,7 +36,7 @@ export default function MasterBadge({ className = '', variant = 'full' }: Master
       <div className="space-y-2 pt-2 border-t border-gray-800">
         <div className="flex items-center gap-2 text-[9px] font-bold uppercase tracking-widest text-gray-400">
           <CheckCircle2 size={10} className="text-safety-green" />
-          NYC License #2103442
+          Licensed & Insured
         </div>
         <div className="flex items-center gap-2 text-[9px] font-bold uppercase tracking-widest text-gray-400">
           <CheckCircle2 size={10} className="text-safety-green" />

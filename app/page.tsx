@@ -54,7 +54,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-3xl font-black italic">LIC</span>
-                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 italic">NYC #2103442</span>
+                  <span className="text-[10px] font-black uppercase tracking-widest text-gray-400 italic">NYC Licensed</span>
                 </div>
               </div>
             </div>

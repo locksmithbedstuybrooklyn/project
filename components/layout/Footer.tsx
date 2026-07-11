@@ -36,7 +36,7 @@ export default function Footer() {
                 Mon-Sun 9AM - 6PM (Emergency 24/7)
               </div>
               <div className="flex items-center gap-4 text-gray-400 text-xs font-black uppercase tracking-widest italic">
-                <Shield size={14} className="text-safety-green" /> DCWP License #2103442-DCA
+                <Shield size={14} className="text-safety-green" /> Licensed & Insured
               </div>
             </div>
           </div>

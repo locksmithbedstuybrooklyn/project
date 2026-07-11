@@ -27,7 +27,7 @@ export default function Header() {
             <div className="flex items-center gap-6">
               <span className="flex items-center gap-2"><Clock size={12} className="text-action-orange" /> 20-Min Response</span>
               <div className="hidden md:flex items-center gap-4">
-                <span className="flex items-center gap-2"><Shield size={12} className="text-safety-green" /> Licensed NYC #2103442</span>
+                <span className="flex items-center gap-2"><Shield size={12} className="text-safety-green" /> Licensed NYC Locksmith</span>
                 <MasterBadge variant="compact" />
               </div>
             </div>

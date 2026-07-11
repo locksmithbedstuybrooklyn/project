@@ -53,7 +53,7 @@ export default function AboutPage() {
     },
     {
       title: 'Licensed & Insured',
-      desc: 'We are a fully licensed (NYC License #2103442), bonded, and insured locksmith service.',
+      desc: 'We are a fully licensed, bonded, and insured locksmith service.',
       icon: <Award className="text-emerald-500" size={32} />
     }
   ];
@@ -92,7 +92,7 @@ export default function AboutPage() {
             <div className="flex flex-wrap justify-center gap-8 border-t border-white/10 pt-10">
               <div className="flex items-center gap-3">
                 <CheckCircle className="text-orange-400" size={20} />
-                <span className="text-white/80 font-bold uppercase tracking-widest text-sm">NYC License #2103442</span>
+                <span className="text-white/80 font-bold uppercase tracking-widest text-sm">Fully Licensed</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="text-orange-400" size={20} />

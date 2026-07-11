@@ -38,7 +38,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="inline-flex items-center gap-2 bg-action-orange/20 border border-action-orange/30 px-4 py-2 rounded-full mb-8">
             <Shield size={16} className="text-action-orange" />
-            <span className="text-action-orange text-sm font-black uppercase italic tracking-widest">Licensed NYC #2103442</span>
+            <span className="text-action-orange text-sm font-black uppercase italic tracking-widest">Licensed NYC Locksmith</span>
           </div>
           <h1 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter uppercase italic leading-none">
             Comprehensive <br /> <span className="text-action-orange">Security Solutions</span>

@@ -33,7 +33,7 @@ export default function FAQPage() {
     },
     {
       question: 'Are your locksmiths licensed?',
-      answer: 'Yes. Every technician is fully licensed by the NYC Department of Consumer Affairs (License #2103442). We are also fully insured for your protection.'
+      answer: 'Yes. Every technician is fully licensed by the NYC Department of Consumer Affairs. We are also fully insured for your protection.'
     },
     {
       question: 'What if you can\'t open it?',
@@ -113,7 +113,7 @@ export default function FAQPage() {
                 <div className="mt-16 flex flex-wrap justify-center gap-10 opacity-40">
                    <div className="flex items-center gap-3">
                       <Shield className="text-safety-green" size={24} />
-                      <span className="text-xs font-black uppercase tracking-widest italic text-white">Licensed NYC #2103442</span>
+                      <span className="text-xs font-black uppercase tracking-widest italic text-white">Licensed NYC Locksmith</span>
                    </div>
                    <div className="flex items-center gap-3">
                       <Clock className="text-safety-green" size={24} />
