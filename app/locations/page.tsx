@@ -10,11 +10,11 @@ import { generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Brooklyn Service Areas',
-  description: 'Local locksmith service areas: Bed-Stuy, Crown Heights, Prospect Heights, Williamsburg, Greenpoint, Bushwick. 24/7 emergency response. Call (718) 568-6597.',
+  description: 'Where does Locksmith Bed Stuy operate? We provide 20-minute emergency response to Bed-Stuy and a 5-mile radius including Crown Heights, Williamsburg, and Bushwick.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/locations' },
   openGraph: {
     title: 'Brooklyn Service Areas | Bed-Stuy Locksmith',
-    description: 'Local locksmith service areas: Bed-Stuy, Crown Heights, Prospect Heights, Williamsburg, Greenpoint, Bushwick. 24/7 emergency response. Call (718) 568-6597.',
+    description: 'Where does Locksmith Bed Stuy operate? We provide 20-minute emergency response to Bed-Stuy and a 5-mile radius including Crown Heights, Williamsburg, and Bushwick.',
     url: 'https://www.locksmithbedstuy.com/locations',
     siteName: 'Bed-Stuy Locksmith',
     type: 'website',
@@ -48,7 +48,7 @@ export default function LocationsPage() {
             Service <span className="text-action-orange">Areas</span>
           </h1>
           <p className="text-xl md:text-3xl text-blue-100 mb-12 max-w-4xl mx-auto font-medium italic leading-tight">
-            We operate a tight, fast-response network across <span className="text-white font-bold underline decoration-action-orange underline-offset-8">Brooklyn's core neighborhoods</span>.
+            Where are we located? Right in the heart of Bed-Stuy. We run a tight, fast-response network ensuring 20-minute arrivals across our <span className="text-white font-bold underline decoration-action-orange underline-offset-8">core Brooklyn zones</span>.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="tel:(718)568-6597">
@@ -72,10 +72,10 @@ export default function LocationsPage() {
               </h2>
               <div className="space-y-8 text-xl text-gray-600 font-medium italic leading-relaxed">
                 <p>
-                  Being "Local" isn't a marketing slogan for us; it's a structural requirement. We only serve neighborhoods where we can guarantee a <span className="text-gray-900 font-black">20-minute arrival window</span>.
+                  Do we service your area? If you are within 5 miles of Bed-Stuy, yes. Being "Local" isn't just a marketing slogan for us; it's a structural requirement to guarantee a <span className="text-gray-900 font-black">20-minute emergency arrival window</span>.
                 </p>
                 <p>
-                  Our technicians live and work in Bed-Stuy, Bushwick, and Williamsburg. We know the building types, the lock systems common to historic brownstones, and the fastest routes when every minute counts.
+                  Our technicians live and work in Bed-Stuy. We know the exact layout of the neighborhood, the specific lock systems common to MacDonough Street brownstones, and the fastest routes down Fulton Street when every minute counts.
                 </p>
               </div>
               <div className="mt-12 grid grid-cols-2 gap-6">

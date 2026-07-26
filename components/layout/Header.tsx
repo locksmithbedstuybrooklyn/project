@@ -56,7 +56,7 @@ export default function Header() {
             </Link>
  
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-6 xl:space-x-10">
+            <nav className="hidden lg:flex items-center space-x-3 xl:space-x-5">
               {[
                 { name: 'Services', href: '/services' },
                 { name: 'Locations', href: '/locations' },
@@ -76,7 +76,7 @@ export default function Header() {
             </nav>
  
             {/* Desktop CTA */}
-            <div className="hidden lg:flex items-center space-x-6">
+            <div className="hidden lg:flex items-center space-x-4">
               <a href="tel:(718)568-6597" className="flex items-center gap-3 group">
                 <div className="w-10 h-10 rounded-full bg-action-orange text-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-orange-500/20">
                   <Phone size={18} />

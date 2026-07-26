@@ -8,11 +8,11 @@ import { generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Contact Dispatch 24/7',
-  description: 'Contact us: (718) 568-6597. Available 24/7 for emergencies. Email, phone, or visit us. Fast response guaranteed.',
+  description: 'Need a locksmith right now in Bed-Stuy? Call (718) 568-6597. We dispatch licensed technicians 24/7 directly from our local Brooklyn headquarters.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/contact' },
   openGraph: {
     title: 'Contact Dispatch 24/7 | Bed-Stuy Locksmith',
-    description: 'Contact us: (718) 568-6597. Available 24/7 for emergencies. Email, phone, or visit us. Fast response guaranteed.',
+    description: 'Need a locksmith right now in Bed-Stuy? Call (718) 568-6597. We dispatch licensed technicians 24/7 directly from our local Brooklyn headquarters.',
     url: 'https://www.locksmithbedstuy.com/contact',
     siteName: 'Bed-Stuy Locksmith',
     type: 'website',
@@ -40,7 +40,7 @@ export default function ContactPage() {
             Contact <span className="text-action-orange">Us</span>
           </h1>
           <p className="text-2xl md:text-3xl text-blue-100 mb-10 max-w-3xl mx-auto font-medium italic">
-            Available 24/7 for emergency service. Call now for immediate help.
+            Locked out? Don't panic. Call our Bed-Stuy dispatch line for immediate, 24/7 assistance from a licensed technician.
           </p>
         </div>
       </section>
@@ -52,7 +52,7 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-4xl md:text-6xl font-black text-gray-900 mb-8 uppercase tracking-tighter italic">Get In Touch</h2>
                 <p className="text-xl text-gray-600 leading-relaxed mb-12 italic font-medium">
-                  We respond to calls, texts, and emails. For emergencies, calling is fastest. We'll dispatch a technician immediately.
+                  If you are locked out or need emergency repairs, calling is the fastest way to get help. We dispatch our mobile units immediately from our central Bed-Stuy location.
                 </p>
                 <div className="space-y-6">
                   <a href="tel:(718)568-6597" className="flex items-center gap-8 p-8 bg-gray-50 border border-gray-100 rounded-[2rem] group hover:border-trust-blue hover:bg-blue-50 transition-all">
@@ -103,7 +103,7 @@ export default function ContactPage() {
                   </div>
                   <Shield className="text-safety-green mb-6" size={40} />
                   <h3 className="text-2xl font-black mb-3 uppercase italic tracking-tight">20-Min Arrival</h3>
-                  <p className="text-gray-400 font-medium italic">Fast response across our area.</p>
+                  <p className="text-gray-400 font-medium italic">Average response time within Bed-Stuy.</p>
                 </div>
               </div>
 
@@ -111,12 +111,12 @@ export default function ContactPage() {
                 <h3 className="text-3xl font-black text-gray-900 mb-8 uppercase tracking-tighter italic">Why Call Us</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {[
-                    'Fast response guaranteed',
-                    'Professional licensed service',
-                    'Transparent honest pricing',
-                    'Licensed and insured',
-                    'Serving Bed-Stuy since 2010',
-                    'Non-destructive techniques'
+                    '20-Minute Local Dispatch',
+                    'NYC DCA Licensed Techs',
+                    'Upfront, Fixed Pricing',
+                    '$2M Liability Insurance',
+                    'Locally Owned in Bed-Stuy',
+                    '99% Damage-Free Entry'
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-4 text-gray-700 font-bold italic">
                       <CheckCircle className="text-safety-green flex-shrink-0" size={24} />
@@ -152,7 +152,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-3xl font-black mb-4 uppercase italic tracking-tighter text-gray-900">Visit or Call</h3>
-                  <p className="text-gray-500 font-medium mb-6 italic leading-relaxed">Our headquarters is located at 492 Throop Ave, Brooklyn, NY 11221. We serve all neighborhoods within a 5-mile radius.</p>
+                  <p className="text-gray-500 font-medium mb-6 italic leading-relaxed">Our primary dispatch center is located at 492 Throop Ave, Brooklyn, NY 11221. From here, our mobile units provide rapid response to all neighborhoods within a 5-mile radius.</p>
                   <Link href="/locations" className="text-action-orange font-black flex items-center gap-2 hover:gap-4 uppercase tracking-widest text-sm transition-all italic">
                     View coverage map <ArrowRight size={18} />
                   </Link>

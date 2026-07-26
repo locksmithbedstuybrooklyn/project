@@ -31,7 +31,7 @@ export default function Home() {
                 Brooklyn <span className="text-action-orange">Locksmith</span>
               </h1>
               <p className="text-xl md:text-3xl text-blue-100 mb-8 max-w-xl font-medium leading-tight">
-                We provide <span className="text-white font-bold">reliable locksmith services</span> for your home and car in Bed-Stuy.
+                Locked out? Need a lock changed? <span className="text-white font-bold">Locksmith Bed Stuy</span> provides immediate, damage-free entry and professional security upgrades for your home and car, directly in the neighborhood.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 mb-8">
@@ -113,13 +113,13 @@ export default function Home() {
 
             <div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-12 uppercase italic tracking-tighter leading-none text-gray-900">
-                We Protect <span className="text-trust-blue">Your Property</span>.
+                Expert Security for <span className="text-trust-blue">Bed-Stuy</span>.
               </h2>
               <div className="space-y-10">
                 {[
-                  { title: 'Brownstone Locks', desc: 'We restore and replace old mortise locks on Bed-Stuy brownstones.' },
-                  { title: 'Smart Keys', desc: 'We program transponder keys. We install smart home locks.' },
-                  { title: 'Local Business', desc: 'We serve local zip codes. We care about our community.' }
+                  { title: 'Historic Brownstone Locks', desc: 'Specializing in the repair, replacement, and modernization of historic mortise locks found in classic Bed-Stuy brownstones, ensuring maximum security without compromising architectural aesthetic.' },
+                  { title: 'Smart Keys & Smart Homes', desc: 'From programming modern automotive transponder keys on the spot to installing the latest keyless entry smart locks (Schlage, Yale, August) for your apartment.' },
+                  { title: 'True Local Business', desc: 'We are not a remote dispatch center. We are a dedicated local team, licensed and insured, protecting our neighbors in 11216, 11221, and the surrounding areas.' }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-8 group">
                     <div className="flex-shrink-0 w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center text-gray-400 group-hover:bg-trust-blue group-hover:text-white transition-all">
@@ -149,7 +149,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-24">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 uppercase italic tracking-tighter">Our <span className="text-action-orange">Services</span></h2>
-            <p className="text-xl text-blue-100/60 font-medium max-w-2xl mx-auto italic">We solve your lock problems in Brooklyn.</p>
+            <p className="text-xl text-blue-100/60 font-medium max-w-2xl mx-auto italic">Comprehensive lock and key solutions delivered with professional expertise and upfront pricing.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
@@ -177,9 +177,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end gap-8 mb-24">
             <div className="max-w-2xl">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 uppercase italic tracking-tighter text-gray-900 leading-none">Local <span className="text-trust-blue">Locksmith</span></h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-8 uppercase italic tracking-tighter text-gray-900 leading-none">Your Bed-Stuy <span className="text-trust-blue">Locksmith</span></h2>
               <p className="text-xl text-gray-500 font-medium italic leading-relaxed">
-                We are not a national dispatch center. Our technicians are in your neighborhood.
+                Based centrally in Bed-Stuy, our mobile units cover a 5-mile radius, ensuring rapid response times to our neighboring Brooklyn communities.
               </p>
             </div>
             <Link href="/locations">
@@ -207,7 +207,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-black mb-12 tracking-tighter uppercase italic leading-none">Locked <span className="text-action-orange">Out?</span></h2>
           <p className="text-2xl md:text-3xl text-blue-100 mb-16 font-medium italic">
-            Do not waste time. Call a local locksmith directly for fast help.
+            Don't trust your security to an out-of-state call center. Connect directly with a licensed Bed-Stuy technician for immediate, upfront pricing and fast help.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="tel:(718)568-6597">

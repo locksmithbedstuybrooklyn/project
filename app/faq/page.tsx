@@ -7,11 +7,11 @@ import { generateFAQSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Locksmith FAQ | Expert Answers | Bed-Stuy Brooklyn',
-  description: 'Frequently asked questions about Brooklyn locksmith services: pricing, response times, licensed technicians, and emergency support. Call (718) 568-6597.',
+  description: 'Get straight answers to your Brooklyn security questions. Pricing, 20-minute Bed-Stuy response times, and emergency support details from licensed professionals.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/faq' },
   openGraph: {
     title: 'Locksmith FAQ | Expert Answers | Bed-Stuy',
-    description: 'Frequently asked questions about locksmith services: pricing, response times, and emergency support in Bed-Stuy, Brooklyn.',
+    description: 'Get straight answers to your Brooklyn security questions. Pricing, 20-minute Bed-Stuy response times, and emergency support details.',
     url: 'https://www.locksmithbedstuy.com/faq',
     type: 'website',
   },
@@ -20,28 +20,28 @@ export const metadata: Metadata = {
 export default function FAQPage() {
   const faqs = [
     {
-      question: 'How fast do you respond?',
-      answer: 'Our average arrival time in Bed-Stuy is 15-20 minutes. Our dispatchers use GPS tracking to send the closest technician to your location immediately.'
+      question: 'Do you provide emergency lockout service in Bed-Stuy?',
+      answer: 'Yes, we dispatch immediately. If you are in the 11216 or 11221 zip codes, our average arrival time is 15-20 minutes, facilitated by our GPS-tracked mobile units stationed locally.'
     },
     {
-      question: 'Do you charge for quotes?',
-      answer: 'No. We provide free, transparent estimates over the phone. We don\'t believe in hidden fees or "bait and switch" pricing tactics.'
+      question: 'How much does a standard lockout cost?',
+      answer: 'Our standard residential lockout service starts at a clear, flat rate. We always provide a firm, upfront estimate before any work begins, eliminating the stress of hidden fees or bait-and-switch tactics.'
     },
     {
-      question: 'Are you available now?',
-      answer: 'Yes. We are available 24 hours a day, 7 days a week, 365 days a year. We never close, not even on holidays or in the middle of the night.'
+      question: 'Are you open right now for emergencies?',
+      answer: 'Yes. Locksmith Bed Stuy operates 24/7/365. Whether it\'s 2 PM on a Tuesday or 3 AM on a holiday weekend, our licensed technicians are on call and ready to respond.'
     },
     {
-      question: 'Are your locksmiths licensed?',
-      answer: 'Yes. Every technician is fully licensed by the NYC Department of Consumer Affairs. We are also fully insured for your protection.'
+      question: 'How do I know I can trust your technicians?',
+      answer: 'Every technician is fully licensed by the NYC Department of Consumer Affairs. Furthermore, our team members undergo rigorous background checks and our business carries $2M in liability insurance.'
     },
     {
-      question: 'What if you can\'t open it?',
-      answer: 'We have a 99% success rate for damage-free entry. In the extremely rare case where a lock is completely seized or broken, we will explain the situation and provide replacement options.'
+      question: 'Will you have to drill and destroy my lock?',
+      answer: 'Drilling is always our absolute last resort. Our master technicians possess the advanced lock-picking skills required to open 99% of residential and automotive locks without causing any damage to your hardware.'
     },
     {
-      question: 'How do I pay?',
-      answer: 'We accept all major credit cards, debit cards, and cash. You only pay after the job is completed to your satisfaction.'
+      question: 'What forms of payment do you accept on-site?',
+      answer: 'We accept all major credit cards, debit cards, and cash directly at your location. Payment is only collected after the job is completed and you are fully satisfied with the security of your property.'
     }
   ];
 

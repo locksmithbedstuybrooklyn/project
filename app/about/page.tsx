@@ -8,11 +8,11 @@ import { generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Dedicated to security, rooted in community. Learn about Locksmith Bed Stuy, our mission, values, and expert team serving Brooklyn since 2010.',
+  description: 'Who is Locksmith Bed Stuy? We are a hyper-local, licensed Brooklyn security team providing 20-minute response times and transparent pricing since 2010.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/about' },
   openGraph: {
     title: 'About Us | Bed-Stuy Locksmith',
-    description: 'Dedicated to security, rooted in community. Learn about Locksmith Bed Stuy, our mission, values, and expert team serving Brooklyn since 2010.',
+    description: 'Who is Locksmith Bed Stuy? We are a hyper-local, licensed Brooklyn security team providing 20-minute response times and transparent pricing since 2010.',
     url: 'https://www.locksmithbedstuy.com/about',
     siteName: 'Bed-Stuy Locksmith',
     type: 'website',
@@ -27,33 +27,33 @@ export default function AboutPage() {
   ]);
   const values = [
     {
-      title: 'Trustworthiness',
-      desc: 'We operate with complete transparency, offering honest assessments and fair pricing. Our reputation is built on the trust our customers place in us.',
+      title: 'Transparent Pricing',
+      desc: 'No hidden fees. No bait-and-switch. We provide clear, upfront pricing before we ever touch your lock, so you know exactly what to expect.',
       icon: <Shield className="text-orange-500" size={32} />
     },
     {
-      title: 'Expertise',
-      desc: 'Our team comprises highly trained and certified locksmiths. From mortise locks to transponder keys, our technical proficiency is unmatched.',
+      title: 'Bed-Stuy Specialists',
+      desc: 'From restoring 100-year-old mortise locks on MacDonough Street to installing smart access control for new Fulton Street cafes, we know local architecture.',
       icon: <Wrench className="text-blue-500" size={32} />
     },
     {
-      title: 'Rapid Response',
-      desc: 'Our local presence ensures a rapid response, with a 20-minute goal for emergencies in our core service areas.',
+      title: '20-Min Local Dispatch',
+      desc: 'Because we operate directly out of Bed-Stuy (near Throop Ave), our mobile units reach emergencies in our core service area much faster than out-of-neighborhood competitors.',
       icon: <Zap className="text-yellow-500" size={32} />
     },
     {
-      title: 'Damage-Free Service',
-      desc: 'We employ specialized tools to ensure that all services are performed without causing damage to your property.',
+      title: 'Precision Entry',
+      desc: 'We are skilled lock-pickers. We only resort to drilling a lock as an absolute last resort, saving you the cost of unnecessary hardware replacement.',
       icon: <Target className="text-red-500" size={32} />
     },
     {
-      title: 'Community Focus',
-      desc: 'We are proud to serve our community and actively participate in local initiatives. We are your neighbors.',
+      title: 'Community First',
+      desc: 'We secure the neighborhoods we live in. Your safety is personal to us, which is why we provide free security consultations to local Bed-Stuy businesses.',
       icon: <Heart className="text-pink-500" size={32} />
     },
     {
       title: 'Licensed & Insured',
-      desc: 'We are a fully licensed, bonded, and insured locksmith service.',
+      desc: 'Our technicians are fully licensed by the NYC Department of Consumer Affairs, legally bonded, and comprehensively insured for your absolute peace of mind.',
       icon: <Award className="text-emerald-500" size={32} />
     }
   ];
@@ -81,13 +81,13 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-8xl font-black text-white leading-none mb-8 tracking-tighter">
-              DEDICATED TO SECURITY,<br />
+              YOUR LOCAL BED-STUY<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500">
-                ROOTED IN COMMUNITY
+                SECURITY EXPERTS
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-              At Locksmith Bed Stuy, we are more than just a service; we are an integral part of the Brooklyn community.
+              We aren't a national call center. Locksmith Bed Stuy is a dedicated team of licensed professionals operating right here in the neighborhood.
             </p>
             <div className="flex flex-wrap justify-center gap-8 border-t border-white/10 pt-10">
               <div className="flex items-center gap-3">
@@ -125,13 +125,13 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
                 <p>
-                  Locksmith Bed Stuy was established with a clear vision: to offer a local, responsive, and highly skilled locksmith service that truly understands the unique security landscape of Brooklyn.
+                  Locksmith Bed Stuy was founded on a simple premise: Bed-Stuy residents deserve a local locksmith they can actually trust. No bait-and-switch pricing, no arriving hours late, and no destroying locks that can easily be picked.
                 </p>
                 <p>
-                  Unlike large, impersonal national chains, we are deeply familiar with the architectural nuances of Bed-Stuy brownstones, the diverse security requirements of local businesses, and the specific automotive needs of our community members.
+                  The architecture of Bedford-Stuyvesant is unique. A generic locksmith often lacks the expertise to carefully repair a 120-year-old mortise lock on a historic brownstone without damaging the original wood. We specialize in exactly that, while also possessing the technical capability to install advanced smart-access systems for the neighborhood's newest developments.
                 </p>
                 <p>
-                  Our journey began with a dedication to mastering the craft of locksmithing, combining traditional techniques with the latest advancements in security technology. Over the years, we have grown, but our core values remain unchanged: integrity, customer satisfaction, and a relentless pursuit of excellence.
+                  From our headquarters near Throop Ave, our mission is to provide 20-minute emergency response to our neighbors in 11216, 11221, and 11233. We are fully licensed by the NYC DCA, deeply committed to transparent pricing, and relentless in our pursuit of securing our local community.
                 </p>
               </div>
             </div>

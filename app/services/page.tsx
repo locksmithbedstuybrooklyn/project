@@ -9,11 +9,11 @@ import { generateBreadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Expert Locksmith Services',
-  description: 'All locksmith services in Bed-Stuy: car unlock, key replacement, lock repair, lock installation, ignition repair, emergency service. Call (718) 568-6597.',
+  description: 'Need a lock fixed or a car unlocked right now? Locksmith Bed Stuy provides immediate, damage-free entry and comprehensive security upgrades.',
   alternates: { canonical: 'https://www.locksmithbedstuy.com/services' },
   openGraph: {
     title: 'Expert Locksmith Services | Bed-Stuy Locksmith',
-    description: 'All locksmith services in Bed-Stuy: car unlock, key replacement, lock repair, lock installation, ignition repair, emergency service. Call (718) 568-6597.',
+    description: 'Need a lock fixed or a car unlocked right now? Locksmith Bed Stuy provides immediate, damage-free entry and comprehensive security upgrades.',
     url: 'https://www.locksmithbedstuy.com/services',
     siteName: 'Bed-Stuy Locksmith',
     type: 'website',
@@ -44,7 +44,7 @@ export default function ServicesPage() {
             Comprehensive <br /> <span className="text-action-orange">Security Solutions</span>
           </h1>
           <p className="text-xl md:text-3xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed font-medium">
-            Your One-Stop Solution for All Lock and Security Needs. We provide reliable, efficient, and high-quality locksmithing for home, business, and vehicle.
+            Need a lock fixed or a car unlocked right now? Locksmith Bed Stuy provides immediate, damage-free entry and comprehensive security upgrades for your home, business, and vehicle.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a href="tel:(718)568-6597">
@@ -66,10 +66,10 @@ export default function ServicesPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-32">
           <div className="space-y-12 text-2xl text-gray-700 leading-relaxed font-medium">
             <p>
-              At Locksmith Bed Stuy, we pride ourselves on offering a complete range of professional locksmith services designed to secure your home, business, and vehicle. Serving Bed-Stuy and the wider Brooklyn area, our team of licensed and experienced technicians is dedicated to providing reliable, efficient, and high-quality security solutions.
+              Whether you are locked out of your Bed-Stuy apartment at 2 AM, or you need to upgrade the access control system for your new Fulton Street business, Locksmith Bed Stuy has the specialized expertise required. Serving our immediate neighborhood and the wider Brooklyn area, our team of licensed master technicians is dedicated to providing reliable, efficient, and damage-free solutions.
             </p>
             <p className="border-l-8 border-trust-blue pl-12 text-left italic bg-blue-50 py-12 rounded-r-3xl">
-              "We understand that security is paramount, and our goal is to deliver peace of mind through exceptional service. Whether you're facing an emergency lockout, planning a security upgrade, or need routine maintenance, we have the expertise and technology to meet your needs."
+              "We don't just unlock doors; we secure our community. By combining traditional locksmithing techniques for historic brownstones with modern smart-lock technology, we provide comprehensive, reliable security solutions."
             </p>
           </div>
         </div>
@@ -156,7 +156,7 @@ export default function ServicesPage() {
                 <span className="text-action-orange italic">Authority.</span>
               </h2>
               <p className="text-2xl text-blue-100 mb-12 leading-relaxed max-w-xl font-medium italic">
-                We combine technical mastery with local Brooklyn response times. Our consolidated service model ensures you receive the most thorough security evaluation possible.
+                Why trust us? We combine master-level technical skills with hyper-local Brooklyn response times. As a fully licensed local entity, our consolidated service model ensures you receive the most thorough, honest security evaluation possible.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 {[
