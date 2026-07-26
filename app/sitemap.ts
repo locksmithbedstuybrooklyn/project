@@ -4,8 +4,8 @@ import { services, locations, blogPosts } from '@/lib/content';
 const BASE_URL = 'https://www.locksmithbedstuy.com';
 
 // Deterministic random date generator based on a string seed (URL)
-// Generates a date between Feb 1, 2026 and May 6, 2026
-function getRandomDateFromUrl(url: string): Date {
+// Generates a date between 3 weeks ago and today
+function getRandomRecentDateFromUrl(url: string): Date {
   let hash = 0;
   for (let i = 0; i < url.length; i++) {
     hash = url.charCodeAt(i) + ((hash << 5) - hash);
@@ -14,9 +14,9 @@ function getRandomDateFromUrl(url: string): Date {
   // Convert hash to a pseudo-random number between 0 and 1
   const random = Math.abs(Math.sin(hash));
   
-  // Feb 1, 2026 to May 6, 2026
-  const start = new Date('2026-02-01T00:00:00Z').getTime();
-  const end = new Date('2026-05-06T00:00:00Z').getTime();
+  const end = new Date().getTime();
+  // 3 weeks (21 days) ago
+  const start = end - (21 * 24 * 60 * 60 * 1000);
   
   return new Date(start + random * (end - start));
 }
@@ -39,7 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Core pages
     ...corePages.map(page => ({
       ...page,
-      lastModified: getRandomDateFromUrl(page.url),
+      lastModified: getRandomRecentDateFromUrl(page.url),
     })),
 
     // Primary service pages
@@ -47,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const url = `${BASE_URL}/services/${service.slug}`;
       return {
         url,
-        lastModified: getRandomDateFromUrl(url),
+        lastModified: getRandomRecentDateFromUrl(url),
         changeFrequency: 'monthly' as const,
         priority: 0.9,
       };
@@ -58,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const url = `${BASE_URL}/locations/${location.slug}`;
       return {
         url,
-        lastModified: getRandomDateFromUrl(url),
+        lastModified: getRandomRecentDateFromUrl(url),
         changeFrequency: 'monthly' as const,
         priority: 0.8,
       };
@@ -69,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const url = `${BASE_URL}/blog/${post.slug}`;
       return {
         url,
-        lastModified: getRandomDateFromUrl(url),
+        lastModified: getRandomRecentDateFromUrl(url),
         changeFrequency: 'monthly' as const,
         priority: 0.8,
       };
